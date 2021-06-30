@@ -1,12 +1,12 @@
 import express from 'express'
 import mongoose from 'mongoose'
+import { dbURI, port } from './config/environment.js'
 
 const app = express()
-const port = 4000
-const dbURI = 'mongodb://localhost/getOut-api'
+
 
 // define the schema
-const getOutSchema = new mongoose.Schema({
+const activitySchema = new mongoose.Schema({
   
 })
 

@@ -2,12 +2,13 @@ import Activity from '../models/activity.js'
 
 // INDEX ROUTE
 export const getAllActivities = async (_req, res) => {
+  console.log('GET ALL ACTIVITIES',getAllActivities)
   const activities = await Activity.find()
   return res.status(200).json(activities)
 }
 
 // CREATE ROUTE - add a new activity
-export const addActivities = async (req, res) => {
+export const addActivity = async (req, res) => {
   try {
     const activityToAdd = await Activity.create(req.body)
     return res.status(201).json(activityToAdd)
@@ -18,7 +19,7 @@ export const addActivities = async (req, res) => {
 }
 
 // SHOW ROUTE - Individual Activity
- export const getOneActivities = async (req, res) => {
+ export const getOneActivity = async (req, res) => {
   try {
    const { id } = req.params
    const singleActivities =  await Activity.findById(id)
@@ -29,6 +30,7 @@ export const addActivities = async (req, res) => {
     return res.status(404).json({ 'message': 'not found' })
   }
 }
+
 //DELETE ROUTE
 export const deleteActivity = async (req, res) => {
   try {

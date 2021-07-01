@@ -1,15 +1,23 @@
 import express from 'express'
-import { getAllActivities, addActivities, getOneActivities, updateActivities, deleteActivities } from '../controllers/activity.js'
+import { getAllActivities, addActivity, getOneActivity, updateActivity, deleteActivity } from '../controllers/activity.js'
+import { registerUser, loginUser } from '../controllers/auth.js'
+import { secureRoute } from './secureRoute.js'
 
 const router = express.Router()
 
 router.route('/activities')
   .get(getAllActivities)
-  .post(addActivities)
+  .post(secureRoute, addActivity)
 
 router.route('/activities/:id')
-  .get(getOneActivities)
-  .put(updateActivities)
-  .delete(deleteActivities)
+  .get(getOneActivity)
+  .put(secureRoute, updateActivity)
+  .delete(secureRoute, deleteActivity)
+
+router.route('/register')
+  .post(registerUser)
+
+router.route('/login')
+  .post(loginUser)
 
 export default router

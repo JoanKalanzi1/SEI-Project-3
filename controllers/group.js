@@ -64,8 +64,9 @@ export const addComment = async (req, res) => {
   try {
     const { id } = req.params
     // Find the group by the ID
-    const group = await group.findById(id)
+    const group = await Group.findById(id)
     if (!group) throw new Error('No activity found')
+    console.log('going wrong here',req.currentUser)
     // create a comment from the req.body and req.currentUser
     const commentToAdd = { ...req.body, owner: req.currentUser._id }
     console.log('Show comments ->', group.comments)

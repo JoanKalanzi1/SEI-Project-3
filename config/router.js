@@ -2,7 +2,9 @@ import express from 'express'
 import { getAllActivities, addActivity, getOneActivity, updateActivity, deleteActivity } from '../controllers/activity.js'
 import { getAllGroups, addGroup, getOneGroup, updateGroup, deleteGroup, addComment, deleteComment } from '../controllers/group.js'
 import { registerUser, loginUser } from '../controllers/auth.js'
+import { registerGroupUser, loginGroupUser } from '../controllers/groupAuth.js'
 import { secureRoute } from './secureRoute.js'
+import { secureRouteGroupUser } from './secureRouteGroupUser.js'
 
 const router = express.Router()
 
@@ -14,7 +16,7 @@ router.route('/activities')
 // Group
 router.route('/groups')
   .get(getAllGroups)
-  .post(secureRoute, addGroup)
+  .post(secureRouteGroupUser, addGroup)
 
 // Activity
 router.route('/activities/:id')
@@ -22,25 +24,34 @@ router.route('/activities/:id')
   .put(secureRoute, updateActivity)
   .delete(secureRoute, deleteActivity)
 
-// Activity
+// Group
 router.route('/groups/:id')
   .get(getOneGroup)
-  .put(secureRoute, updateGroup)
-  .delete(secureRoute, deleteGroup)
+  .put(secureRouteGroupUser, updateGroup)
+  .delete(secureRouteGroupUser, deleteGroup)
 
 //Group
 router.route('/groups/:id/comments')
   .post(secureRoute, addComment)
 
 //Group
-router.route('/shows/:id/comments/:commentId')
-  .delete(secureRoute, deleteComment)
+router.route('/groups/:id/comments/:commentId')
+  .delete(secureRouteGroupUser, deleteComment)
 
-
+// User login
 router.route('/register')
   .post(registerUser)
 
+// User login 
 router.route('/login')
   .post(loginUser)
+
+//Group login
+router.route('/groupRegister')
+  .post(registerGroupUser)
+  
+// Group login 
+router.route('/groupLogin')
+  .post(loginGroupUser)
 
 export default router

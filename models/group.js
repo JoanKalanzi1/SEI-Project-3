@@ -14,9 +14,9 @@ const commentSchema = new mongoose.Schema({
 
 // define teh schema for the group
 const groupSchema = new mongoose.Schema({
-  Name: { type: String, required: true, unique: true },
+  name: { type: String, required: true, unique: true },
   image: { type: String, required: true },
-  Activity: { type: String, required: true }, // indoor or outdoor
+  activity: { type: String, required: true }, // indoor or outdoor
   location: { type: String, required: true, maxLength: 100 },
   number: { type: String, required: true },
   about: { type: String, required: true } ,

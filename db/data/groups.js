@@ -1,6 +1,6 @@
 export default [
   {
-    Name: 'raving bandits',
+    name: 'raving bandits',
     image: 'image',
     Activity: 'raving with purpose', // indoor or outdoor
     location: 'your living room',

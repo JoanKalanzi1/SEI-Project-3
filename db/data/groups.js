@@ -25,7 +25,7 @@ export default [
     name: "Tree hugging meditation",
     image: "img",
     activity: "Tree hugging",
-    location: "",
+    location: "a",
     number: "0",
     about: "A group of people who love nature and meditation ",
     time: "10:00",
@@ -90,7 +90,7 @@ export default [
   {
     name: "Reading over wine",
     image: "hey",
-    activity: "Reading books and drinking great wine",
+    activity: 'Drinks',
     location: "location",
     number: "0",
     about: "Do you love reading? Do you love drinking wine? if the answer is yes! join our join",
@@ -178,7 +178,7 @@ export default [
   {
     name: 'raving bandits',
     image: 'image',
-    Activity: 'raving with purpose', // indoor or outdoor
+    activity: 'raving with purpose', // indoor or outdoor
     location: 'your living room',
     number: 'however many you want',
     about: 'virtual rave group',

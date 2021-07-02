@@ -3,8 +3,11 @@ import { getAllActivities, addActivity, getOneActivity, updateActivity, deleteAc
 import { getAllGroups, addGroup, getOneGroup, updateGroup, deleteGroup, addComment, deleteComment } from '../controllers/group.js'
 import { registerUser, loginUser } from '../controllers/auth.js'
 import { registerGroupUser, loginGroupUser } from '../controllers/groupAuth.js'
+import { getUserProfile } from '../controllers/users.js'
+import { getGroupUserProfile } from '../controllers/groupUser.js'
 import { secureRoute } from './secureRoute.js'
 import { secureRouteGroupUser } from './secureRouteGroupUser.js'
+
 
 const router = express.Router()
 
@@ -38,7 +41,7 @@ router.route('/groups/:id/comments')
 router.route('/groups/:id/comments/:commentId')
   .delete(secureRouteGroupUser, deleteComment)
 
-// User login
+// User register
 router.route('/register')
   .post(registerUser)
 
@@ -46,12 +49,20 @@ router.route('/register')
 router.route('/login')
   .post(loginUser)
 
-//Group login
+  //User profile
+router.route('/profile')
+  .get(secureRoute, getUserProfile)
+
+//Groupuser register
 router.route('/groupRegister')
   .post(registerGroupUser)
   
-// Group login 
+// Groupuser login 
 router.route('/groupLogin')
   .post(loginGroupUser)
+
+//Groupuser profile
+router.route('/groupProfile')
+  .get(secureRouteGroupUser, getGroupUserProfile)
 
 export default router

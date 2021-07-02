@@ -12,6 +12,15 @@ const userSchema = new mongoose.Schema({
   password: { type: String, required: true }
 })
 
+// remove the password from the populated owner when it converts to json
+userSchema.set('toJSON', {
+  virtuals: true,
+  transform(_doc, json){
+    delete json.password // remove password
+    return json // return object without password field
+  }
+})
+
 // Virtual field
 userSchema
   .virtual('passwordConfirmation') // Create our virtual field name

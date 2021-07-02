@@ -12,6 +12,21 @@ const groupUserSchema = new mongoose.Schema({
   password: { type: String, required: true }
 })
 
+groupUserSchema.virtual('createdGroups', {
+  ref: 'Group', // References the Show model
+  localField: '_id', // _id on current user model
+  foreignField: 'owner' // field to check against id
+})
+
+// remove the password from the populated owner when it converts to json
+groupUserSchema.set('toJSON', {
+  virtuals: true,
+  transform(_doc, json){
+    delete json.password // remove password
+    return json // return object without password field
+  }
+})
+
 // Virtual field
 groupUserSchema
   .virtual('passwordConfirmation') // Create our virtual field name

@@ -24,10 +24,14 @@ const seedDatabase = async () => {
     const users = await User.create(userData)
     console.log(`🌱 DB seeded with ${activities.length} activities & with ${users.length} users.`)
 
+    const groupsData = await GroupUser.create(groupUserData)
+    const groupsWithUsers = groupData.map(group => {
+      return { ...group, owner: groupsData[0]._id }
+    })
+
     // create groups using activityData
-    const groups = await Group.create(groupData)
-    const group = await GroupUser.create(groupUserData)
-    console.log(`🌱 DB seeded with ${groups.length} groups & with ${group.length} users.`)
+    const groups = await Group.create(groupsWithUsers)
+    console.log(`🌱 DB seeded with ${groups.length} groups & with ${groupsData.length} users.`)
 
     //close connection
     await mongoose.connection.close()

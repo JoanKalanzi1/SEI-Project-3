@@ -1,11 +1,13 @@
 import Activity from '../models/activity.js'
 
+
 // INDEX ROUTE
 export const getAllActivities = async (_req, res) => {
-  console.log('GET ALL ACTIVITIES',getAllActivities)
+  console.log('GET ALL ACTIVITIES', getAllActivities)
   const activities = await Activity.find()
   return res.status(200).json(activities)
 }
+
 
 // CREATE ROUTE - add a new activity
 export const addActivity = async (req, res) => {
@@ -19,37 +21,38 @@ export const addActivity = async (req, res) => {
 }
 
 // SHOW ROUTE - Individual Activity
- export const getOneActivity = async (req, res) => {
+export const getOneActivity = async (req, res) => {
   try {
-   const { id } = req.params
-   const singleActivities =  await Activity.findById(id)
-   if (!singleActivities) throw new Error()
-   return res.status(200).json(singleActivities)
+    const { id } = req.params
+    const singleActivities = await Activity.findById(id).populate('owner').populate('comments.owner')
+    if (!singleActivities) throw new Error()
+    return res.status(200).json(singleActivities)
   } catch (err) {
     console.log('I am wrong', err)
     return res.status(404).json({ 'message': 'not found' })
   }
 }
 
+
 //DELETE ROUTE
 export const deleteActivity = async (req, res) => {
   try {
     const { id } = req.params
     const activityToDelete = await Activity.findById(id)
-    if(!activityToDelete) throw new Error()
+    if (!activityToDelete) throw new Error()
     await activityToDelete.remove()
     return res.sendStatus(204)
   } catch (err) {
-    console.log('ERROR IN DELETE',err)
+    console.log('ERROR IN DELETE', err)
     return res.status(404).json({ 'message': 'not found' })
   }
 }
 
 // Update ROUTE - Editing an individual activity
-export const updateActivity =  async (req, res) => {
+export const updateActivity = async (req, res) => {
   const { id } = req.params
   try {
-    const activityToUpdate = await Activity.findOneAndUpdate({ _id: id}, { ...req.body }, { new: true })
+    const activityToUpdate = await Activity.findOneAndUpdate({ _id: id }, { ...req.body }, { new: true })
     if (!activityToUpdate) throw new Error()
     return res.status(200).json(activityToUpdate)
   } catch (err) {
@@ -57,7 +60,3 @@ export const updateActivity =  async (req, res) => {
     return res.status(404).json({ 'message': 'activity not found' })
   }
 }
-
-// create comment
-
-// delete comment

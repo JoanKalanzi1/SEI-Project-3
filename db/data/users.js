@@ -3,7 +3,7 @@ export default [
     username: 'admin',
     email: 'admin@email.com',
     password: 'pass1234',
-    passwordConfirmation:'pass1234'
+    passwordConfirmation: 'pass1234'
   },
   {
     username: 'cecilia',

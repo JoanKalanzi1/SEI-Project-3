@@ -13,8 +13,9 @@ export const secureRouteGroupUser = async (req, res, next) => {
     // find user based on id in payload
     const groupUserToVerify = await GroupUser.findById(payload.sub)
     // Check to make sure user exists
+    console.log('GROUP USER>>>>', groupUserToVerify)
     if (!groupUserToVerify) throw new Error('Group not found')
-
+    req.currentGroupUser = groupUserToVerify
     next()
   } catch (err) {
     console.log(err)

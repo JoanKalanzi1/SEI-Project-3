@@ -38,6 +38,8 @@ export const deleteGroup = async (req, res) => {
     const { id } = req.params
     const groupToDelete = await Group.findById(id)
     if (!groupToDelete) throw new Error()
+    // Check returned shows owner is equal to the user making the request
+    if (!groupToDelete.owner.equals(req.currentGroupUser._id)) throw new Error('Unauthorised')
     await groupToDelete.remove()
     return res.sendStatus(204)
   } catch (err) {
@@ -66,7 +68,7 @@ export const addComment = async (req, res) => {
     // Find the group by the ID
     const group = await Group.findById(id)
     if (!group) throw new Error('No activity found')
-    console.log('going wrong here',req.currentUser)
+    console.log('going wrong here', req.currentUser)
     // create a comment from the req.body and req.currentUser
     const commentToAdd = { ...req.body, owner: req.currentUser._id }
     console.log('Show comments ->', group.comments)

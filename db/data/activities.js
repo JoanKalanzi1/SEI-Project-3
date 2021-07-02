@@ -8,14 +8,14 @@ export default [
   {
     nameOfActivity: 'Yoga',
     image: 'url',
-    environment: 'indoor/outdoor',
+    environment: 'both',
     summary: 'A relaxing form of exercise that was developed in India and involves assuming and holding postures that stretch the limbs and muscles, doing breathing exercises, and using meditation techniques to calm the mind. '
   }
   ,
   {
     nameOfActivity: 'Reading',
     image: 'url',
-    environment: 'indoor/outdoor',
+    environment: 'both',
     summary: 'Reading is a multifaceted process involving word recognition, comprehension, fluency, and motivation. You can learn new facts, follow a group of heroes on a party, or see the world through another\'s eyes.'
   }
   ,
@@ -30,13 +30,13 @@ export default [
     nameOfActivity: 'Gardening',
     image: 'https://imgur.com/fEUGLTT',
     environment: 'outdoor',
-    summary: 'If the need to pickup a very environmentally-friendly and ‘green’ hobby has come to mind, then it must be gardening time. Gardening is the practice of growing plants either for ornamental or food. A gardening effort can involve a plot as small as a windowsill or as large as a few acres. Gardening as a hobby can be an effective tool for stress management as well as providing food for the family and beauty as well. Many gardeners who start out usually do so with a smaller scale as in the backyard. Here they feel more comfortable and can make the usual mistakes that most if not all successful gardeners will do from time to time. In the end, gardening is a thrilling hobby and one that can be practiced for a lifetime'
+    summary: 'If the need to pickup a very environmentally-friendly and ‘green’ hobby has come to mind, then it must be gardening time. Gardening is the practice of growing plants either for ornamental or food. A gardening effort can involve a plot as small as a windowsill or as large as a few acres. Gardening as a hobby can be an effective tool for stress management as well as providing food for the family and beauty as well.'
   }
   ,
   {
     nameOfActivity: 'Volunteering',
     image: 'https://imgur.com/5GMHMrQ',
-    environment: 'indoor/outdoor',
+    environment: 'both',
     summary: 'Do you want to spend your time giving back, or willingly doing something to help society or people in need with no expectation of any money or profit.  This hobby is pleasant and encourages you and the community to involve good work.'
   }
   ,
@@ -50,7 +50,7 @@ export default [
   {
     nameOfActivity: 'Music',
     image: 'url',
-    environment: 'indoor/outdoor',
+    environment: 'both',
     summary: 'Everyone’s taste in music is unique which means that no matter what music you make, someone is bound to enjoy listening to it. While the music industry may favour certain types of music more than others, it is important to understand that there isn’t a single human culture on earth that has existed without music. Music is of great benefit to us, regardless of whether we are renowned recording artists, karaoke singers or merely fans of music.'
   },
   {
@@ -74,7 +74,7 @@ export default [
   {
     nameOfActivity: 'Running',
     image: 'url',
-    environment: 'indoor/outdoor',
+    environment: 'outdoor',
     summary: 'Running as a hobby is recommended because it is beneficial in helping to improve health, helps you to meet new people and is versatile and relatively inexpensive. Running is also a useful tool in reducing stress and provides other psychological benefits. Running is a relatively easy hobby to take up.'
   }
   ,

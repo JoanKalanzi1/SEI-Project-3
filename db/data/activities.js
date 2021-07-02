@@ -1,6 +1,5 @@
 export default [
   {
-<<<<<<< HEAD
     nameOfActivity: 'Mountain Biking',
     image: 'https://imgur.com/Xig6fS9',
     environment: 'outdoor',
@@ -313,19 +312,7 @@ export default [
   //   environment: 'indoor/outdoor',
   //   summary: 'description'
   // }  
-=======
-    nameOfActivity: 'name',
-    image: 'url',
-    environment: 'indoor/outdoor',
-    summary: 'description'
-  },
-  {
-    nameOfActivity: 'name2',
-    image: 'url',
-    environment: 'indoor/outdoor',
-    summary: 'description'
-  }
->>>>>>> development
+
 ]
 
 // nameOfActivity: 'name',

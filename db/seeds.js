@@ -1,9 +1,13 @@
 import mongoose  from 'mongoose'
 import { dbURI } from '../config/environment.js'
 import Activity from '../models/activity.js'
+import Group from '../models/group.js'
 import activityData from './data/activities.js'
+import groupData from './data/groups.js'
 import User from '../models/user.js'
 import userData from './data/users.js'
+import groupUserData from './data/groupUser.js'
+import GroupUser from '../models/groupUser.js'
 
 const seedDatabase = async () => {
   try {
@@ -19,6 +23,11 @@ const seedDatabase = async () => {
     const activities = await Activity.create(activityData)
     const users = await User.create(userData)
     console.log(`🌱 DB seeded with ${activities.length} activities & with ${users.length} users.`)
+
+    // create groups using activityData
+    const groups = await Group.create(groupData)
+    const group = await GroupUser.create(groupUserData)
+    console.log(`🌱 DB seeded with ${groups.length} groups & with ${group.length} users.`)
 
     //close connection
     await mongoose.connection.close()

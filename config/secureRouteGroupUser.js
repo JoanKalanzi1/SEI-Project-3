@@ -1,8 +1,8 @@
 import jwt from 'jsonwebtoken'
 import { secret } from './environment.js'
-import User from '../models/user.js'
+import GroupUser from '../models/groupUser.js'
 
-export const secureRoute = async (req, res, next) => {
+export const secureRouteGroupUser = async (req, res, next) => {
   try {
     if (!req.headers.authorization) throw new Error('Missing headers')
     const token = req.headers.authorization.replace('Bearer ', '')
@@ -11,10 +11,10 @@ export const secureRoute = async (req, res, next) => {
     const payload = jwt.verify(token, secret)
     console.log('Payload-->', payload)
     // find user based on id in payload
-    const userToVerify = await User.findById(payload.sub)
+    const groupUserToVerify = await GroupUser.findById(payload.sub)
     // Check to make sure user exists
-    if (!userToVerify) throw new Error('User not found')
-    req.currentUser = userToVerify
+    if (!groupUserToVerify) throw new Error('Group not found')
+
     next()
   } catch (err) {
     console.log(err)

@@ -64,6 +64,7 @@ export const updateGroup = async (req, res) => {
 // create comment for a group 
 export const addComment = async (req, res) => {
   try {
+    console.log('Comment added')
     const { id } = req.params
     // Find the group by the ID
     const group = await Group.findById(id)
@@ -83,21 +84,38 @@ export const addComment = async (req, res) => {
   }
 }
 
-// delete comment for a group
 
+// delete comment for a group
 export const deleteComment = async (req, res) => {
   try {
     const { id, commentId } = req.params
     const group = await Group.findById(id)
     if (!group) throw new Error('Group not found')
-    const groupToDelete = group.comment.id(commentId)
-    if (!groupToDelete) throw new Error('Comment not found')
+    // const groupToDelete = group.comment.id(commentId)
     const commentToDelete = group.comments.id(commentId)
+    if (!commentToDelete) throw new Error('Comment not found')
     await commentToDelete.remove()
     await group.save()
     return res.sendStatus(204)
   } catch (err) {
     console.log(err)
     return res.status(404).json({ message: err })
+  }
+}
+
+// Edit comment for a group
+export const editComment = async (req, res) => {
+  try {
+    const { id, commentId } = req.params
+    const group = await Group.findById(id)
+    if (!group) throw new Error('Group not found')
+    const commentToUpdate = group.comments.id(commentId)
+    console.log(commentToUpdate)
+    // await Group.findOneAndUpdate({ _id: commentId }, { ...req.body }, { new: true })
+    if (!commentToUpdate) throw new Error()
+    return res.status(200).json(commentToUpdate)
+  } catch (err) {
+    console.log('ERROR IN EDIT ROUTE:', err)
+    return res.status(404).json({ 'message': 'group not found' })
   }
 }

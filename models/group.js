@@ -47,3 +47,4 @@ groupSchema.set('toJSON', {
 
 //Export the schema
 export default mongoose.model('Group', groupSchema)
+

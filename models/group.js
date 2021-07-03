@@ -16,8 +16,8 @@ const commentSchema = new mongoose.Schema({
 const groupSchema = new mongoose.Schema({
   name: { type: String, required: true, unique: true },
   image: { type: String, required: true },
-  activity: { type: String, required: true },
-  location: { type: String, required: true, maxLength: 100 },
+  activity: [ { type:String } ],
+  location: [{ type: String, required: true, maxLength: 100 }],
   number: { type: String, required: true },
   about: { type: String, required: true },
   time: { type: String },

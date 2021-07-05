@@ -284,7 +284,26 @@ export default [
     creative: 'No',
     environment: 'Outdoor',
     summary: 'Scuba diving is a fast growing hobby that has captivated the hearts of many. With seventy percent of the planet resting underwater, you\'ve got to dive in to truly see what the world has to offer.'
+  },
+  {
+    nameOfActivity: 'Tag Rugby',
+    image: 'https://imgur.com/jCCi6zs',
+    physical: 'Physical',
+    competitive: 'Competive',
+    creative: 'No',
+    environment: 'Outdoor',
+    summary: 'Tag Rugby is a minimal contact team game in which each player wears shorts with velcro patches with two tags attached to them. The attacking team has six plays or tags to try to score a try or take the ball down field as close to the line as possible.'
+  },
+  {
+    nameOfActivity: 'Fell Running',
+    image: 'https://imgur.com/8mCQhwZ',
+    physical: 'Physical',
+    competitive: 'Sometimes',
+    creative: 'No',
+    environment: 'Outdoor',
+    summary: 'Fell running, a traditionally British sport, is running and racing off road, where a signficant gradient is climbed. It\'s not so much about speed, but you\'ll have to train yourself for the unpredictable weather and terrain you might experience underfoot. Fell running also involves running between two checkpoints, often without a clear path.'
   }
+  
   // {
   //   nameOfActivity: 'Coasteering',
   //   image: 'url',

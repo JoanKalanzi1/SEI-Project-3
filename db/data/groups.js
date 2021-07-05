@@ -49,7 +49,7 @@ export default [
     activity: 'Baking',
     location: 'location',
     number: '0',
-    about: 'Baking is our life's mission.',
+    about: 'Baking is our life\'s mission.',
     time: '15:00',
     level: 'Beginner',
     contact: 'contact'

@@ -8,7 +8,7 @@ export default [
     about: "We love playing netball because we are young and free",
     time: "14:00",
     level: "Beginner",
-    contact: "contact"
+    contact: "02579280927897"
   },
   {
     name: " We love Cheese",
@@ -19,7 +19,7 @@ export default [
     about: "A fun group that love cheese. Bring your own cheese.",
     time: "18:00",
     level: "Beginner",
-    contact: "contact"
+    contact: "02579280927897"
   },
   {
     name: "Tree hugging meditation",
@@ -30,7 +30,7 @@ export default [
     about: "A group of people who love nature and meditation ",
     time: "10:00",
     level: "Beginner",
-    contact: "contact"
+    contact: "02579280927897"
   },
   {
     name: "Walking away",
@@ -41,7 +41,7 @@ export default [
     about: " we like hiking around london",
     time: "09:00",
     level: "Beginner",
-    contact: "contact"
+    contact: "02579280927897"
   },
   {
     name: "Baking warriors",
@@ -52,7 +52,7 @@ export default [
     about: "Baking is our life's mission.",
     time: "15:00",
     level: "Beginner",
-    contact: "contact"
+    contact: "025976424890"
   },
   {
     name: "Urban gardening",
@@ -63,7 +63,7 @@ export default [
     about: "Sharing skills and experiences of gardening in small spaces",
     time: "11:00",
     level: "Beginner",
-    contact: "hey"
+    contact: "0257798887798"
   },
   {
     name: "The Ultimate Frisbee group",
@@ -74,7 +74,7 @@ export default [
     about: "If you love throwing a frisbee join this group",
     time: "18:00",
     level: "Beginner",
-    contact: "hey"
+    contact: "0258090904776"
   },
   {
     name: "Warhammer",
@@ -85,7 +85,7 @@ export default [
     about: "whatever mike wants",
     time: "15:00",
     level: "hey",
-    contact: "hhhhh"
+    contact: "0257909992899"
   },
   {
     name: "Reading over wine",
@@ -96,7 +96,7 @@ export default [
     about: "Do you love reading? Do you love drinking wine? if the answer is yes! join our join",
     time: "19:00",
     level: " Beginner",
-    contact: "hey"
+    contact: "0257929787912"
   },
   {
     name: "Biking",
@@ -107,7 +107,7 @@ export default [
     about: " we cycle around london",
     time: "19:00",
     level: " Beginner",
-    contact: "hey"
+    contact: "0259078863090"
   },
   {
     name: "soup kitchen",
@@ -118,7 +118,7 @@ export default [
     about: " we volunteer to various soup centers in london ",
     time: "09:00",
     level: " Beginner",
-    contact: "hey"
+    contact: "02590739303892"
   },
   {
     name: "Video Gaming",
@@ -129,7 +129,7 @@ export default [
     about: " we play games on online together",
     time: "20:00",
     level: " Beginner",
-    contact: "hey"
+    contact: "025689090188778"
   },
   {
     name: "Football",
@@ -140,7 +140,7 @@ export default [
     about: "We play football together in the park ",
     time: "09:00",
     level: "intermediate",
-    contact: "hey"
+    contact: "02509649920778"
   },
   {
     name: "Singing Angels",
@@ -151,7 +151,7 @@ export default [
     about: "Have you ever wanted to join a pop and rock choir but felt too nervous about attending? Fear not! The Singing Angels is designed for you.",
     time: "09:00",
     level: "intermediate",
-    contact: "hey"
+    contact: "02587489098778"
   },
   {
     name: "Dancing for fun",
@@ -162,28 +162,28 @@ export default [
     about: "Meet like minded people through dancing",
     time: "09:00",
     level: "intermediate",
-    contact: "hey"
+    contact: "024557898778"
   },
   {
     name: "Board games",
     image: "https://imgur.com/4LXpaEs",
-    activity: ["Boarding", "Puzzling"],
+    activity: ["Board game", "Puzzl"],
     location: { name: "Asolando Drive ", longitude: -0.092679, latitude:	51.490835 },
     number: "0",
     about: "We love board playing board games together ",
     time: "09:00",
     level: "intermediate",
-    contact: "hey"
+    contact: "025789367127"
   },
   {
     name: 'The camera club',
     image: "https://imgur.com/knOsdhS",
     activity: ["Photography", "Films"], // indoor or outdoor
     location: { name: "West Hampstead Mews ", longitude: 	-0.189936, latitude: 51.547303 },
-    number: 'however many you want',
+    number: '0',
     about: "Welcome to The camera club. Improve your PHOTOGRAPHY and BOOST YOUR CREATIVITY!",
     time: 'tuesday',
-    level: 'All',
+    level: 'Both',
     contact: '098986557898778'
   },
   {
@@ -191,10 +191,10 @@ export default [
     image: "https://imgur.com/CdSIaRk",
     activity: ["kitting", "Films"], // indoor or outdoor
     location: { name: "Kingdon Road ", longitude: -0.192392, latitude: 51.549382 },
-    number: 'however many you want',
+    number: '0',
     about: "Come ready with your knitting project and join the virtual meet up.",
     time: 'tuesday',
-    level: 'All',
+    level: 'Both',
     contact: '098986557898778'
   },
   {
@@ -202,10 +202,10 @@ export default [
     image: "https://imgur.com/2hWiQJD",
     activity: ["puzzling", "Math/ Mind Game", "Board games", "Chess"], // indoor or outdoor
     location: { name: "Great Eastern Road", longitude: 0.003688, latitude: 51.544929 },
-    number: 'however many you want',
-    about: "",
+    number: "0",
+    about: "The mind is very powerful. Join us and become more mindful through games  ",
     time: 'tuesday',
-    level: 'All',
+    level: 'Both',
     contact: '098986557898778'
   },
   {
@@ -213,10 +213,10 @@ export default [
     image: "https://imgur.com/ZUYPboU",
     activity: ['Painting'], // indoor or outdoor
     location: { name: "Amhurst Road ", longitude: -0.061674, latitude: 	51.549004 },
-    number: 'however many you want',
+    number: '0',
     about: 'We create beautiful art',
     time: '16:00',
-    level: 'All',
+    level: 'Both',
     contact: '098986557898778'
   },
   {
@@ -224,10 +224,10 @@ export default [
     image: "https://imgur.com/NwDOzUt",
     activity: ['Reading', 'Films, Music'], // indoor or outdoor
     location: { name: "Benworth Street ", longitude: 	-0.02787, latitude:51.528216 },
-    number: '',
-    about: 'We create beautiful art',
+    number: "0",
+    about: 'We watch anime and review it afterwards',
     time: '16:00',
-    level: 'All',
+    level: 'Both',
     contact: '098986557898778'
   },
   {
@@ -235,10 +235,10 @@ export default [
     image: "https://imgur.com/kHiukfT",
     activity: ['Yoga','Math / Mind Games'], // indoor or outdoor
     location: { name: "Cairo Road ", longitude: 	-0.018014, latitude: 51.585503 },
-    number: '',
-    about: 'We create beautiful art',
+    number: "0",
+    about: "If you love Yoga you would love our group.",
     time: '16:00',
-    level: 'All',
+    level: 'Both',
     contact: '098986557898778'
   },
   {
@@ -246,10 +246,159 @@ export default [
     image: "https://imgur.com/rZMkYI1",
     activity: ['Swimming', 'Sailing'], // indoor or outdoor
     location: { name: "Harrow Lane ", longitude: 	-0.0131, latitude:	51.508507 },
-    number: '',
-    about: 'We create beautiful art',
+    number: "0",
+    about: 'The group is for sailing loves and those that own a boat.',
     time: '16:00',
-    level: 'All',
+    level: 'Both',
     contact: '098986557898778'
-  }
+  },
+//   {
+//     name: 'GCSE Tutors',
+//     image: "",
+//     activity: ['Learning,Mentoring, Tutoring'], // indoor or outdoor
+//     location: {  },
+//     number: "0",
+//     about: 'We provide GCSE tutoring for all subjects',
+//     time: 'saturday',
+//     level: 'Both',
+//     contact: '098973567878'
+//   },
+//   {
+//     name: 'Diving  Group',
+//     image: "",
+//     activity: ['Swimming', 'Scuba Diving', 'Learning'], // indoor or outdoor
+//     location: { },
+//     number: "0",
+//     about: 'We are a diving group that love the sea. Join us if interested in scuba diving',
+//     time: 'Sunday ',
+//     level: 'Both',
+//     contact: '09826893898778'
+//   },{
+//     name: 'Coasteering for freedom',
+//     image: "",
+//     activity: ['Swimming', 'Sailing', 'Coasterring', 'Learning'], // indoor or outdoor
+//     location: { },
+//     number: "0",
+//     about: 'We love jumping off big rocks in the middle of the sea',
+//     time: '16:00',
+//     level: 'intermediate',
+//     contact: '098986557898778'
+//   },{
+//     name: 'Kayaking along the thames',
+//     image: "",
+//     activity: ['Swimming', 'Sailing', 'Coastering', 'Kayaking', 'Canoeing'], // indoor or outdoor
+//     location: { name: "", longitude: , latitude: },
+//     number: "0",
+//     about: 'Kayaking is fun especially on the river Thames',
+//     time: '16:00',
+//     level: 'intermediate',
+//     contact: '098986557898778'
+//   },{
+//     name: 'Paddle away',
+//     image: "",
+//     activity: ['Swimming', 'Sailing', 'Stand Up Paddle Boarding'], // indoor or outdoor
+//     location: { name: "Harrow Lane ", longitude: 	-0.0131, latitude:	51.508507 },
+//     number: "0",
+//     about: 'This is a fun join that focuses on paddle boarding.',
+//     time: '16:00',
+//     level: 'intermediate',
+//     contact: '098986388778'
+//   },{
+//     name: 'Make you own Jewelry',
+//     image: "",
+//     activity: ['Art', 'Creating','Learning'], // indoor or outdoor
+//     location: { name: "Harrow Lane ", longitude: 	-0.0131, latitude:	51.508507 },
+//     number: "0",
+//     about: 'We focus on Jewelry making. ',
+//     time: '16:00',
+//     level: 'Beginnerr',
+//     contact: '098763990378'
+//   }{
+//     name: 'Learn how to play an instrument',
+//     image: "https://imgur.com/rZMkYI1",
+//     activity: ['Learning', 'Music' , 'Instrument'], // indoor or outdoor
+//     location: { name: "Harrow Lane ", longitude: 	-0.0131, latitude:	51.508507 },
+//     number: "0",
+//     about: 'The join has three teacher are that has various experiences in teaching music. The class are free so feel free to join',
+//     time: 'wednesday',
+//     level: 'Beginner',
+//     contact: '09868937898778'
+//   },
+//   {
+//     name: 'The Fishing Thames',
+//     image: "",
+//     activity: ['Swimming', 'Sailing','Fishing', 'Learning'], // indoor or outdoor
+//     location: { name: "Harrow Lane ", longitude: 	-0.0131, latitude:	51.508507 },
+//     number: "0",
+//     about: 'We Fish everyday after work at the nearest Thames River',
+//     time: '18:00',
+//     level: 'Both',
+//     contact: '0267890098778'
+//   },
+//   {
+//     name: 'Code wars ',
+//     image: "",
+//     activity: ['Learning', 'Coding'], // indoor or outdoor
+//     location: { name: "Harrow Lane ", longitude: 	-0.0131, latitude:	51.508507 },
+//     number: "0",
+//     about: 'Learn how to code ',
+//     time: '16:00',
+//     level: 'Beginner',
+//     contact: '09889038778'
+//   },
+//   {
+//     name: 'Latte Art',
+//     image: "https://imgur.com/rZMkYI1",
+//     activity: ['Art', 'Latte', 'Learning'], // indoor or outdoor
+//     location: { name: "Harrow Lane ", longitude: 	-0.0131, latitude:	51.508507 },
+//     number: "0",
+//     about: 'Learn how to make latte art from your own home.',
+//     time: '16:00',
+//     level: 'Bigginner',
+//     contact: '096849090778'
+//   },
+//   {
+//     name: '',
+//     image: "https://imgur.com/rZMkYI1",
+//     activity: ['Swimming', 'Sailing'], // indoor or outdoor
+//     location: { name: "Harrow Lane ", longitude: 	-0.0131, latitude:	51.508507 },
+//     number: "0",
+//     about: 'The group is for sailing loves and those that own a boat.',
+//     time: '16:00',
+//     level: 'Both',
+//     contact: '098986557898778'
+//   },
+//   {
+//     name: 'The sailing club',
+//     image: "https://imgur.com/rZMkYI1",
+//     activity: ['Swimming', 'Sailing'], // indoor or outdoor
+//     location: { name: "Harrow Lane ", longitude: 	-0.0131, latitude:	51.508507 },
+//     number: "0",
+//     about: 'The group is for sailing loves and those that own a boat.',
+//     time: '16:00',
+//     level: 'Both',
+//     contact: '098986557898778'
+//   },
+//   {
+//     name: 'The sailing club',
+//     image: "https://imgur.com/rZMkYI1",
+//     activity: ['Swimming', 'Sailing'], // indoor or outdoor
+//     location: { name: "Harrow Lane ", longitude: 	-0.0131, latitude:	51.508507 },
+//     number: "0",
+//     about: 'The group is for sailing loves and those that own a boat.',
+//     time: '16:00',
+//     level: 'Both',
+//     contact: '098986557898778'
+//   },
+//   {
+//     name: 'The sailing club',
+//     image: "https://imgur.com/rZMkYI1",
+//     activity: ['Swimming', 'Sailing'], // indoor or outdoor
+//     location: { name: "Harrow Lane ", longitude: 	-0.0131, latitude:	51.508507 },
+//     number: "0",
+//     about: 'The group is for sailing loves and those that own a boat.',
+//     time: '16:00',
+//     level: 'Both',
+//     contact: '098986557898778'
+//   }
 ]

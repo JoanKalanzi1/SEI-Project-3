@@ -1,5 +1,6 @@
 import mongoose from 'mongoose'
 import bcrypt from 'bcrypt'
+// import groupSchema from '../models/group.js'
 
 // username
 // email
@@ -10,6 +11,8 @@ const userSchema = new mongoose.Schema({
   username: { type: String, required: true, unique: true, maxLength: 30 },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true }
+  // groups: [groupSchema],
+  // groupJoin: { type: mongoose.Schema.ObjectId, ref: 'Group'}
 })
 
 // remove the password from the populated owner when it converts to json

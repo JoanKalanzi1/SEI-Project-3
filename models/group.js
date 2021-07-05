@@ -17,7 +17,7 @@ const groupSchema = new mongoose.Schema({
   name: { type: String, required: true, unique: true },
   image: { type: String, required: true },
   activity: [ { type:String } ],
-  location: [{ type: String, required: true, maxLength: 100 }],
+  location: {  type: Object, required: true, maxLength: 600 },
   number: { type: String, required: true },
   about: { type: String, required: true },
   time: { type: String },
@@ -25,6 +25,7 @@ const groupSchema = new mongoose.Schema({
   contact: { type: String },
   owner: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
   comments: [commentSchema]
+  // groupJoin: { type: mongoose.Schema.ObjectId, ref: 'User', required: true}
 })
 
 groupSchema.virtual('avgRating')

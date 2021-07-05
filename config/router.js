@@ -49,7 +49,7 @@ router.route('/register')
 router.route('/login')
   .post(loginUser)
 
-  //User profile
+//User profile
 router.route('/profile')
   .get(secureRoute, getUserProfile)
 

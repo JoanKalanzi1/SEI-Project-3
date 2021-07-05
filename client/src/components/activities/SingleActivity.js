@@ -2,17 +2,17 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
 
-const SingleGroup = () => {
-  const [group, setGroup] = useState([])
+const SingleActivity  = () => {
+  const [activity, setActivity] = useState([])
   const [hasError, setHasError] = useState(false)
   const { id } = useParams()
 
   useEffect( () => {
     const getData = async () => {
       try {
-        const { data } = await axios.get(`/api/groups/${id}`)
-        setGroup(data)
-        console.log('GROUP1', group)
+        const { data } = await axios.get(`/api/activities/${id}`)
+        setActivity(data)
+        console.log('ACTIVITY', activity)
       } catch (err) {
         setHasError(true)
         console.log('ERROR WHILE GETTING GROUP DATA', err)
@@ -21,17 +21,17 @@ const SingleGroup = () => {
     getData()
   })
 
-  console.log('DATA', group)
+  console.log('DATA', activity)
   return (
     <div>
-      {group ?
+      {activity ?
         <div>
-          <h2>{group.name}</h2>
+          <h2>{activity.nameOfActivity}</h2>
           <hr />
           <div>
             <div>
               <figure>
-                <img src={group.image} alt={group.name} />
+                <img src={activity.image} alt={activity.nameOfActivity} />
               </figure>
               <hr /> 
             </div>
@@ -45,4 +45,5 @@ const SingleGroup = () => {
     </div> 
   )
 }
-export default SingleGroup
+
+export default SingleActivity

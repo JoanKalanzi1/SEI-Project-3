@@ -1,4 +1,4 @@
-import Logo from '/Users/cecilianunn/development/Project-3/SEI-Project-3/client/src/styles/Logo.png'
+import Logo from '../styles/Logo.png'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import React from 'react'
@@ -19,6 +19,9 @@ const NavBar = () => {
             </LinkContainer>
             <LinkContainer to='/activities'>
               <Nav.Link href="#activities">Activities</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to='/groups'>
+              <Nav.Link href="#groups">Groups</Nav.Link>
             </LinkContainer>
             <LinkContainer to='/Login'>
               <Nav.Link href="#Login">Login</Nav.Link>

@@ -1,6 +1,6 @@
 import express from 'express'
 import { getAllActivities, addActivity, getOneActivity, updateActivity, deleteActivity } from '../controllers/activity.js'
-import { getAllGroups, addGroup, getOneGroup, updateGroup, deleteGroup, addComment, deleteComment } from '../controllers/group.js'
+import { getAllGroups, addGroup, getOneGroup, updateGroup, deleteGroup, addComment, deleteComment, editComment } from '../controllers/group.js'
 import { registerUser, loginUser } from '../controllers/auth.js'
 import { registerGroupUser, loginGroupUser } from '../controllers/groupAuth.js'
 import { getUserProfile } from '../controllers/users.js'
@@ -11,10 +11,10 @@ import { secureRouteGroupUser } from './secureRouteGroupUser.js'
 
 const router = express.Router()
 
-// Activity
+// Activity - 
 router.route('/activities')
   .get(getAllActivities)
-  .post(secureRoute, addActivity)
+  .post(secureRouteGroupUser, addActivity)
 
 // Group
 router.route('/groups')
@@ -24,8 +24,8 @@ router.route('/groups')
 // Activity
 router.route('/activities/:id')
   .get(getOneActivity)
-  .put(secureRoute, updateActivity)
-  .delete(secureRoute, deleteActivity)
+  .put(secureRouteGroupUser, updateActivity)
+  .delete(secureRouteGroupUser, deleteActivity)
 
 // Group
 router.route('/groups/:id')
@@ -33,12 +33,19 @@ router.route('/groups/:id')
   .put(secureRouteGroupUser, updateGroup)
   .delete(secureRouteGroupUser, deleteGroup)
 
-//Group
+//Add comment - user & group
 router.route('/groups/:id/comments')
   .post(secureRoute, addComment)
+  .post(secureRouteGroupUser, addComment)
 
-//Group
+// Edit comment - user & group 
 router.route('/groups/:id/comments/:commentId')
+  .put(secureRoute, editComment)
+  .put(secureRouteGroupUser, editComment)
+
+//Group comment control - user & group
+router.route('/groups/:id/comments/:commentId')
+  .delete(secureRoute, deleteComment)
   .delete(secureRouteGroupUser, deleteComment)
 
 // User register
@@ -49,7 +56,7 @@ router.route('/register')
 router.route('/login')
   .post(loginUser)
 
-  //User profile
+//User profile
 router.route('/profile')
   .get(secureRoute, getUserProfile)
 

@@ -196,6 +196,7 @@ export default [
     time: 'tuesday',
     level: 'Both',
     contact: '098986557898778'
+    
   },
   {
     name: "Mindfulness through games",

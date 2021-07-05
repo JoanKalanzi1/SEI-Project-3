@@ -1,9 +1,5 @@
 import React from 'react'
-import Navbar from 'react-bootstrap/Navbar'
 import Button from 'react-bootstrap/Button'
-import Form from 'react-bootstrap/Form'
-import Nav from 'react-bootstrap/Nav'
-import FormControl from 'react-bootstrap/FormControl'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 
@@ -22,19 +18,6 @@ const App = () => {
   return (
     // Navbar area 
     <>
-      <Navbar bg="dark" variant="dark">
-        <Nav className="mr-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#activities">Activities</Nav.Link>
-          <Nav.Link href="#groups">Groups</Nav.Link>
-          <Navbar.Brand href="#home">LOGO</Navbar.Brand>
-        </Nav>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-info">Search</Button>
-        </Form>
-      </Navbar>
-      <br />
       <Jumbotron>
         <h1>Hello, world!</h1>
         <p>

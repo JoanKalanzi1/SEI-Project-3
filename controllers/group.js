@@ -70,7 +70,7 @@ export const addComment = async (req, res) => {
     // Find the group by the ID
     const group = await Group.findById(id)
     if (!group) throw new Error('No activity found')
-    console.log('going wrong here', req.currentUser)
+    // console.log('going wrong here', req.currentUser)
     // create a comment from the req.body and req.currentUser
     const commentToAdd = { ...req.body, owner: req.currentUser._id }
     console.log('Show comments ->', group.comments)
@@ -114,7 +114,7 @@ export const editComment = async (req, res) => {
     console.log('TO UPDATE', commentToUpdate)
     const newComment = await Group.findByOneAndUpdate({ _id: commentId }, { ...req.body }, { new: true })
     console.log('NEW COMMENT', newComment)
-    if (!commentToUpdate) throw new Error()
+    if (!commentToUpdate) throw new Error('Comment not found')
     return res.status(200).json(newComment)
   } catch (err) {
     console.log('ERROR IN EDIT ROUTE:', err)

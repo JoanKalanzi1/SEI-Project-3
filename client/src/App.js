@@ -1,21 +1,18 @@
 import React from 'react'
+<<<<<<< HEAD
 import Button from 'react-bootstrap/Button'
+=======
+>>>>>>> development
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Jumbotron from 'react-bootstrap/Jumbotron'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import NavBar from './components/NavBar'
+import Home from './components/Home'
+import ShowActivities from './components/ShowActivities.js'
 
-
-// function App() {
-//   React.useEffect(() => {
-//     const getData = async () => {
-//       const res = await fetch('/api/endpoint') // * <-- replace with your endpoint
-//       const data = await res.json()
-//       console.log(data)
-//     }
-//     getData()
-//   })
 
 const App = () => {
   return (
+<<<<<<< HEAD
     // Navbar area 
     <>
       <Jumbotron>
@@ -40,11 +37,25 @@ const App = () => {
       <div className="Footer"> 
         <h2> Footer </h2>
       </div>
+=======
+    <BrowserRouter>
+      <NavBar />
+      <Switch>
+        <Route path="/activities">
+          <ShowActivities />
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+>>>>>>> development
 
-      <div>
-      </div>
-    </>
+      </Switch>
+    </BrowserRouter>
   )
+
+
 }
+
+
 
 export default App

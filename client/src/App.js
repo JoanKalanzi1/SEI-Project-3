@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 import Navbar from 'react-bootstrap/Navbar'
 import Button from 'react-bootstrap/Button'
 import Nav from 'react-bootstrap/Nav'
@@ -6,10 +7,28 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import video from '/Users/cecilianunn/development/Project-3/SEI-Project-3/client/src/styles/pexels-rodnae-productions-7502873.mp4'
 import Logo from '/Users/cecilianunn/development/Project-3/SEI-Project-3/client/src/styles/Logo.png'
+=======
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import NavBar from './components/NavBar'
+import Home from './components/Home'
+import ShowActivities from './components/ShowActivities.js'
+
+
+>>>>>>> development
 // function App() {
 //   React.useEffect(() => {
 //     const getData = async () => {
-//       const res = await fetch('/api/endpoint') // * <-- replace with your endpoint
+//       const res = await fetch('/api/activities') // * <-- replace with your endpoint
+//       const data = await res.json()
+//       console.log(data)
+//     }
+//     getData()
+//   })
+
+// function App() {
+//   React.useEffect(() => {
+//     const getData = async () => {
+//       const res = await fetch('/api/groups') // * <-- replace with your endpoint
 //       const data = await res.json()
 //       console.log(data)
 //     }
@@ -17,6 +36,7 @@ import Logo from '/Users/cecilianunn/development/Project-3/SEI-Project-3/client/
 //   })
 const App = () => {
   return (
+<<<<<<< HEAD
     // Navbar area 
     <>
       <Navbar className="navbar-colour" Navbar bg="" variant="dark">
@@ -64,4 +84,21 @@ const App = () => {
     </>
   )
 }
+=======
+    <BrowserRouter>
+      <NavBar />
+      <Switch>
+        <Route path ="/activities">
+          <ShowActivities />
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+       
+      </Switch>
+    </BrowserRouter>
+  )
+}
+
+>>>>>>> development
 export default App

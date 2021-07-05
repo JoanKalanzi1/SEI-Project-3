@@ -109,13 +109,13 @@ export const editComment = async (req, res) => {
   try {
     const { id, commentId } = req.params
     const group = await Group.findById(id)
-    if (!group) throw new Error()
-    const commentToUpdate = group.comments.id(commentId)
+    if (!group) throw new Error('Group not found')
+    const commentToUpdate = group.comments.findByOneAndUpdate({ _id: commentId }, { ...req.body }, { new: true })
     console.log('TO UPDATE', commentToUpdate)
-    const newComment = await Group.findByOneAndUpdate({ _id: commentId }, { ...req.body }, { new: true })
-    console.log('NEW COMMENT', newComment)
-    if (!commentToUpdate) throw new Error()
-    return res.status(200).json(newComment)
+    // const newComment = await Group.findByOneAndUpdate({ _id: commentId }, { ...req.body }, { new: true })
+    // console.log('NEW COMMENT', newComment)
+    if (!commentToUpdate) throw new Error('Comment not found')
+    return res.status(200).json(commentToUpdate)
   } catch (err) {
     console.log('ERROR IN EDIT ROUTE:', err)
     return res.status(404).json({ 'message': 'Comment not found' })

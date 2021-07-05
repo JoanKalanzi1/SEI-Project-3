@@ -34,7 +34,6 @@ const App = () => {
           <Button variant="outline-info">Search</Button>
         </Form>
       </Navbar>
-      <br />
       <Jumbotron>
         <h1>Hello, world!</h1>
         <p>

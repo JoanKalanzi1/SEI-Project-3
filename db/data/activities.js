@@ -16,8 +16,7 @@ export default [
     creative: 'No',
     environment: 'Both',
     summary: 'A relaxing form of exercise that was developed in India and involves assuming and holding postures that stretch the limbs and muscles, doing breathing exercises, and using meditation techniques to calm the mind. '
-  }
-  ,
+  },
   {
     nameOfActivity: 'Reading',
     image: 'https://imgur.com/KFIzmj1',

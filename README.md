@@ -13,8 +13,8 @@ High level hobbies
 9. Cycling
 10. Drinks
 11. Gaming
-12. Fell Running
-13. Tag Rugby
+12. Running
+13. Rugby
 14. Pottery
 15. Chess
 16. Hockey

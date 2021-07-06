@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Form, Button } from 'react-bootstrap'
 import axios from 'axios'
-import { useHistory } from 'react-router'
+import { useHistory } from 'react-router-dom'
 
 
 
@@ -26,7 +26,7 @@ const Register = () => {
     const registerFormData = { ...formData, [event.target.name]: event.target.value }
     console.log('state', formData)
     setFormData(registerFormData)
-    console.log('setFormData', setFormData)
+    // console.log('setFormData', setFormData)
   }
   const handleSubmit = async (event) => {
     
@@ -35,7 +35,7 @@ const Register = () => {
     try {
       await axios.post('/api/register', formData)
       console.log(formData)
-      history.push('/api/login')
+      history.push('/Login')
     } catch (err) {
       console.log(err.response)
       hasError(err.response.data)

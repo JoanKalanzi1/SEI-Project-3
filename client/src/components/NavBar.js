@@ -36,8 +36,14 @@ const NavBar = () => {
             <LinkContainer to='/activities'>
               <Nav.Link href="#activities">Activities</Nav.Link>
             </LinkContainer>
+            <LinkContainer to='/groups'>
+              <Nav.Link href="#groups">Groups</Nav.Link>
+            </LinkContainer>
             <LinkContainer to='/Login'>
-              <Nav.Link href="#Login">Login</Nav.Link>
+              <Nav.Link href="#login">Login</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to='/Register'>
+              <Nav.Link href="#register">Register</Nav.Link>
             </LinkContainer>
             <LinkContainer to='/Register'>
               <Nav.Link href="#register">Register</Nav.Link>

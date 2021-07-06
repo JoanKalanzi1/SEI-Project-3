@@ -8,6 +8,7 @@ import ActivityShow from './components/ActivityShow'
 
 
 
+
 // function App() {
 //   React.useEffect(() => {
 //     const getData = async () => {
@@ -33,6 +34,7 @@ const App = () => {
         <Route path='/activities/:id' component={ActivityShow} />
         <Route path='/activities' component={ActivityIndex} />
       </Switch>
+      
     </BrowserRouter>
   )
 }

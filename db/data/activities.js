@@ -12,7 +12,7 @@ export default [
     nameOfActivity: 'Yoga',
     image: 'https://imgur.com/zhw5EHn',
     physical: 'Physical',
-    competitive: 'Non-Competive',
+    competitive: 'Non-competitive',
     creative: 'No',
     environment: 'Both',
     summary: 'A relaxing form of exercise that was developed in India and involves assuming and holding postures that stretch the limbs and muscles, doing breathing exercises, and using meditation techniques to calm the mind. '
@@ -21,7 +21,7 @@ export default [
     nameOfActivity: 'Reading',
     image: 'https://imgur.com/KFIzmj1',
     physical: 'Non-Physical',
-    competitive: 'Non-Competive',
+    competitive: 'Non-competitive',
     creative: 'No',
     environment: 'Both',
     summary: 'Reading is a multifaceted process involving word recognition, comprehension, fluency, and motivation. You can learn new facts, follow a group of heroes on a party, or see the world through another\'s eyes.'
@@ -31,7 +31,7 @@ export default [
     nameOfActivity: 'Anime',
     image: 'url',
     physical: 'Physical /non-physical',
-    competitive: 'competitive /non-competive',
+    competitive: 'competitive /non-competitive',
     creative: 'yes / no / sometimes',
     environment: 'indoor/outdoor',
     summary: 'Anime is a style of animation originating in Japan that is characterized by stark colorful graphics depicting vibrant characters in action-filled plots often with fantastic or futuristic themes.'
@@ -41,7 +41,7 @@ export default [
     nameOfActivity: 'Gardening',
     image: 'https://imgur.com/fEUGLTT',
     physical: 'Physical',
-    competitive: 'Non-Competive',
+    competitive: 'Non-competitive',
     creative: 'Yes',
     environment: 'Outdoor',
     summary: 'If the need to pickup a very environmentally-friendly and ‘green’ hobby has come to mind, then it must be gardening time. Gardening is the practice of growing plants either for ornamental or food. A gardening effort can involve a plot as small as a windowsill or as large as a few acres. Gardening as a hobby can be an effective tool for stress management as well as providing food for the family and beauty as well.'
@@ -51,7 +51,7 @@ export default [
     nameOfActivity: 'Volunteering',
     image: 'https://imgur.com/5GMHMrQ',
     physical: 'Either',
-    competitive: 'Non-Competive',
+    competitive: 'Non-competitive',
     creative: 'Sometimes',
     environment: 'Both',
     summary: 'Do you want to spend your time giving back, or willingly doing something to help society or people in need with no expectation of any money or profit.  This hobby is pleasant and encourages you and the community to involve good work.'
@@ -61,7 +61,7 @@ export default [
     nameOfActivity: 'Cooking',
     image: 'https://imgur.com/Q4ej6v8',
     physical: 'Non-Physical',
-    competitive: 'Non-Competive',
+    competitive: 'Non-competitive',
     creative: 'Yes',
     environment: 'Indoor',
     summary: 'When we talk about cooking as a hobby, we mean learning all about cooking, types of cooking involved, how to shop for the ingredients, the utensils and supplies you need and actually doing everything from scratch.'
@@ -71,7 +71,7 @@ export default [
     nameOfActivity: 'Music',
     image: 'https://imgur.com/RyQXitl',
     physical: 'Non-Physical',
-    competitive: 'Non-Competive',
+    competitive: 'Non-competitive',
     creative: 'Yes',
     environment: 'Indoor',
     summary: 'Everyone’s taste in music is unique which means that no matter what music you make, someone is bound to enjoy listening to it. While the music industry may favour certain types of music more than others, it is important to understand that there isn’t a single human culture on earth that has existed without music. Music is of great benefit to us, regardless of whether we are renowned recording artists, karaoke singers or merely fans of music.'
@@ -89,7 +89,7 @@ export default [
     nameOfActivity: 'Drinks',
     image: 'https://imgur.com/ocEv12m',
     physical: 'Non-Physical',
-    competitive: 'Non-Competive',
+    competitive: 'Non-competitive',
     creative: 'Sometimes',
     environment: 'Both',
     summary: 'Do you enjoy making delicious concotions for others, but don\'t want to put in the time involved with cooking? Do you enjoy tasting different drinks, or just getting together and talking with friends over a glass of wine? Drinks making and tasting might be for you!'
@@ -126,7 +126,7 @@ export default [
     nameOfActivity: 'Pottery',
     image: 'https://imgur.com/Bs2VU3u',
     physical: 'Non-Physical',
-    competitive: 'Non-Competive',
+    competitive: 'Non-competitive',
     creative: 'Yes',
     environment: 'Indoor',
     summary: 'Pottery involves creating both pieces of art and practical items like plates, bowls jugs, from clay. This can then be decorated and fired to preserve the items for years to come!'
@@ -171,7 +171,7 @@ export default [
     nameOfActivity: 'Photography',
     image: 'https://imgur.com/mwyKlH5',
     physical: 'Physical',
-    competitive: 'Non-Competive',
+    competitive: 'Non-competitive',
     creative: 'Yes',
     environment: 'Both',
     summary: 'Photography is a hobby that offers so many possibilities for creative expression, technical expertise, and sheer variety of ways to capture an image. Age is not a barrier to learning a new hobby and you can start with the camera on your phone if that\'s what you have available. Start getting real now'
@@ -180,7 +180,7 @@ export default [
     nameOfActivity: 'Films',
     image: 'https://imgur.com/l4bQmGG',
     physical: 'Physical',
-    competitive: 'Non-Competive',
+    competitive: 'Non-competitive',
     creative: 'No',
     environment: 'Indoor',
     summary: 'Movies send excitement, thrill, and fun to audiences. When you hear a new movie comes out, you rush to the theater to take a ticket. You might even read the movie review on the internet first before you buy popcorn and enjoy the show.'
@@ -189,7 +189,7 @@ export default [
     nameOfActivity: 'Jigsaws',
     image: 'https://imgur.com/vkcdYug',
     physical: 'Non-Physical',
-    competitive: 'Non-Competive',
+    competitive: 'Non-competitive',
     creative: 'No',
     environment: 'Indoor',
     summary: 'Jigsaw puzzles are great hobbies; and they are not just a hobby for children. Jigsaw puzzles are becoming more and more popular. Why, because they are an activity that is affordable, relaxing, a bonding activity among family and friends, and educational. They are a challenge and a very relaxing activity.'
@@ -198,7 +198,7 @@ export default [
     nameOfActivity: 'Walking',
     image: 'https://imgur.com/tpy78hB',
     physical: 'Physical',
-    competitive: 'Non-Competive',
+    competitive: 'Non-competitive',
     creative: 'yes / no / sometimes',
     environment: 'indoor/outdoor',
     summary: 'Walking is a hobby most people can enjoy because you can tailor your walk to match your fitness, tackling anything from a short local hike to some of Britain\'s most challenging mountains'
@@ -207,7 +207,7 @@ export default [
     nameOfActivity: 'Brain Games',
     image: 'https://imgur.com/hz8DtQF',
     physical: 'Non-Physical',
-    competitive: 'Non-Competive',
+    competitive: 'Non-competitive',
     creative: 'No',
     environment: 'Indoor',
     summary: 'Keeping fit mentally is important as we get older and in the area of hobbies and interests there are many enjoyable ways of doing so. What’s more, they can be very cheap if you’re happy to stay at home and get your mental exercise there.'
@@ -216,7 +216,7 @@ export default [
     nameOfActivity: 'Knitting',
     image: 'https://imgur.com/TGAm1iR',
     physical: 'Physical',
-    competitive: 'Non-Competive',
+    competitive: 'Non-competitive',
     creative: 'Yes',
     environment: 'Indoor',
     summary: 'Why is knitting such a good hobby? It is a soothing, satisfying activity where you use your own two hands to create beautiful, useful things. It is simple to learn, and you\'ll never get bored with the wealth of patterns and techniques!'
@@ -225,7 +225,7 @@ export default [
     nameOfActivity: 'Writing',
     image: 'https://imgur.com/LtjuKkn',
     physical: 'Non-Physical',
-    competitive: 'Non-Competive',
+    competitive: 'Non-competitive',
     creative: 'Yes',
     environment: 'Indoor',
     summary: 'Almost 80% of our communication is done through writing. Writing as a hobby is so popular that it also has its own mediums. You’ll find that journaling and bullet journaling are two very popular niches in this category.'
@@ -234,7 +234,7 @@ export default [
     nameOfActivity: 'Painting',
     image: 'https://imgur.com/Wu9sdHR',
     physical: 'Non-Physical',
-    competitive: 'Non-Competive',
+    competitive: 'Non-competitive',
     creative: 'Yes',
     environment: 'Both',
     summary: 'Painting is one of those hobbies that gives you an opportunity to relax, enjoy and learn at the same time. We cannot imagine our life without colours and the essence of a painting lies in its colour schema itself.'
@@ -270,7 +270,7 @@ export default [
   // nameOfActivity: 'Tutoring / Learning / Mentoring',
   // image: 'url',
   // physical: 'Physical /non-physical',
-  // competitive: 'competitive /non-competive',
+  // competitive: 'competitive /non-competitive',
   // creative: 'yes / no / sometimes',
   // environment: 'indoor',
   // summary: 'description'
@@ -279,7 +279,7 @@ export default [
     nameOfActivity: 'Scuba Diving',
     image: 'https://imgur.com/BgdDfhP',
     physical: 'Physical',
-    competitive: 'Non-Competive',
+    competitive: 'Non-competitive',
     creative: 'No',
     environment: 'Outdoor',
     summary: 'Scuba diving is a fast growing hobby that has captivated the hearts of many. With seventy percent of the planet resting underwater, you\'ve got to dive in to truly see what the world has to offer.'
@@ -288,7 +288,7 @@ export default [
     nameOfActivity: 'Tag Rugby',
     image: 'https://imgur.com/jCCi6zs',
     physical: 'Physical',
-    competitive: 'Competive',
+    competitive: 'competitive',
     creative: 'No',
     environment: 'Outdoor',
     summary: 'Tag Rugby is a minimal contact team game in which each player wears shorts with velcro patches with two tags attached to them. The attacking team has six plays or tags to try to score a try or take the ball down field as close to the line as possible.'
@@ -307,7 +307,7 @@ export default [
   //   nameOfActivity: 'Coasteering',
   //   image: 'url',
   // physical: 'Physical /non-physical',
-  // competitive: 'competitive /non-competive',
+  // competitive: 'competitive /non-competitive',
   // creative: 'yes / no / sometimes',
   // environment: 'indoor',
   // summary: 'description'
@@ -316,7 +316,7 @@ export default [
   // nameOfActivity: 'Kayaking / Canoeing',
   // image: 'url',
   // physical: 'Physical /non-physical',
-  // competitive: 'competitive /non-competive',
+  // competitive: 'competitive /non-competitive',
   // creative: 'yes / no / sometimes',
   // environment: 'indoor',
   // summary: 'description'
@@ -325,7 +325,7 @@ export default [
   // nameOfActivity: 'Stand Up Paddle Boarding',
   // image: 'url',
   // physical: 'Physical /non-physical',
-  // competitive: 'competitive /non-competive',
+  // competitive: 'competitive /non-competitive',
   // creative: 'yes / no / sometimes',
   // environment: 'indoor',
   // summary: 'description'
@@ -334,7 +334,7 @@ export default [
   // nameOfActivity: 'Surfing',
   // image: 'url',
   // physical: 'Physical /non-physical',
-  // competitive: 'competitive /non-competive',
+  // competitive: 'competitive /non-competitive',
   // creative: 'yes / no / sometimes',
   // environment: 'indoor',
   // summary: 'description'
@@ -343,7 +343,7 @@ export default [
   // nameOfActivity: 'Football',
   // image: 'url',
   // physical: 'Physical /non-physical',
-  // competitive: 'competitive /non-competive',
+  // competitive: 'competitive /non-competitive',
   // creative: 'yes / no / sometimes',
   // environment: 'indoor',
   // summary: 'description'
@@ -352,7 +352,7 @@ export default [
   // nameOfActivity: 'Boxing',
   // image: 'url',
   // physical: 'Physical /non-physical',
-  // competitive: 'competitive /non-competive',
+  // competitive: 'competitive /non-competitive',
   // creative: 'yes / no / sometimes',,
   // environment: 'indoor',
   // summary: 'description'
@@ -361,7 +361,7 @@ export default [
   //   nameOfActivity: 'Rock climbing',
   //   image: 'url',
   // physical = 'Physical /non-physical',
-  // competitive = 'competitive /non-competive',
+  // competitive = 'competitive /non-competitive',
   // creative = 'yes / no / sometimes',
   // environment: 'indoor',
   // summary: 'description'
@@ -370,7 +370,7 @@ export default [
   //   nameOfActivity: 'Camping',
   //   image: 'url',
   // physical: 'Physical /non-physical',
-  // competitive: 'competitive /non-competive',
+  // competitive: 'competitive /non-competitive',
   // creative: 'yes / no / sometimes',
   // environment: 'indoor',
   // summary: 'description'
@@ -379,7 +379,7 @@ export default [
   //   nameOfActivity: 'Fishing',
   //   image: 'url',
   // physical: 'Physical /non-physical',
-  // competitive: 'competitive /non-competive',
+  // competitive: 'competitive /non-competitive',
   // creative: 'yes / no / sometimes',
   // environment: 'indoor',
   // summary: 'description'
@@ -388,7 +388,7 @@ export default [
   //   nameOfActivity: 'Golfing',
   //   image: 'url',
   // physical: 'Physical /non-physical',
-  // competitive: 'competitive /non-competive',
+  // competitive: 'competitive /non-competitive',
   // creative: 'yes / no / sometimes',
   // environment: 'indoor',
   // summary: 'description'
@@ -397,7 +397,7 @@ export default [
   // nameOfActivity: 'Ice Skating',
   // image: 'url',
   // physical: 'Physical /non-physical',
-  // competitive: 'competitive /non-competive',
+  // competitive: 'competitive /non-competitive',
   // creative: 'yes / no / sometimes',
   // environment: 'indoor',
   // summary: 'description'
@@ -406,7 +406,7 @@ export default [
   // nameOfActivity: 'Kickboxing',
   // image: 'url',
   // physical: 'Physical /non-physical',
-  // competitive: 'competitive /non-competive',
+  // competitive: 'competitive /non-competitive',
   // creative: 'yes / no / sometimes',
   // environment: 'indoor',
   // summary: 'description'
@@ -415,7 +415,7 @@ export default [
   // nameOfActivity: 'Foraging',
   // image: 'url',
   // physical: 'Physical /non-physical',
-  // competitive: 'competitive /non-competive',
+  // competitive: 'competitive /non-competitive',
   // creative: 'yes / no / sometimes',
   // environment: 'indoor',
   // summary: 'description'
@@ -424,7 +424,7 @@ export default [
   // nameOfActivity: 'Magic',
   // image: 'url',
   // physical: 'Physical /non-physical',
-  // competitive: 'competitive /non-competive',
+  // competitive: 'competitive /non-competitive',
   // creative: 'yes / no / sometimes',
   // environment: 'indoor',
   // summary: 'description'
@@ -433,7 +433,7 @@ export default [
   // nameOfActivity: 'Acting',
   // image: 'url',
   // physical: 'Physical /non-physical',
-  // competitive: 'competitive /non-competive',
+  // competitive: 'competitive /non-competitive',
   // creative: 'yes / no / sometimes',
   // environment: 'indoor',
   // summary: 'description'
@@ -442,7 +442,7 @@ export default [
   //   nameOfActivity: 'Woodworking',
   //   image: 'url',
   // physical: 'Physical /non-physical',
-  // competitive: 'competitive /non-competive',
+  // competitive: 'competitive /non-competitive',
   // creative: 'yes / no / sometimes',
   // environment: 'indoor',
   // summary: 'description'
@@ -451,7 +451,7 @@ export default [
   //   nameOfActivity: 'Origami',
   //   image: 'url',
   // physical: 'Physical /non-physical',
-  // competitive: 'competitive /non-competive',
+  // competitive: 'competitive /non-competitive',
   // creative: 'yes / no / sometimes',
   // environment: 'indoor',
   // summary: 'description'
@@ -460,7 +460,7 @@ export default [
   // nameOfActivity: 'Tiddlywinks',
   // image: 'url',
   // physical: 'Physical /non-physical',
-  // competitive: 'competitive /non-competive',
+  // competitive: 'competitive /non-competitive',
   // creative: 'yes / no / sometimes',
   // environment: 'indoor',
   // summary: 'description'
@@ -469,7 +469,7 @@ export default [
   // nameOfActivity: 'Table Top Gaming',
   // image: 'url',
   // physical: 'Physical /non-physical',
-  // competitive: 'competitive /non-competive',
+  // competitive: 'competitive /non-competitive',
   // creative: 'yes / no / sometimes',
   // environment: 'indoor',
   // summary: 'description'
@@ -478,7 +478,7 @@ export default [
   // nameOfActivity: 'Flower Arranging',
   // image: 'url',
   // physical: 'Physical /non-physical',
-  // competitive: 'competitive /non-competive',
+  // competitive: 'competitive /non-competitive',
   // creative: 'yes / no / sometimes',
   // environment: 'indoor',
   // summary: 'description'

@@ -1,4 +1,20 @@
 # SEI-Project-3
+
+User finds a group and wants to join it
+user has to log in (modal)
+send them to login page
+after login send them back to group page
+user clicks on join button 
+group appears on users profile page
+on profile page user sees all groups they are part and can remove 
+
+create a group schema to join
+embed the id of that group into the user 
+
+
+
+
+
 Hopefully it just has this now
 
 High level hobbies
@@ -71,3 +87,4 @@ Groups
 3. Cycling club
 4. Gaming club - incl board games, 
 5. 
+Hey Joan, hope your weekend is good as well. I would say it’s definitely something to do on the backend, and it’s a relationship just like Charlotte has shown, so that a user can have a group in their schema, like a comment. So that group can be referenced and shown on the user profile. So a request that goes to add a group and shows up on the user profile when a group is added

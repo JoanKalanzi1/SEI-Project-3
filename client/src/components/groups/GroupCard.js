@@ -7,7 +7,7 @@ const GroupCard = ({ _id, name }) => {
     <div>
       <Nav fill variant="tabs" defaultActiveKey="/home">
         <Nav.Item>
-          <Nav.Link href={`api/groups/${_id}`}>{name}</Nav.Link>
+          <Nav.Link href={`groups/${_id}`}>{name}</Nav.Link>
         </Nav.Item>
       </Nav>
     </div>

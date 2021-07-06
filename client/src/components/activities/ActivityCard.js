@@ -8,7 +8,7 @@ const ActivityCard = ({ _id, nameOfActivity }) => {
     <div>
       <Nav fill variant="tabs" defaultActiveKey="/home">
         <Nav.Item>
-          <Nav.Link href={`api/activities/${_id}`}>{nameOfActivity}</Nav.Link>
+          <Nav.Link href={`activities/${_id}`}>{nameOfActivity}</Nav.Link>
         </Nav.Item>
       </Nav>
     </div>

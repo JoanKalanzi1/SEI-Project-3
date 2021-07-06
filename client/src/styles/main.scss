@@ -5,6 +5,9 @@
 .logo-nav-items {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 0 580px 0 580px;
+}
+
+.activity-carousel, .group-carousel {
+  margin: 180px;
 }

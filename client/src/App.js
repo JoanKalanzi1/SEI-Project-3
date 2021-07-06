@@ -2,9 +2,10 @@ import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import Home from './components/Home'
+import AuthPage from './components/Register.js'
 import ShowActivities from './components/ShowActivities.js'
-import Register from './components/Auth/Register'
-import Login from './components/Auth/Login'
+import UserRegister from './components/Auth/Register.js'
+import UserLogin from './components/Auth/Login.js'
 
 
 const App = () => {
@@ -12,11 +13,14 @@ const App = () => {
     <BrowserRouter>
       <NavBar />
       <Switch>
+        <Route path="/authorization">
+          <AuthPage />
+        </Route>
         <Route path="/login">
-          <Login />
+          <UserLogin />
         </Route>
         <Route path="/register">
-          <Register />
+          <UserRegister />
         </Route>
         <Route path="/activities">
           <ShowActivities />

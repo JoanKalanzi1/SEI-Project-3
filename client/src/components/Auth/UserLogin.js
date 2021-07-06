@@ -4,7 +4,7 @@ import { Form, Button } from 'react-bootstrap'
 import { useHistory } from 'react-router-dom'
 
 
-const Login = () => {
+const UserLogin = () => {
 
   const history = useHistory()
 
@@ -75,4 +75,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default UserLogin

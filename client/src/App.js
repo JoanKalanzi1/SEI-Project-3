@@ -3,6 +3,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import Home from './components/Home'
 import ShowActivities from './components/ShowActivities.js'
+import ActivityIndex from './components/ActivityIndex'
+import ActivityShow from './components/ActivityShow'
+
 
 
 // function App() {
@@ -15,15 +18,6 @@ import ShowActivities from './components/ShowActivities.js'
 //     getData()
 //   })
 
-// function App() {
-//   React.useEffect(() => {
-//     const getData = async () => {
-//       const res = await fetch('/api/groups') // * <-- replace with your endpoint
-//       const data = await res.json()
-//       console.log(data)
-//     }
-//     getData()
-//   })
 
 const App = () => {
   return (
@@ -36,7 +30,8 @@ const App = () => {
         <Route exact path="/">
           <Home />
         </Route>
-       
+        <Route path='/activities/:id' component={ActivityShow} />
+        <Route path='/activities' component={ActivityIndex} />
       </Switch>
     </BrowserRouter>
   )

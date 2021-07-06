@@ -49,7 +49,11 @@ export default [
     activity: ['Baking', 'Cooking'],
     location: { name: 'Chancery Lane ', longitude: -0.112442, latitude: 51.517 },
     number: '0',
+<<<<<<< HEAD
     about: 'Baking is our life's mission.',
+=======
+    about: 'Baking is our life\'s mission.',
+>>>>>>> development
     time: '15:00',
     level: 'Beginner',
     contact: '025976424890'

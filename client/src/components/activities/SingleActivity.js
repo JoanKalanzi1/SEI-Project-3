@@ -19,7 +19,7 @@ const SingleActivity  = () => {
       }
     }
     getData()
-  })
+  },[id])
 
   console.log('DATA', activity)
   return (

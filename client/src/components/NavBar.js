@@ -45,9 +45,6 @@ const NavBar = () => {
             <LinkContainer to='/Register'>
               <Nav.Link href="#register">Register</Nav.Link>
             </LinkContainer>
-            <LinkContainer to='/Register'>
-              <Nav.Link href="#register">Register</Nav.Link>
-            </LinkContainer>
           </Nav>
         </div>
       </div>

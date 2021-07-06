@@ -7,13 +7,20 @@ import bcrypt from 'bcrypt'
 // password
 // passwordConfirmation
 
+ const groupMemberSchema = new mongoose.Schema({
+  groupName: { type: String, required: true, unique: true }, // Group.
+  groupLink: { type: String, required: true, unique: true }, // '/groups/:id'
+  groupImage: { type: String, required: true }
+})
+
 const userSchema = new mongoose.Schema({
   username: { type: String, required: true, unique: true, maxLength: 30 },
   email: { type: String, required: true, unique: true },
-  password: { type: String, required: true }
-  // groups: [groupSchema],
-  // groupJoin: { type: mongoose.Schema.ObjectId, ref: 'Group'}
+  password: { type: String, required: true },
+  memberShip: [groupMemberSchema],
+  // groupName: { type: mongoose.Schema.ObjectId, ref: 'groupMember'}
 })
+
 
 // remove the password from the populated owner when it converts to json
 userSchema.set('toJSON', {
@@ -59,3 +66,5 @@ userSchema.methods.validatePassword = function (password) {
 
 // Export the model
 export default mongoose.model('User', userSchema)
+// export default mongoose.model('groupMember',groupMemberSchema )
+

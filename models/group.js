@@ -12,6 +12,13 @@ const commentSchema = new mongoose.Schema({
   timestamps: true
 })
 
+// Define a member schema
+const memberSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  profilePage: { type: String, required: true },
+  owner: { type: mongoose.Schema.ObjectId, ref: 'User', required: true }
+})
+
 // define teh schema for the group
 const groupSchema = new mongoose.Schema({
   name: { type: String, required: true, unique: true },
@@ -24,7 +31,8 @@ const groupSchema = new mongoose.Schema({
   level: { type: String },
   contact: { type: String },
   owner: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
-  comments: [commentSchema]
+  comments: [commentSchema],
+  members: [memberSchema]
   // groupJoin: { type: mongoose.Schema.ObjectId, ref: 'User', required: true}
 })
 
@@ -48,4 +56,5 @@ groupSchema.set('toJSON', {
 
 //Export the schema
 export default mongoose.model('Group', groupSchema)
+
 

@@ -1,88 +1,105 @@
 import React, { useState } from 'react'
+import { Form, Button } from 'react-bootstrap'
 import axios from 'axios'
 import { useHistory } from 'react-router'
-import { Form, Button } from 'react-bootstrap'
+
 
 
 const Register = () => {
 
   const history = useHistory()
-  const [Error, hasError] = useState({
 
+  const [formData, setFormData] = useState({
     username: '',
     email: '',
     password: '',
     passwordConfirmation: '',
   })
-  const [formData, setFormDate] = useState({
+  const [errors, hasError] = useState({
     username: '',
     email: '',
     password: '',
     passwordConfirmation: '',
-  }
-  )
+  })
 
+  const handleChange = (event) => {
+    const registerFormData = { ...formData, [event.target.name]: event.target.value }
+    console.log('state', formData)
+    setFormData(registerFormData)
+    console.log('setFormData', setFormData)
+  }
   const handleSubmit = async (event) => {
+    
     event.preventDefault()
+    console.log('submitted')
     try {
       await axios.post('/api/register', formData)
+      console.log(formData)
       history.push('/api/login')
     } catch (err) {
-      hasError(err.response.data.errors)
+      console.log(err.response)
+      hasError(err.response.data)
     }
-    setFormDate()
+    setFormData()
   }
-
-
+  console.log('formData.username',formData.username)
   return (
-
     <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3" controlId="formBasicUsername">
         <Form.Label>Username</Form.Label>
         <Form.Control
           onChange={handleChange}
-          type="username"
-          placeholder="Enter username"
           value={formData.username}
           name="username"
-        />
+          placeholder="Enter username" />
         <Form.Text className="text-muted">
+          {/* We'll never share your email with anyone else. */}
         </Form.Text>
       </Form.Group>
+      {errors.username && <p className="help is-danger">{errors.username}</p>}
 
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email</Form.Label>
         <Form.Control
-          type="Email"
-          placeholder="Enter email"
           onChange={handleChange}
-          type="username"
-          placeholder="Enter username"
-          value={formData.username}
-          name="username"
-        />
+          value={formData.email}
+          name="email"
+          placeholder="Enter email" />
         <Form.Text className="text-muted">
-          Type Email here.
+          {/* We'll never share your email with anyone else. */}
         </Form.Text>
       </Form.Group>
+      {errors.email && <p className="help is-danger">{errors.email}</p>}
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
+        <Form.Control
+          onChange={handleChange}
+          value={formData.password}
+          type="password"
+          name="password"
+          placeholder="Password" />
       </Form.Group>
+      {errors.password && <p className="help is-danger">{errors.password}</p>}
+
       <Form.Group className="mb-3" controlId="formBasicPasswordConfirmation">
         <Form.Label>passwordConfirmation</Form.Label>
-        <Form.Control type="password" placeholder="PasswordConfirmation" />
+        <Form.Control
+          onChange={handleChange}
+          value={formData.passwordConfirmation}
+          type="password"
+          name="passwordConfirmation"
+          placeholder="PasswordConfirmation" />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
-      </Form.Group>
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
+      {errors.passwordConfirmation && <p className="help is-danger">{errors.passwordConfirmation}</p>}
+
+      <Button variant="primary" type="submit">Submit</Button>
     </Form>
   )
 
 
+
+
 }
+
 export default Register

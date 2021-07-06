@@ -1,25 +1,11 @@
 import Logo from '../styles/Logo.png'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-
 import { LinkContainer } from 'react-router-bootstrap'
-// import { useParams } from 'react-router-dom'
+
 
 const NavBar = () => {
-  // const [group, setGroup] = useState([])
 
-  // useEffect(() => {
-  //   const getData = async () => {
-  //     try {
-  //       const { data } = await axios.get('/api/groups/')
-  //       setGroup(data)
-  //     } catch (err) {
-  //       console.log(err)
-  //     }
-  //   }
-  //   getData()
-  // }, [])
-  // console.log('data', getData)
 
 
   return (
@@ -41,9 +27,6 @@ const NavBar = () => {
             </LinkContainer>
             <LinkContainer to='/Login'>
               <Nav.Link href="#login">Login</Nav.Link>
-            </LinkContainer>
-            <LinkContainer to='/Register'>
-              <Nav.Link href="#register">Register</Nav.Link>
             </LinkContainer>
             <LinkContainer to='/Register'>
               <Nav.Link href="#register">Register</Nav.Link>

@@ -1,36 +1,52 @@
-import React, { useEffect, useState } from 'react'
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useState, useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import axios from 'axios'
-// import Swiper core and required modules
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
-// Import Swiper styles
 import 'swiper/swiper.scss'
 import 'swiper/components/navigation/navigation.scss'
 import 'swiper/components/pagination/pagination.scss'
 import 'swiper/components/scrollbar/scrollbar.scss'
-// install Swiper modules
+import axios from 'axios'
+import ActivityCard from '../activities/ActivityCard'
+
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
-// install Swiper modules
 SwiperCore.use([Pagination])
 
 const ActivityCarousel = () => {
-
-  const [singleActivity, setSingleActivity] = useState([])
+  const [activities, setActivities] = useState(null)
+  const [carouselActivities, setCarouselActivities] = useState(null) // starting state as null as empty array is truthy
+  // eslint-disable-next-line
+  const [hasError, setHasError] = useState(false)
+  const carouselArray = []
+  const randomString = () => Math.random() * 1000
 
   useEffect(() => {
-    const getData = async () => {
+    const getActivityData = async () => {
       try {
         const { data } = await axios.get('/api/activities')
-        console.log(data)
-        setSingleActivity(data)
+        console.log('DATA', data)
+        setActivities(data)
       } catch (err) {
-        console.log(err)
+        setHasError(true)
+        console.log('ERROR WHILE GETTING GROUP DATA', err)
       }
     }
-    getData()
+    getActivityData()
   }, [])
-  console.log(singleActivity)
+  console.log('ACTIVITIES', activities)
+  useEffect(() => {
+    const getCarouselData = () => {
+      for (let i = 0; i < 8; i++) {
+        const randomNum = Math.floor(Math.random() * activities.length)
+        const singleActivity = activities[randomNum]
+        carouselArray.push(singleActivity)
+      }
+      setCarouselActivities(carouselArray)
+    }
+    if (activities) getCarouselData() // calling function behind a condition as the loop can only run when groups are on state, this useEffect will run on page load and groups will have no value initially
+  }, [activities])
+  if (!carouselActivities) return null // if there is nothing on state first render return null instead
 
 
   return (
@@ -44,14 +60,13 @@ const ActivityCarousel = () => {
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide change')}
       >
-        <SwiperSlide>Activity 1</SwiperSlide>
-        <SwiperSlide>Activity 2</SwiperSlide>
-        <SwiperSlide>Activity 3</SwiperSlide>
-        <SwiperSlide>Activity 4</SwiperSlide>
-        <SwiperSlide>Activity 5</SwiperSlide>
-        <SwiperSlide>Activity 6</SwiperSlide>
-        <SwiperSlide>Activity 7</SwiperSlide>
-        <SwiperSlide>Activity 8</SwiperSlide>
+        {carouselActivities.map(activity => {
+          return (
+            <SwiperSlide key={randomString()}>
+              <ActivityCard {...activity}/>
+            </SwiperSlide>
+          )
+        })}
       </Swiper>
     </div>
   )

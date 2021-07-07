@@ -11,14 +11,15 @@ import bcrypt from 'bcrypt'
   groupName: { type: String, required: true, unique: true }, // Group.
   groupLink: { type: String, required: true, unique: true }, // '/groups/:id'
   groupImage: { type: String, required: true }
+  
 })
 
 const userSchema = new mongoose.Schema({
   username: { type: String, required: true, unique: true, maxLength: 30 },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
-  memberShip: [groupMemberSchema],
-  // groupName: { type: mongoose.Schema.ObjectId, ref: 'groupMember'}
+  // memberShip: [groupMemberSchema],
+  // groupName: { type: mongoose.Schema.ObjectId, ref: 'Group'}
 })
 
 

@@ -1,18 +1,25 @@
 import React from 'react'
 import Nav from 'react-bootstrap/Nav'
+import Col from 'react-bootstrap/Col'
 
+const ActivityCard = ({ _id, nameOfActivity, image }) => {
 
-const ActivityCard = ({ _id, nameOfActivity }) => {
 
   return (
-    <div>
-      <Nav fill variant="tabs" defaultActiveKey="/home">
-        <Nav.Item>
-          <Nav.Link href={`activities/${_id}`}>{nameOfActivity}</Nav.Link>
-        </Nav.Item>
-      </Nav>
-    </div>
+    <Nav.Item >
+      <Col class='indexShow' xs={12} style={{
+        minHeight: '300px',
+        backgroundImage: `url("${image}.jpeg")`,
+        backgroundSize: 'cover',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}>
+        <span id='cardName'><Nav.Link href={`activities/${_id}`}>{nameOfActivity}</Nav.Link></span>
+      </Col>
+    </Nav.Item>
   )
 }
+
 
 export default ActivityCard

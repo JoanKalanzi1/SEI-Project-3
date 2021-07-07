@@ -10,11 +10,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 0 580px 0 580px;
+}
+
+.activity-carousel, .group-carousel {
+  margin: 180px;
+}
+
+#cardName {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */

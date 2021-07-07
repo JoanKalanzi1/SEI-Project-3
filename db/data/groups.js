@@ -1,7 +1,7 @@
 export default [
   {
-    name: 'Netball for the youth',
-    image: 'https://imgur.com/ACV4zY8',
+    name: 'Netball for the Youth',
+    image: 'https://imgur.com/aW6yRlP',
     activity: ['Netball', 'Socialising' ],
     location: { name: 'Bishopsgate', longitude: -0.07851, latitude: 51.518852 },
     number: '0',
@@ -11,9 +11,9 @@ export default [
     contact: '02579280927897'
   },
   {
-    name: ' We love Cheese',
-    image: 'https://imgur.com/yZvZdMc',
-    activity: ['social', 'Eating'],
+    name: ' We Love Cheese',
+    image: 'https://imgur.com/dMyKfyR',
+    activity: ['Socialising', 'Eating'],
     location: { name: '	Cock Lane', longitude: -0.102727, latitude: 51.516996 },
     number: '0',
     about: 'A fun group that love cheese. Bring your own cheese.',
@@ -22,8 +22,8 @@ export default [
     contact: '02579280927897'
   },
   {
-    name: 'Tree hugging meditation',
-    image: 'https://imgur.com/JdOH5NP',
+    name: 'Tree Hugging Meditation',
+    image: 'https://imgur.com/q5hkr46',
     activity: ['Nature', 'Gardening'],
     location: { name: ' Aldersgate Street', longitude: -0.097025, latitude: 51.520737 },
     number: '0',
@@ -33,8 +33,8 @@ export default [
     contact: '02579280927897'
   },
   {
-    name: 'Walking away',
-    image: 'https://imgur.com/L5DobTt',
+    name: 'Walking Away',
+    image: 'https://imgur.com/XCAKUQm',
     activity: ['Hiking', 'Rambling'],
     location: { name: 'Aldgate', longitude: -0.078905, latitude: 51.514882 },
     number: '0',
@@ -44,8 +44,8 @@ export default [
     contact: '02579280927897'
   },
   {
-    name: 'Baking warriors',
-    image: 'https://imgur.com/czDHNq9',
+    name: 'Baking Warriors',
+    image: 'https://imgur.com/lkuEpjM',
     activity: ['Baking', 'Cooking'],
     location: { name: 'Chancery Lane ', longitude: -0.112442, latitude: 51.517 },
     number: '0',
@@ -55,8 +55,8 @@ export default [
     contact: '025976424890'
   },
   {
-    name: 'Urban gardening',
-    image: 'https://imgur.com/wfJtAZO',
+    name: 'Urban Gardening',
+    image: 'https://imgur.com/nfXv5F9',
     activity: ['Gardening', 'Nature'],
     location: { name: 'Ascot Road ', longitude: -0.424507 , latitude: 51.64862 },
     number: '0',
@@ -67,7 +67,7 @@ export default [
   },
   {
     name: 'The Ultimate Frisbee group',
-    image: 'https://imgur.com/bIXDZPT',
+    image: 'https://imgur.com/hzldeA5',
     activity: ['Ultimate Frisbee'],
     location: { name: 'Warbank Crescent', longitude: -0.001272, latitude: 51.338315 },
     number: '0',
@@ -88,8 +88,8 @@ export default [
     contact: '0257909992899'
   },
   {
-    name: 'Reading over wine',
-    image: 'https://imgur.com/seBAAXV',
+    name: 'Reading over Wine',
+    image: 'https://imgur.com/lBCnC4K',
     activity: ['Drinks', 'Reading'],
     location: { name: ' Bedford Gardens', longitude: -0.193568, latitude: 51.506947 },
     number: '0',
@@ -100,8 +100,8 @@ export default [
   },
   {
     name: 'Biking',
-    image: 'https://imgur.com/WSpz672',
-    activity: ['Mountain Biking', 'cycling'],
+    image: 'https://imgur.com/BMFHc7R',
+    activity: ['Mountain Biking', 'Cycling'],
     location: { name: 'Lennox Gardens', longitude: -0.164845, latitude: 51.496377 },
     number: '0',
     about: ' we cycle around london',
@@ -110,9 +110,9 @@ export default [
     contact: '0259078863090'
   },
   {
-    name: 'soup kitchen',
-    image: 'https://imgur.com/d4BfRhC',
-    activity: ['cooking', 'volunteering'],
+    name: 'Soup Kitchen',
+    image: 'https://imgur.com/6k18rXY',
+    activity: ['Cooking', 'Volunteering'],
     location: { name: 'Annandale Road ', longitude: 0.007598, latitude: 51.486366 },
     number: '0',
     about: ' we volunteer to various soup centers in london ',
@@ -122,8 +122,8 @@ export default [
   },
   {
     name: 'Video Gaming',
-    image: 'https://imgur.com/iM9g9Xs',
-    activity: ['computer Gaming', 'Gaming'],
+    image: 'https://imgur.com/iUa4nll',
+    activity: ['Computer Gaming', 'Gaming'],
     location: { name: 'Bellot Street', longitude: 0.005707, latitude: 51.487188 },
     number: '0',
     about: ' we play games on online together',
@@ -133,7 +133,7 @@ export default [
   },
   {
     name: 'Football',
-    image: 'https://imgur.com/gdQjwCN',
+    image: 'https://imgur.com/LO58J0O',
     activity: ['Football', 'Running'],
     location: { name: 'Boyfield Street ', longitude: -0.102138, latitude: 51.49928 },
     number: '0',
@@ -144,7 +144,7 @@ export default [
   },
   {
     name: 'Singing Angels',
-    image: 'https://imgur.com/9yrjrNa',
+    image: 'https://imgur.com/VR6KLVs',
     activity: ['Music', 'Films'],
     location: { name: 'Great Suffolk Street ', longitude: -0.098699, latitude: 51.502983 },
     number: '0',
@@ -154,8 +154,8 @@ export default [
     contact: '02587489098778'
   },
   {
-    name: 'Dancing for fun',
-    image: 'https://imgur.com/HKiHUny',
+    name: 'Dancing for Fun',
+    image: 'https://imgur.com/XvQpYPZ',
     activity: ['Dancing', 'Music'],
     location: { name: ' Mandela Way ', longitude: -0.080152, latitude: 51.492762 },
     number: '0',
@@ -165,8 +165,8 @@ export default [
     contact: '024557898778'
   },
   {
-    name: 'Board games',
-    image: 'https://imgur.com/4LXpaEs',
+    name: 'Board Games',
+    image: 'https://imgur.com/2PRny7u',
     activity: ['Board game', 'Puzzl'],
     location: { name: 'Asolando Drive ', longitude: -0.092679, latitude:	51.490835 },
     number: '0',
@@ -176,8 +176,8 @@ export default [
     contact: '025789367127'
   },
   {
-    name: 'The camera club',
-    image: 'https://imgur.com/knOsdhS',
+    name: 'The Camera Club',
+    image: 'https://imgur.com/yQO4Zdd',
     activity: ['Photography', 'Films'], // indoor or outdoor
     location: { name: 'West Hampstead Mews ', longitude: -0.189936, latitude: 51.547303 },
     number: '0',
@@ -188,7 +188,7 @@ export default [
   },
   {
     name: 'Knitting and movies',
-    image: 'https://imgur.com/CdSIaRk',
+    image: 'https://imgur.com/qlyi5lK',
     activity: ['kitting', 'Films'], // indoor or outdoor
     location: { name: 'Kingdon Road ', longitude: -0.192392, latitude: 51.549382 },
     number: '0',
@@ -199,8 +199,8 @@ export default [
     
   },
   {
-    name: 'Mindfulness through games',
-    image: 'https://imgur.com/2hWiQJD',
+    name: 'Mindfulness through Games',
+    image: 'https://imgur.com/KA5eLTd',
     activity: ['puzzling', 'Math/ Mind Game', 'Board games', 'Chess'], // indoor or outdoor
     location: { name: 'Great Eastern Road', longitude: 0.003688, latitude: 51.544929 },
     number: '0',
@@ -210,8 +210,8 @@ export default [
     contact: '098986557898778'
   },
   {
-    name: 'We create art',
-    image: 'https://imgur.com/ZUYPboU',
+    name: 'We Create Art',
+    image: 'https://imgur.com/Vs8qOEG',
     activity: ['Painting'], // indoor or outdoor
     location: { name: 'Amhurst Road ', longitude: -0.061674, latitude: 51.549004 },
     number: '0',
@@ -222,7 +222,7 @@ export default [
   },
   {
     name: 'Anime Review',
-    image: 'https://imgur.com/NwDOzUt',
+    image: 'https://imgur.com/8PFoP4K',
     activity: ['Reading', 'Films, Music'], // indoor or outdoor
     location: { name: 'Benworth Street ', longitude:	-0.02787, latitude: 51.528216 },
     number: '0',
@@ -232,8 +232,8 @@ export default [
     contact: '098986557898778'
   },
   {
-    name: 'Yoga and wellbeing',
-    image: 'https://imgur.com/kHiukfT',
+    name: 'Yoga and Wellbeing',
+    image: 'https://imgur.com/U7GOyax',
     activity: ['Yoga','Math / Mind Games'], // indoor or outdoor
     location: { name: 'Cairo Road ', longitude: -0.018014, latitude: 51.585503 },
     number: '0',
@@ -243,12 +243,12 @@ export default [
     contact: '098986557898778'
   },
   {
-    name: 'The sailing club',
-    image: 'https://imgur.com/rZMkYI1',
+    name: 'The Sailing Club',
+    image: 'https://imgur.com/Zccxsch',
     activity: ['Swimming', 'Sailing'], // indoor or outdoor
     location: { name: 'Harrow Lane ', longitude: -0.0131, latitude:	51.508507 },
     number: '0',
-    about: 'The group is for sailing loves and those that own a boat.',
+    about: 'The group is for sailing lovers and those that own a boat.',
     time: '16:00',
     level: 'Both',
     contact: '098986557898778'

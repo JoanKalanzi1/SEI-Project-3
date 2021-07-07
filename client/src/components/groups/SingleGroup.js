@@ -20,11 +20,7 @@ const SingleGroup = () => {
     }
     getData()
   // eslint-disable-next-line react-hooks/exhaustive-deps
-<<<<<<< HEAD
   }, [id])
-=======
-  },[id])
->>>>>>> 8f326a39016bce474535f90c5cb27f3cd5a4ed31
 
   console.log('DATA', group)
   return (

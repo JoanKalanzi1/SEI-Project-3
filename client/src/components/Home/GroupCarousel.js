@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -6,10 +6,30 @@ import 'swiper/swiper.scss'
 import 'swiper/components/navigation/navigation.scss'
 import 'swiper/components/pagination/pagination.scss'
 import 'swiper/components/scrollbar/scrollbar.scss'
+import axios from 'axios'
+
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
 SwiperCore.use([Pagination])
 
 const GroupCarousel = () => {
+  const [groups, setGroups] = useState([])
+  const [hasError, setHasError] = useState(false)
+
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const { data } = await axios.get('/api/groups')
+        console.log('GROUPS', data)
+        setGroups(data)
+
+      } catch (err) {
+        setHasError(true)
+        console.log('ERROR WHILE GETTING GROUP DATA', err)
+      }
+    }
+    getData()
+  }, [])
+
 
   return (
     <div className="group-carousel">

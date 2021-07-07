@@ -8,7 +8,11 @@ import ActivitiesIndex from './components/activities/ActivitiesIndex'
 import GroupsIndex from './components/groups/GroupsIndex'
 import UserRegister from './components/Auth/UserRegister.js'
 import UserLogin from './components/Auth/UserLogin.js'
+import GroupRegister from './components/Auth/GroupRegister'
+import GroupLogin from './components/Auth/GroupLogin'
+
 const App = () => {
+
   return (
     <BrowserRouter>
       <NavBar />
@@ -30,6 +34,12 @@ const App = () => {
         </Route>
         <Route path="/register">
           <UserRegister />
+        </Route>
+        <Route path="/groupregister">
+          <GroupRegister />
+        </Route>
+        <Route path="/grouplogin">
+          <GroupLogin />
         </Route>
         <Route exact path="/">
           <Home />

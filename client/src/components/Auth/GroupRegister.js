@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { Form, Button } from 'react-bootstrap'
 import axios from 'axios'
-import { useHistory } from 'react-router-dom'
+// import { useHistory } from 'react-router-dom'
 
 
 
-const Register = () => {
+const GroupRegister = () => {
 
-  const history = useHistory()
+  // const history = useHistory()
 
   const [formData, setFormData] = useState({
     username: '',
@@ -33,9 +33,9 @@ const Register = () => {
     event.preventDefault()
     console.log('submitted')
     try {
-      await axios.post('/api/register', formData)
+      await axios.post('/api/groupRegister', formData)
       console.log(formData)
-      history.push('/Login')
+      // history.push('/groupLogin')
     } catch (err) {
       console.log(err.response)
       hasError(err.response.data)
@@ -102,4 +102,4 @@ const Register = () => {
 
 }
 
-export default Register
+export default GroupRegister

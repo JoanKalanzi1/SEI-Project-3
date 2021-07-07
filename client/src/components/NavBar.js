@@ -18,10 +18,11 @@ const NavBar = () => {
     history.push('/Register')
     handleClose()
   }
-  const handleGroup = () => {
-    window.location.pathname === '/home' ?
-      history.push('/grouplogin') :
-      history.push('/groupregister')
+  const handleGroup = (event) => {
+    console.log('event.target.group',event.target.group)
+    // window.location.pathname === '/home' ?
+    //   history.push('/grouplogin') :
+    //   history.push('/groupregister')
      
 
     handleClose()
@@ -49,7 +50,7 @@ const NavBar = () => {
               <LinkContainer to='/Login'>
                 <Nav.Link href="#login" onClick={handleShow}>Login</Nav.Link>
               </LinkContainer>
-              <LinkContainer to='/home' variant="primary" onClick={handleShow}>
+              <LinkContainer to='#' variant="primary" onClick={handleShow}>
                 <Nav.Link href="#register">Register</Nav.Link>
               </LinkContainer>
             </Nav>
@@ -68,8 +69,8 @@ const NavBar = () => {
           </Modal.Header>
           <Modal.Body>Select from the options below</Modal.Body>
           <Modal.Footer>
-            <Button variant="primary" onClick={handleUser}>User</Button>
-            <Button variant="primary" onClick={handleGroup}>Group</Button>
+            <Button className= 'user' variant="primary" onClick={handleUser}>User</Button>
+            <Button className ='group' variant="primary" onClick={handleGroup}>Group</Button>
           </Modal.Footer>
         </Modal>
       </section>

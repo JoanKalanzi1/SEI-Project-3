@@ -6,7 +6,6 @@ const SingleGroup = () => {
   const [group, setGroup] = useState([])
   const [hasError, setHasError] = useState(false)
   const { id } = useParams()
-
   useEffect( () => {
     const getData = async () => {
       try {
@@ -20,15 +19,7 @@ const SingleGroup = () => {
     }
     getData()
   // eslint-disable-next-line react-hooks/exhaustive-deps
-<<<<<<< HEAD
   },[id])
-=======
-<<<<<<< HEAD
-  }, [id])
-=======
-  },[id])
->>>>>>> 8f326a39016bce474535f90c5cb27f3cd5a4ed31
->>>>>>> development
 
   console.log('DATA', group)
   return (

@@ -44,7 +44,7 @@ const UserRegister = () => {
   }
   console.log('formData.username',formData.username)
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit} className = ''>
       <Form.Group className="mb-3" controlId="formBasicUsername">
         <Form.Label>Username</Form.Label>
         <Form.Control

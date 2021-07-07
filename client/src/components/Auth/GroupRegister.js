@@ -15,7 +15,7 @@ const GroupRegister = () => {
     password: '',
     passwordConfirmation: '',
   })
-  const [errors, hasError] = useState({
+  const [errors, setError] = useState({
     username: '',
     email: '',
     password: '',
@@ -34,15 +34,14 @@ const GroupRegister = () => {
     console.log('submitted')
     try {
       await axios.post('/api/groupRegister', formData)
-      console.log(formData)
-      // history.push('/groupLogin')
+      // console.log(formData)
+      history.push('/grouplogin')
     } catch (err) {
-      console.log(err.response)
-      hasError(err.response.data)
+      console.log('err.response.data',err.response.data)
+      setError(err.response.data)
     }
     setFormData()
   }
-  console.log('formData.username',formData.username)
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3" controlId="formBasicUsername">

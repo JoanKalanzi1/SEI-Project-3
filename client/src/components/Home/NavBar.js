@@ -1,37 +1,32 @@
 // import Logo from '../styles/Logo.png'
 import Navbar from 'react-bootstrap/Navbar'
-import { Nav, Button, Modal , Image } from 'react-bootstrap'
+import { Nav, Modal, Image } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import React, { useState } from 'react'
-import { useHistory } from 'react-router-dom'
+
+import { Link, useLocation } from 'react-router-dom'
+
 
 
 const NavBar = () => {
-  const history = useHistory()
+  // const history = useHistory()
+  const location = useLocation()
 
   const [show, setShow] = useState(false)
 
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
 
-  const handleUser = () => {
-    history.push('/Register')
-    handleClose()
-  }
-  const handleGroup = (event) => {
-    console.log('event.target.group',event.target.group)
-    // window.location.pathname === '/home' ?
-    //   history.push('/grouplogin') :
-    //   history.push('/groupregister')
-  } 
-// import { LinkContainer } from 'react-router-bootstrap'
-// import { useParams } from 'react-router-dom'
-// const NavBar = () => {
-// >>>>>>> development:client/src/components/Home/NavBar.js
-
-//     handleClose()
-//   }
-
+  // const handleUser = () => {
+  //   history.push('/Register')
+  //   handleClose()
+  // }
+  // const handleGroup = (event) => {
+  //   console.log('event.target.group',event.target.group)
+  //   window.location.pathname === '/home' ?
+  //     history.push('/grouplogin') :
+  //     history.push('/groupregister')
+  // } 
   // { window.location.pathname === '/Login' ? 'Login Now' : 'Register Now' }
   return (
     <>
@@ -69,12 +64,12 @@ const NavBar = () => {
           keyboard={false}
         >
           <Modal.Header closeButton>
-            <Modal.Title>{window.location.pathname === '/Login' ? 'Login Now' : 'Register Now'}</Modal.Title>
+            <Modal.Title>{location.pathname === '/Login' ? 'Login Now' : 'Register Now'}</Modal.Title>
           </Modal.Header>
           <Modal.Body>Select from the options below</Modal.Body>
           <Modal.Footer>
-            <Button className= 'user' variant="primary" onClick={handleUser}>User</Button>
-            <Button className ='group' variant="primary" onClick={handleGroup}>Group</Button>
+            <Link onClick={() => handleClose()} to= {location.pathname === '/Login' ? '/Login' : '/Register'}>User</Link>
+            <Link onClick={() => handleClose()} to= {location.pathname === '/Login' ?  '/grouplogin' : '/groupregister'}>Group</Link>
           </Modal.Footer>
         </Modal>
       </section>

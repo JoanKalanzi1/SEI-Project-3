@@ -23,26 +23,18 @@ const SingleGroup = () => {
 
   console.log('DATA', group)
   return (
-    <div>
+    <section>
       {group ?
-        <div>
+        <div className='title'>
           <h2>{group.name}</h2>
-          <hr />
-          <div>
-            <div>
-              <figure>
-                <img src={group.image} alt={group.name} />
-              </figure>
-              <hr /> 
-            </div>
-          </div>
+          {/* <h4>{group.location}</h4> */}
         </div>
         :
         <h2>
           {hasError ? 'Something has gone wrong!' : 'loading...group'}
         </h2>
       }
-    </div> 
+    </section>
   )
 }
 export default SingleGroup

@@ -7,7 +7,7 @@ const ActivityCard = ({ _id, nameOfActivity, image }) => {
 
   return (
     <Nav.Item >
-      <Col class='indexShow' xs={12} rounded style={{
+      <Col class='indexShow' xs={12} style={{
         minHeight: '300px',
         backgroundImage: `url("${image}.jpeg")`,
         backgroundSize: 'cover',

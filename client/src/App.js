@@ -48,14 +48,11 @@ const App = () => {
         <Route path="/login">
           <UserLogin />
         </Route>
-
         <Route path="/generator">
           <Generator />
         </Route>
-
         <Route path="/register">
           <UserRegister />
-
         </Route>
         <Route exact path="/">
           <Home />

@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
+import Image from 'react-bootstrap/Image'
 
-const SingleActivity  = () => {
+const SingleActivity = () => {
   const [activity, setActivity] = useState([])
   const [hasError, setHasError] = useState(false)
   const { id } = useParams()
 
-  useEffect( () => {
+  useEffect(() => {
     const getData = async () => {
       try {
         const { data } = await axios.get(`/api/activities/${id}`)
@@ -21,29 +22,30 @@ const SingleActivity  = () => {
     getData()
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[id])
+ 
+ 
 
   console.log('DATA', activity)
   return (
-    <div>
+    <section>
       {activity ?
         <div>
           <h2>{activity.nameOfActivity}</h2>
-          <hr />
-          <div>
+          <div id='activityContainer'>
+            <div id='imageContainer'>
+              <Image src={`${activity.image}.jpeg`} alt={activity.nameOfActivity} />
+            </div>
             <div>
-              <figure>
-                <img src={activity.image} alt={activity.nameOfActivity} />
-              </figure>
-              <hr /> 
+              <p>{activity.summary}</p>
             </div>
           </div>
         </div>
         :
         <h2>
-          {hasError ? 'Something has gone wrong!' : 'loading...group'}
+          {hasError ? 'Something has gone wrong!' : 'loading... activity'}
         </h2>
       }
-    </div> 
+    </section>
   )
 }
 

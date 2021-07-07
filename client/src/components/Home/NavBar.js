@@ -1,6 +1,6 @@
-import Logo from '../styles/Logo.png'
+// import Logo from '../styles/Logo.png'
 import Navbar from 'react-bootstrap/Navbar'
-import { Nav, Button, Modal } from 'react-bootstrap'
+import { Nav, Button, Modal , Image } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
@@ -23,10 +23,14 @@ const NavBar = () => {
     // window.location.pathname === '/home' ?
     //   history.push('/grouplogin') :
     //   history.push('/groupregister')
-     
+  } 
+// import { LinkContainer } from 'react-router-bootstrap'
+// import { useParams } from 'react-router-dom'
+// const NavBar = () => {
+// >>>>>>> development:client/src/components/Home/NavBar.js
 
-    handleClose()
-  }
+//     handleClose()
+//   }
 
   // { window.location.pathname === '/Login' ? 'Login Now' : 'Register Now' }
   return (
@@ -34,7 +38,7 @@ const NavBar = () => {
       <Navbar className="navbar-colour" Navbar bg="" variant="dark">
         <div className="logo-nav-items">
           <div className="logo">
-            <Navbar.Brand href="#home"><img src={Logo} /></Navbar.Brand>
+            <Navbar.Brand href="#home"><Image src="https://imgur.com/0C9foJS.jpeg" /></Navbar.Brand>
           </div>
           <div className="navbar-items">
             <Nav className="mr-auto">

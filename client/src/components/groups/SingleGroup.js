@@ -12,7 +12,7 @@ const SingleGroup = () => {
       try {
         const { data } = await axios.get(`/api/groups/${id}`)
         setGroup(data)
-        console.log('GROUP1', group)
+        console.log('GROUP', group)
       } catch (err) {
         setHasError(true)
         console.log('ERROR WHILE GETTING GROUP DATA', err)
@@ -20,7 +20,15 @@ const SingleGroup = () => {
     }
     getData()
   // eslint-disable-next-line react-hooks/exhaustive-deps
+<<<<<<< HEAD
   },[id])
+=======
+<<<<<<< HEAD
+  }, [id])
+=======
+  },[id])
+>>>>>>> 8f326a39016bce474535f90c5cb27f3cd5a4ed31
+>>>>>>> development
 
   console.log('DATA', group)
   return (

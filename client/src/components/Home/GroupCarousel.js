@@ -13,22 +13,29 @@ SwiperCore.use([Pagination])
 
 const GroupCarousel = () => {
   const [groups, setGroups] = useState([])
+  const [carouselGroups, setCarouselGroups] = useState([])
   const [hasError, setHasError] = useState(false)
 
   useEffect(() => {
-    const getData = async () => {
+    const getGroupData = async () => {
       try {
         const { data } = await axios.get('/api/groups')
         console.log('GROUPS', data)
         setGroups(data)
-
       } catch (err) {
         setHasError(true)
         console.log('ERROR WHILE GETTING GROUP DATA', err)
       }
     }
-    getData()
+    getGroupData()
   }, [])
+
+  useEffect(() => {
+    const getCarouselData = () => {
+      console.log('carouselGroups', groups)
+    }
+    getCarouselData()
+  }, [groups])
 
 
   return (

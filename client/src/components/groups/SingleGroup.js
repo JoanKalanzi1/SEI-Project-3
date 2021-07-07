@@ -13,6 +13,8 @@ const SingleGroup = () => {
         const { data } = await axios.get(`/api/groups/${id}`)
         setGroup(data)
         console.log('GROUP', group)
+        console.log('DATA', data)
+
       } catch (err) {
         setHasError(true)
         console.log('ERROR WHILE GETTING GROUP DATA', err)
@@ -28,7 +30,8 @@ const SingleGroup = () => {
       {group ?
         <div className='title'>
           <h2>{group.name}</h2>
-          {/* <h4>{group.location}</h4> */}
+          <h4>{group.location.name}</h4>
+          
         </div>
         :
         <h2>

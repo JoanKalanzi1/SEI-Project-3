@@ -4,13 +4,16 @@ import { useParams } from 'react-router-dom'
 
 const SingleGroup = () => {
   const [group, setGroup] = useState([])
+  const [location, setLocation] = useState([])
   const [hasError, setHasError] = useState(false)
   const { id } = useParams()
-  useEffect( () => {
+
+  useEffect(() => {
     const getData = async () => {
       try {
         const { data } = await axios.get(`/api/groups/${id}`)
         setGroup(data)
+        setLocation(data.location)
         console.log('GROUP', group)
         console.log('DATA', data)
 
@@ -20,17 +23,16 @@ const SingleGroup = () => {
       }
     }
     getData()
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[id])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [id])
 
   console.log('DATA', group)
   return (
     <section>
       {group ?
-        <div className='title'>
+        <div>
           <h2>{group.name}</h2>
-          <h4>{group.location.name}</h4>
-          
+          <h4>{location.name}</h4>
         </div>
         :
         <h2>

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
@@ -7,25 +8,24 @@ import 'swiper/components/navigation/navigation.scss'
 import 'swiper/components/pagination/pagination.scss'
 import 'swiper/components/scrollbar/scrollbar.scss'
 import axios from 'axios'
-// import GroupCard from '../groups/GroupCard'
+import GroupCard from '../groups/GroupCard'
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
 SwiperCore.use([Pagination])
 
 const GroupCarousel = () => {
-  const [groups, setGroups] = useState([])
-  const [carouselGroups, setCarouselGroups] = useState([])
+  const [groups, setGroups] = useState(null)
+  const [carouselGroups, setCarouselGroups] = useState(null) // starting state as null as empty array is truthy
   // eslint-disable-next-line
   const [hasError, setHasError] = useState(false)
-
   const carouselArray = []
-
+  const randomString = () => Math.random() * 1000
 
   useEffect(() => {
     const getGroupData = async () => {
       try {
         const { data } = await axios.get('/api/groups')
-        console.log('GROUPS', data)
+        console.log('DATA', data)
         setGroups(data)
       } catch (err) {
         setHasError(true)
@@ -34,7 +34,6 @@ const GroupCarousel = () => {
     }
     getGroupData()
   }, [])
-
   useEffect(() => {
     const getCarouselData = () => {
       for (let i = 0; i < 8; i++) {
@@ -44,14 +43,9 @@ const GroupCarousel = () => {
       }
       setCarouselGroups(carouselArray)
     }
-    getCarouselData()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    if (groups) getCarouselData() // calling function behind a condition as the loop can only run when groups are on state, this useEffect will run on page load and groups will have no value initially
   }, [groups])
-
-
-  console.log('Carousel groups', carouselGroups)
-  console.log('Carousel 1', carouselGroups[0].name)
-
+  if (!carouselGroups) return null // if there is nothing on state first render return null instead
   return (
     <div className="group-carousel">
       <Swiper
@@ -68,19 +62,15 @@ const GroupCarousel = () => {
             return <GroupCard key={group._id} {...group} />
           })}
         </SwiperSlide> */}
-        <SwiperSlide>{`${carouselGroups[0].name}`}</SwiperSlide>
-        <SwiperSlide>{`${carouselGroups[1].name}`}</SwiperSlide>
-        <SwiperSlide>{`${carouselGroups[2].name}`}</SwiperSlide>
-        <SwiperSlide>{`${carouselGroups[3].name}`}</SwiperSlide>
-        <SwiperSlide>{`${carouselGroups[4].name}`}</SwiperSlide>
-        <SwiperSlide>{`${carouselGroups[5].name}`}</SwiperSlide>
-        <SwiperSlide>{`${carouselGroups[6].name}`}</SwiperSlide>
-        <SwiperSlide>{`${carouselGroups[7].name}`}</SwiperSlide>
-        ...
+        {carouselGroups.map(group => {
+          return (
+            <SwiperSlide key={randomString()}>
+              <GroupCard {...group}/>
+            </SwiperSlide>
+          )
+        })}
       </Swiper>
-
     </div>
   )
 }
-
 export default GroupCarousel

@@ -22,8 +22,8 @@ const SingleActivity = () => {
     getData()
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[id])
- 
- 
+
+
 
   console.log('DATA', activity)
   return (

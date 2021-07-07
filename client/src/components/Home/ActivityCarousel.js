@@ -16,21 +16,21 @@ SwiperCore.use([Pagination])
 
 const ActivityCarousel = () => {
 
-  const [singleActivity, setSingleActivity] = useState([])
+  const [activities, setActivities] = useState([])
 
   useEffect(() => {
     const getData = async () => {
       try {
         const { data } = await axios.get('/api/activities')
         console.log(data)
-        setSingleActivity(data)
+        setActivities(data)
       } catch (err) {
         console.log(err)
       }
     }
     getData()
   }, [])
-  console.log(singleActivity)
+  console.log('ACTIVITIES', activities)
 
 
   return (

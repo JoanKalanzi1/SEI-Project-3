@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row'
 
 
 
+
 const GroupsIndex = () => {
   const [groups, setGroups] = useState([])
   const [hasError, setHasError] = useState(false)

@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-import Image from 'react-bootstrap/Image'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-=======
 // import Logo from '../styles/Logo.png'
 import Navbar from 'react-bootstrap/Navbar'
-import { Nav, Button, Modal , Image } from 'react-bootstrap'
->>>>>>> development
+import { Nav, Button, Modal, Image } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
@@ -25,18 +19,18 @@ const NavBar = () => {
     handleClose()
   }
   const handleGroup = (event) => {
-    console.log('event.target.group',event.target.group)
+    console.log('event.target.group', event.target.group)
     // window.location.pathname === '/home' ?
     //   history.push('/grouplogin') :
     //   history.push('/groupregister')
-  } 
-// import { LinkContainer } from 'react-router-bootstrap'
-// import { useParams } from 'react-router-dom'
-// const NavBar = () => {
-// >>>>>>> development:client/src/components/Home/NavBar.js
+  }
+  // import { LinkContainer } from 'react-router-bootstrap'
+  // import { useParams } from 'react-router-dom'
+  // const NavBar = () => {
+  // >>>>>>> development:client/src/components/Home/NavBar.js
 
-//     handleClose()
-//   }
+  //     handleClose()
+  //   }
 
   // { window.location.pathname === '/Login' ? 'Login Now' : 'Register Now' }
   return (
@@ -79,8 +73,8 @@ const NavBar = () => {
           </Modal.Header>
           <Modal.Body>Select from the options below</Modal.Body>
           <Modal.Footer>
-            <Button className= 'user' variant="primary" onClick={handleUser}>User</Button>
-            <Button className ='group' variant="primary" onClick={handleGroup}>Group</Button>
+            <Button className='user' variant="primary" onClick={handleUser}>User</Button>
+            <Button className='group' variant="primary" onClick={handleGroup}>Group</Button>
           </Modal.Footer>
         </Modal>
       </section>

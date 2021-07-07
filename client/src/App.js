@@ -1,15 +1,27 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+<<<<<<< HEAD
 import NavBar from './components/NavBar'
 import Home from './components/Home'
+=======
+import NavBar from './components/Home/NavBar'
+import Home from './components/Home/Home'
+>>>>>>> development
 import SingleGroup from './components/groups/SingleGroup.js'
 import SingleActivity from './components/activities/SingleActivity'
 import ActivitiesIndex from './components/activities/ActivitiesIndex'
 import GroupsIndex from './components/groups/GroupsIndex'
+<<<<<<< HEAD
 import AuthPage from './components/Register.js'
 import UserRegister from './components/Auth/UserRegister.js'
 import UserLogin from './components/Auth/UserLogin.js'
 
+=======
+import AuthPage from './components/Home/Register.js'
+import UserRegister from './components/Auth/UserRegister.js'
+import UserLogin from './components/Auth/UserLogin.js'
+import Generator from './components/Generator'
+>>>>>>> development
 
 const App = () => {
   return (
@@ -34,6 +46,12 @@ const App = () => {
         <Route path="/login">
           <UserLogin />
         </Route>
+<<<<<<< HEAD
+=======
+        <Route path="/generator">
+          <Generator />
+        </Route>
+>>>>>>> development
         <Route path="/register">
           <UserRegister />
         </Route>

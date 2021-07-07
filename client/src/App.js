@@ -6,30 +6,44 @@ import SingleGroup from './components/groups/SingleGroup.js'
 import SingleActivity from './components/activities/SingleActivity'
 import ActivitiesIndex from './components/activities/ActivitiesIndex'
 import GroupsIndex from './components/groups/GroupsIndex'
-import AuthPage from './components/Register.js'
 import UserRegister from './components/Auth/UserRegister.js'
 import UserLogin from './components/Auth/UserLogin.js'
+import GroupRegister from './components/Auth/GroupRegister'
+import GroupLogin from './components/Auth/GroupLogin'
 import Generator from './components/Generator'
 
+
+
 const App = () => {
+
   return (
+
     <BrowserRouter>
       <NavBar />
       <Switch>
-        <Route path ='/groups/:id'>
+        <Route path='/groups/:id'>
           <SingleGroup />
         </Route>
-        <Route path ='/groups'>
+        <Route path='/groups'>
           <GroupsIndex />
         </Route>
-        <Route path ='/activities/:id'>
+        <Route path='/activities/:id'>
           <SingleActivity />
         </Route>
-        <Route path ="/activities">
+        <Route path="/activities">
           <ActivitiesIndex />
         </Route>
-        <Route path="/authorization">
-          <AuthPage />
+        <Route path="/login">
+          <UserLogin />
+        </Route>
+        <Route path="/register">
+          <UserRegister />
+        </Route>
+        <Route path="/groupregister">
+          <GroupRegister />
+        </Route>
+        <Route path="/grouplogin">
+          <GroupLogin />
         </Route>
         <Route path="/login">
           <UserLogin />
@@ -45,8 +59,11 @@ const App = () => {
         </Route>
       </Switch>
     </BrowserRouter>
+
   )
 }
+
+
 
 
 export default App

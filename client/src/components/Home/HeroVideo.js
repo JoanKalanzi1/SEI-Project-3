@@ -11,7 +11,8 @@ const HeroVideo = () => {
       </video>
       <h1>Jump into something new</h1>
       <p>
-        Couped up inside for too long? Us too! Lets get out, find a new hobby and meet great people in London
+        Couped up inside for too long? Us too! 
+        Let us find you a new hobby and local group to join
       </p>
       <p>
         <div>

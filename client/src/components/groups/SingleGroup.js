@@ -7,7 +7,7 @@ const SingleGroup = () => {
   const [hasError, setHasError] = useState(false)
   const { id } = useParams()
 
-  useEffect( () => {
+  useEffect(() => {
     const getData = async () => {
       try {
         const { data } = await axios.get(`/api/groups/${id}`)
@@ -19,31 +19,23 @@ const SingleGroup = () => {
       }
     }
     getData()
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id])
 
   console.log('DATA', group)
   return (
-    <div>
+    <section>
       {group ?
-        <div>
+        <div className='title'>
           <h2>{group.name}</h2>
-          <hr />
-          <div>
-            <div>
-              <figure>
-                <img src={group.image} alt={group.name} />
-              </figure>
-              <hr /> 
-            </div>
-          </div>
+          {/* <h4>{group.location}</h4> */}
         </div>
         :
         <h2>
           {hasError ? 'Something has gone wrong!' : 'loading...group'}
         </h2>
       }
-    </div> 
+    </section>
   )
 }
 export default SingleGroup

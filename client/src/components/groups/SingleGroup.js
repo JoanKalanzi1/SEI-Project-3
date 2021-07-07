@@ -6,8 +6,7 @@ const SingleGroup = () => {
   const [group, setGroup] = useState([])
   const [hasError, setHasError] = useState(false)
   const { id } = useParams()
-
-  useEffect(() => {
+  useEffect( () => {
     const getData = async () => {
       try {
         const { data } = await axios.get(`/api/groups/${id}`)
@@ -21,8 +20,8 @@ const SingleGroup = () => {
       }
     }
     getData()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [id])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[id])
 
   console.log('DATA', group)
   return (

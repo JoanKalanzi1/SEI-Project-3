@@ -32,7 +32,7 @@ const GroupLogin = () => {
       const { data } = await axios.post('/api/groupLogin', GroupLogInData)
       
       setTokenToLocalStorage(data.token)
-      history.push('/Activities')
+      history.push('/groups')
 
     } catch (err) {
       hasErrors(err.response.data.errors)

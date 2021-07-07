@@ -1,17 +1,30 @@
 import React from 'react'
 import Nav from 'react-bootstrap/Nav'
+import Col from 'react-bootstrap/Col'
+// import Image from 'react-bootstrap/Image'
 
-const GroupCard = ({ _id, name }) => {
+const GroupCard = ({ _id, name, image }) => {
 
   return (
-    <div>
-      <Nav fill variant="tabs" defaultActiveKey="/home">
-        <Nav.Item>
-          <Nav.Link href={`groups/${_id}`}>{name}</Nav.Link>
-        </Nav.Item>
-      </Nav>
-    </div>
+    <Nav.Item >
+      <Col class='indexShow' xs={12} rounded style={{
+        minHeight: '300px',
+        backgroundImage: `url("${image}.jpeg")`,
+        backgroundSize: 'cover',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}>
+        <span id='cardName'><Nav.Link href={`groups/${_id}`}>{name}</Nav.Link></span>
+      </Col>
+    </Nav.Item>
   )
 }
+
+{/* <div style={{
+  backgroundImage: `url("https://via.placeholder.com/500")`
+}}>
+  Hello World
+</div> */}
 
 export default GroupCard

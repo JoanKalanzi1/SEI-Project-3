@@ -1,6 +1,7 @@
-import Logo from '../styles/Logo.png'
+// import Logo from '../styles/Logo.png'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
+import Image from 'react-bootstrap/Image'
 
 import { LinkContainer } from 'react-router-bootstrap'
 // import { useParams } from 'react-router-dom'
@@ -26,7 +27,7 @@ const NavBar = () => {
     <Navbar className="navbar-colour" Navbar bg="" variant="dark">
       <div className="logo-nav-items">
         <div className="logo">
-          <Navbar.Brand href="#home"><img src={Logo} /></Navbar.Brand>
+          <Navbar.Brand href="#home"><Image src="https://imgur.com/0C9foJS.jpeg" /></Navbar.Brand>
         </div>
         <div className="navbar-items">
           <Nav className="mr-auto">

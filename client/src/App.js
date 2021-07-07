@@ -1,40 +1,49 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import NavBar from './components/NavBar'
-import Home from './components/Home'
-import ShowActivities from './components/ShowActivities.js'
-import ActivityIndex from './components/ActivityIndex'
-import ActivityShow from './components/ActivityShow'
-
-
-
-
-// function App() {
-//   React.useEffect(() => {
-//     const getData = async () => {
-//       const res = await fetch('/api/activities') // * <-- replace with your endpoint
-//       const data = await res.json()
-//       console.log(data)
-//     }
-//     getData()
-//   })
-
+import NavBar from './components/Home/NavBar'
+import Home from './components/Home/Home'
+import SingleGroup from './components/groups/SingleGroup.js'
+import SingleActivity from './components/activities/SingleActivity'
+import ActivitiesIndex from './components/activities/ActivitiesIndex'
+import GroupsIndex from './components/groups/GroupsIndex'
+import AuthPage from './components/Home/Register.js'
+import UserRegister from './components/Auth/UserRegister.js'
+import UserLogin from './components/Auth/UserLogin.js'
+import Generator from './components/Generator'
 
 const App = () => {
   return (
     <BrowserRouter>
       <NavBar />
       <Switch>
+        <Route path ='/groups/:id'>
+          <SingleGroup />
+        </Route>
+        <Route path ='/groups'>
+          <GroupsIndex />
+        </Route>
+        <Route path ='/activities/:id'>
+          <SingleActivity />
+        </Route>
         <Route path ="/activities">
-          <ShowActivities />
+          <ActivitiesIndex />
+        </Route>
+        <Route path="/authorization">
+          <AuthPage />
+        </Route>
+        <Route path="/login">
+          <UserLogin />
+        </Route>
+        <Route path="/generator">
+          <Generator />
+        </Route>
+        <Route path="/register">
+          <UserRegister />
         </Route>
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path='/activities/:id' component={ActivityShow} />
-        <Route path='/activities' component={ActivityIndex} />
       </Switch>
-      
     </BrowserRouter>
   )
 }

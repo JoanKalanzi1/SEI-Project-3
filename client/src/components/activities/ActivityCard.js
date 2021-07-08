@@ -14,6 +14,7 @@ const ActivityCard = ({ _id, nameOfActivity, image }) => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        
       }}>
         <span id='cardName'><Nav.Link href={`activities/${_id}`}>{nameOfActivity}</Nav.Link></span>
       </Col>

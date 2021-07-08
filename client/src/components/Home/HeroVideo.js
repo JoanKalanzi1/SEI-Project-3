@@ -7,7 +7,7 @@ const HeroVideo = () => {
   return (
     <Jumbotron>
       <video className='videoTag' autoPlay loop muted>
-        <source src='https://imgur.com/PXNKqMo' type='video/mp4' />
+        <source src='https://imgur.com/PXNKqMo.mp4' type='video/mp4' />
       </video>
       <h1>Jump into something new</h1>
       <p>

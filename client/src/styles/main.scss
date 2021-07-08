@@ -24,7 +24,7 @@
  
 }
 
-  a {
+  a.nav-link {
     color: #f8f9fa;
     text-decoration: none;
     background-color: #00000045;
@@ -56,11 +56,12 @@
   --swiper-theme-color: #f8f9fa;
 }
 #cardName {
+  color: red;
 transition: transform 0.2s ease-in-out;
   &:hover{
     transform: scale(1.05);
-    box-shadow: 25px rgb(255, 0, 0, 1);
-    color: darken($color: white, $amount: 20);
+    box-shadow: 25px rgb(81, 255, 0);
+    color: darken($color: white, $amount: 80);
   }
 }
 .logo {
@@ -70,4 +71,17 @@ transition: transform 0.2s ease-in-out;
 .getout{
   display: flex;
   justify-content: center;
+}
+.groupSet{
+  display:flex;
+  justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ h2, h3, h4 {
+   margin-top:10px;
+   margin-bottom: 10px;
+
+ }
 }

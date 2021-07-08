@@ -6,7 +6,7 @@ const SingleGroup = () => {
   const [group, setGroup] = useState(null) // linked to first getData
   const [location, setLocation] = useState([]) // also linked to first getData
   const [groupActivityData, setGroupActivityData] = useState([]) // also linked to first getData
-  const [num, setNum] = useState([null]) // also linked to first getData
+  const [num, setNum] = useState([]) // also linked to first getData
   const [activities, setActivities] = useState(null) //
   const [groupActivities, setGroupActivities] = useState(null)
   const [hasError, setHasError] = useState(false)
@@ -20,7 +20,7 @@ const SingleGroup = () => {
         setGroup(data)
         setLocation(data.location)
         setGroupActivityData(data.activity)
-        
+        setNum(data.activity.length - 1)
       } catch (err) {
         setHasError(true)
         console.log('ERROR WHILE GETTING GROUP DATA', err)
@@ -30,14 +30,7 @@ const SingleGroup = () => {
     console.log('getDATA RUNNING')
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id])
-
-  useEffect(() => {
-    const setInfo = () => {
-      setNum(groupActivityData.length)
-    }
-    setInfo()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [group])
+  
 
   useEffect(() => {
     const getActivityData = async () => {
@@ -49,20 +42,20 @@ const SingleGroup = () => {
         console.log('ERROR WHILE GETTING ACTIVITY DATA', err)
       }
     }
-    if (num) getActivityData()
+    if (group) getActivityData()
     console.log('getACTIVITYDATA RUNNING')
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [num])
+  }, [group])
 
 
   useEffect(() => {
     const getGroupActivities = () => {
       console.log('getGroupActivities RUNNING')
-      for (let i = 0; i < num; i++) {
-        const activityFound = activities.nameOfActivity.filter(groupActivityData[i])
-        console.log('ACTIVITYFOUND', activityFound)
-        activitiesArray.push(activityFound)
-      }
+      // for (let i = 0; i < num; i++) {
+      //   const activityFound = activities.nameOfActivity.filter(groupActivityData[i])
+      //   console.log('ACTIVITYFOUND', activityFound)
+      //   activitiesArray.push(activityFound)
+      // }
       setGroupActivities(activitiesArray)
     }
     if (activities) getGroupActivities()
@@ -76,7 +69,7 @@ const SingleGroup = () => {
   console.log('GroupActivityData', groupActivityData)
   console.log('activities set!', activities)
   console.log('groupActivities', groupActivities)
-  console.log('number set', num)
+  console.log('num', num)
 
 
   return (

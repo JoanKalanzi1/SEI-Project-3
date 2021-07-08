@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import { Form, Button, Col, Container } from 'react-bootstrap'
+import { Form, Button, Container } from 'react-bootstrap'
 import { useHistory } from 'react-router-dom'
 
 
@@ -22,7 +22,7 @@ const CreateGroup = () => {
     name: '',
     image: '',
     activity: [''],
-    location: {},
+    location: [''],
     number: '',
     about: '',
     time: '',
@@ -56,78 +56,97 @@ const CreateGroup = () => {
 
   return (
     <Container fluid="sm" className="login">
-      <Form onSubmit={handleSubmit} className=''>
+      <Form onSubmit={handleSubmit}>
+        <Form.Group className="mb-3" controlId="formBasicUsername">
+          <Form.Label>Name</Form.Label>
+          <Form.Control
+            onChange={handleChange}
+            value={formData.name}
+            name="name"
+            placeholder="Enter name of the group" />
+          <Form.Text className="text-muted">
+            {/* We'll never share your email with anyone else. */}
+          </Form.Text>
+        </Form.Group>
+        {errors.name && <p className="help is-danger">{errors.name}</p>}
 
-        <Form.Row>
-          <Col>
-            <Form.Control placeholder="Name of group"
-              onChange={handleChange}
-              value={formData.name}
-              name="name" />
-          </Col>
-          {errors.name && <p className="help is-danger">{errors.name}</p>}
-          <Col>
-            <Form.Control placeholder="Name of activity"
-              onChange={handleChange}
-              value={formData.name}
-              name="activity" />
-          </Col>
-        </Form.Row>
-
+        <Form.Group className="mb-3" controlId="formBasicActivity">
+          <Form.Label>Activity</Form.Label>
+          <Form.Control
+            onChange={handleChange}
+            value={formData.activity}
+            name="activity"
+            placeholder="Enter name of the activity" />
+          <Form.Text className="text-muted">
+            {/* We'll never share your email with anyone else. */}
+          </Form.Text>
+        </Form.Group>
         {errors.activity && <p className="help is-danger">{errors.activity}</p>}
-        <Form.Row>
-          <Col>
-            <Form.Control placeholder="Time:"
-              onChange={handleChange}
-              value={formData.time}
-              name="time" />
-          </Col>
-          {errors.time && <p className="help is-danger">{errors.time}</p>}
-          <Col>
-            <Form.Control placeholder="Level"
-              onChange={handleChange}
-              value={formData.level}
-              name="level" />
-          </Col>
-        </Form.Row>
+
+        <Form.Group className="mb-3" controlId="formBasicLocation">
+          <Form.Label>Location</Form.Label>
+          <Form.Control
+            onChange={handleChange}
+            value={formData.location}
+            name="location"
+            placeholder="Enter the location" />
+        </Form.Group>
+        {errors.location && <p className="help is-danger">{errors.location}</p>}
+
+        <Form.Group className="mb-3" controlId="formBasicTime">
+          <Form.Label>Time</Form.Label>
+          <Form.Control
+            onChange={handleChange}
+            value={formData.time}
+            name="time"
+            placeholder="Such as 19:00" />
+        </Form.Group>
+        {errors.time && <p className="help is-danger">{errors.time}</p>}
+        <Form.Group className="mb-3" controlId="formBasicContact">
+          <Form.Label>Contact</Form.Label>
+          <Form.Control
+            onChange={handleChange}
+            value={formData.contact}
+            name="contact"
+            placeholder="079567893670" />
+        </Form.Group>
+        {errors.contact && <p className="help is-danger">{errors.contact}</p>}
+        <Form.Group className="mb-3" controlId="formBasicLevel">
+          <Form.Label>Level</Form.Label>
+          <Form.Control
+            onChange={handleChange}
+            value={formData.level}
+            name="level"
+            placeholder=" Such as Beginner" />
+        </Form.Group>
         {errors.level && <p className="help is-danger">{errors.level}</p>}
-        <Form.Row >
-          <Col>
-            <Form.Control placeholder="Location"
-              onChange={handleChange}
-              value={formData.location}
-              name="location" />
-            
-          </Col>
-          {errors.location && <p className="help is-danger">{errors.location}</p>}
-       
-          <Col>
-            <Form.Control placeholder="Contact"
-              onChange={handleChange}
-              value={formData.contact}
-              name="contact" />
-          </Col>
-
-        </Form.Row>
-
         <Form.Group controlId="exampleForm.ControlTextarea1">
           <Form.Label>Now describe what your group will be about</Form.Label>
           <Form.Control as="textarea" rows={3}
             onChange={handleChange}
             value={formData.about}
-            name="about" />
+            name="about"
+          />
         </Form.Group>
-        {/* {errors.about && <p className="help is-danger">{errors.about}</p>} */}
+        {errors.level && <p className="help is-danger">{errors.level}</p>}
         <Form>
           <Form.Group>
-            <Form.File id="exampleFormControlFile1" label="Example file input" />
+            <Form.File id="exampleFormControlFile1"
+              onChange={handleChange}
+              value={formData.image}
+              name="image"
+              label="Example file input" />
           </Form.Group>
         </Form>
+        {errors.image && <p className="help is-danger">{errors.image}</p>}
 
         <Button variant="primary" type="submit">Submit</Button>
-
-
       </Form>
+
+
+
+
+
     </Container >
   )
 

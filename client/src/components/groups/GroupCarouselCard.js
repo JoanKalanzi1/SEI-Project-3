@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav'
 import Col from 'react-bootstrap/Col'
 // import Image from 'react-bootstrap/Image'
 
-const GroupCard = ({ _id, name, image }) => {
+const GroupCarouselCard = ({ _id, name, image }) => {
 
   return (
     <Nav.Item >
@@ -23,4 +23,4 @@ const GroupCard = ({ _id, name, image }) => {
 }
 
 
-export default GroupCard
+export default GroupCarouselCard

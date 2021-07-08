@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import ActivityCard from '../activities/ActivityCard'
+import Image from 'react-bootstrap/Image'
 
 const SingleGroup = () => {
   const [group, setGroup] = useState(null) // linked to first getData i.e. individual group
@@ -83,8 +84,13 @@ const SingleGroup = () => {
         {group ?
           <div>
             <h2>{group.name}</h2>
+            <div>
+              <Image src={`${group.image}.jpeg`} alt={group.name} className='imageContainer' />
+            </div>
             <h4>{location.name}</h4>
             <h3>{group.about}</h3>
+            <h3>{group.time}</h3>
+            <h3>{group.contact}</h3>
           </div>
           :
           <h2>
@@ -93,7 +99,7 @@ const SingleGroup = () => {
         }
       </div>
       <div>
-        Actvities you would do in this group:
+        Actvities you can take part in, in this group:
         {groupActivities ?
           <div>
             {groupActivities.map(activity => {

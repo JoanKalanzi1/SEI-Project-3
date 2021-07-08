@@ -16,7 +16,7 @@ const ActivityCard = ({ _id, nameOfActivity, image }) => {
         alignItems: 'center',
         
       }}>
-        <span id='cardName'><Nav.Link href={`activities/${_id}`}>{nameOfActivity}</Nav.Link></span>
+        <span id='cardName'><Nav.Link href={`http://localhost:3000/activities/${_id}`}>{nameOfActivity}</Nav.Link></span>
       </Col>
     </Nav.Item>
   )

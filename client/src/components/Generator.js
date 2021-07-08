@@ -25,6 +25,7 @@ const Generator = () => {
       console.log(activities)
     }
     getData()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   console.log(activities)
@@ -80,28 +81,28 @@ const Generator = () => {
         <h2> I want a new adventure that is ...</h2>
         <div className="Physcial">
           <Button variant="outline-secondary" value="Physical" onClick={handleClick} size="lg">Physical</Button>{' '}
-          <Button variant="outline-secondary" value="non-physical" onClick={handleClick} size="lg">Non-physical</Button>{' '}
+          <Button variant="outline-secondary" value="Non-Physical" onClick={handleClick} size="lg">Non-physical</Button>{' '}
         </div>
         <div className="Competitive">
-          <Button variant="outline-success" value="competitive" onClick={handleClick} size="lg">Competitive</Button>{' '}
-          <Button variant="outline-success" value="non-competitive" onClick={handleClick} size="lg">Non-competitive</Button>{' '}
+          <Button variant="outline-success" value="Competitive" onClick={handleClick} size="lg">Competitive</Button>{' '}
+          <Button variant="outline-success" value="Non-Competitive" onClick={handleClick} size="lg">Non-competitive</Button>{' '}
         </div>
         <div className="Creative">
-          <Button variant="outline-primary" value="creative" onClick={handleClick} size="lg">Creative</Button>{' '}
-          <Button variant="outline-primary" value="non-creative" onClick={handleClick} size="lg">Non-creative</Button>{' '}
-          <Button variant="outline-primary" value="sometimes" onClick={handleClick} size="lg">Sometimes</Button>{' '}
+          <Button variant="outline-primary" value="Creative" onClick={handleClick} size="lg">Creative</Button>{' '}
+          <Button variant="outline-primary" value="Non-Creative" onClick={handleClick} size="lg">Non-creative</Button>{' '}
+          <Button variant="outline-primary" value="Sometimes" onClick={handleClick} size="lg">Sometimes</Button>{' '}
         </div>
         <div className="Indoor">
-          <Button variant="outline-info" value="indoor" onClick={handleClick} size="lg">Indoor</Button>{' '}
-          <Button variant="outline-info" value="outdoor" onClick={handleClick} size="lg">Outdoor</Button>{' '}
+          <Button variant="outline-info" value="Indoor" onClick={handleClick} size="lg">Indoor</Button>{' '}
+          <Button variant="outline-info" value="Outdoor" onClick={handleClick} size="lg">Outdoor</Button>{' '}
         </div>
         <br></br>
         <h2>Not sure? Lets give you something random</h2>
         <div className="Random">
-          <Button variant="outline-danger" value="random" onClick={handleClick}>Random</Button>{' '}
+          <Button variant="outline-danger" value="Random" onClick={handleClick}>Random</Button>{' '}
         </div>
       </div>
     </>
   )
 }
-export default Generatorc
+export default Generator

@@ -37,27 +37,29 @@ const NavBar = () => {
     <>
       <Navbar className="navbar-colour" Navbar bg="" variant="dark">
         <div className="logo-nav-items">
-          <div className="logo">
-            <Navbar.Brand href="#home"><Image src="https://imgur.com/0C9foJS.jpeg" /></Navbar.Brand>
-          </div>
-          <div className="navbar-items">
-            <Nav className="mr-auto">
-              <LinkContainer to='/'>
-                <Nav.Link href="#home">Home</Nav.Link>
-              </LinkContainer>
-              <LinkContainer to='/activities'>
-                <Nav.Link href="#activities">Activities</Nav.Link>
-              </LinkContainer>
-              <LinkContainer to='/groups'>
-                <Nav.Link href="#groups">Groups</Nav.Link>
-              </LinkContainer>
-              <LinkContainer to='/Login'>
-                <Nav.Link href="#login" onClick={handleShow}>Login</Nav.Link>
-              </LinkContainer>
-              <LinkContainer to='#' variant="primary" onClick={handleShow}>
-                <Nav.Link href="#register">Register</Nav.Link>
-              </LinkContainer>
-            </Nav>
+          <div className="logo-and-nav">
+            <div className="logo">
+              <Navbar.Brand href="#home"><Image src="https://imgur.com/0C9foJS.jpeg" /></Navbar.Brand>
+            </div>
+            <div className="navbar-items">
+              <Nav className="mr-auto">
+                <LinkContainer to='/'>
+                  <Nav.Link href="#home">Home</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to='/activities'>
+                  <Nav.Link href="#activities">Activities</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to='/groups'>
+                  <Nav.Link href="#groups">Groups</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to='/Login'>
+                  <Nav.Link href="#login" onClick={handleShow}>Login</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to='#' variant="primary" onClick={handleShow}>
+                  <Nav.Link href="#register">Register</Nav.Link>
+                </LinkContainer>
+              </Nav>
+            </div>
           </div>
         </div>
       </Navbar>

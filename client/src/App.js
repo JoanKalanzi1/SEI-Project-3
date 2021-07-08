@@ -11,6 +11,7 @@ import UserLogin from './components/Auth/UserLogin.js'
 import GroupRegister from './components/Auth/GroupRegister'
 import GroupLogin from './components/Auth/GroupLogin'
 import Generator from './components/Generator'
+import CreateGroup from './components/Auth/CreateGroup'
 
 
 
@@ -47,6 +48,9 @@ const App = () => {
         </Route>
         <Route path="/login">
           <UserLogin />
+        </Route>
+        <Route path="/creategroups">
+          <CreateGroup />
         </Route>
         <Route path="/generator">
           <Generator />

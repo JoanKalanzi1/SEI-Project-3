@@ -1,35 +1,40 @@
 import React from 'react'
-import { ImageBackground, Text } from 'react-native'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Button from 'react-bootstrap/Button'
 import { Link } from 'react-router-dom'
 
 
+
+
 const HeroVideo = () => {
   return (
     <Jumbotron>
-      <ImageBackground source src="https://i.imgur.com/PXNKqMo.mp4" type="video/mp4" resizeMode="cover">
+
+      <div className='hero-video-and-text'>
         <video className='videoTag'
           autoPlay loop muted
           style={{
-            vw: '100%',
+            position: 'relative',
+            width: '100%',
           }}>
+          <source src="https://i.imgur.com/PXNKqMo.mp4" type="video/mp4" />
         </video>
-        <Text>
+        <div className='text-on-hero'>
           <h1>Jump into something new</h1>
           <p>
             Couped up inside for too long? Us too!
+            <br></br>
             Let us find you a new hobby and local group to join
           </p>
           <p>
-            <div>
+            <div className="button">
               <Link to='/generator'>
-                <Button variant="primary center" href="/generator">Get me out!</Button>
+                <Button variant="dark" className="button-home" href="/generator">Get me out!</Button>
               </Link>
             </div>
           </p>
-        </Text>
-      </ImageBackground>
+        </div >
+      </div>
     </Jumbotron >
   )
 }

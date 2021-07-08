@@ -26,6 +26,9 @@ const Generator = () => {
     }
     getData()
   }, [])
+
+
+  
   const handleRandomSelection = () => {
     const randomNumber = Math.floor(Math.random() * activities.length)
     const randomActivity = activities[randomNumber]

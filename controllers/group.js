@@ -8,7 +8,7 @@ export const getAllGroups = async (_req, res) => {
   return res.status(200).json(groups)
 }
 
-// CREATE ROUTE - add a new activity
+// CREATE ROUTE - add a new group
 export const addGroup = async (req, res) => {
   try {
     const groupToAdd = await Group.create(req.body)

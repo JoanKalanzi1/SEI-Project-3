@@ -82,12 +82,13 @@ const SingleGroup = () => {
     <section>
       <div>
         {group ?
-          <div>
+          <div className='groupSet'>
             <h2>{group.name}</h2>
+            <h4>Located in: {location.name}</h4>
             <div>
               <Image src={`${group.image}.jpeg`} alt={group.name} className='imageContainer' />
             </div>
-            <h4>{location.name}</h4>
+          
             <h3>{group.about}</h3>
             <h3>{group.time}</h3>
             <h3>{group.contact}</h3>

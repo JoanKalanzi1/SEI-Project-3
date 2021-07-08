@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
+import ActivityCard from '../activities/ActivityCard'
 
 const SingleGroup = () => {
-  const [group, setGroup] = useState(null) // linked to first getData
-  const [location, setLocation] = useState([]) // also linked to first getData
-  const [groupActivityData, setGroupActivityData] = useState([]) // also linked to first getData
-  const [num, setNum] = useState([]) // also linked to first getData
-  const [activities, setActivities] = useState(null) //
-  const [groupActivities, setGroupActivities] = useState(null)
+  const [group, setGroup] = useState(null) // linked to first getData i.e. individual group
+  const [location, setLocation] = useState([]) // also linked to first getData, i.e location.
+  const [groupActivityData, setGroupActivityData] = useState([]) // also linked to first getData i.e. mtb biking, cooking
+  const [num, setNum] = useState([]) // also linked to first getData, i.e, 1.
+  const [activities, setActivities] = useState(null) // is all activities
+  const [groupActivities, setGroupActivities] = useState(null) //group activity data
   const [hasError, setHasError] = useState(false)
   const { id } = useParams()
   const activitiesArray = []
@@ -20,7 +21,7 @@ const SingleGroup = () => {
         setGroup(data)
         setLocation(data.location)
         setGroupActivityData(data.activity)
-        setNum(data.activity.length - 1)
+        setNum(data.activity.length)
       } catch (err) {
         setHasError(true)
         console.log('ERROR WHILE GETTING GROUP DATA', err)
@@ -30,7 +31,7 @@ const SingleGroup = () => {
     console.log('getDATA RUNNING')
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id])
-  
+
 
   useEffect(() => {
     const getActivityData = async () => {
@@ -50,14 +51,17 @@ const SingleGroup = () => {
 
   useEffect(() => {
     const getGroupActivities = () => {
-      console.log('getGroupActivities RUNNING')
-      // for (let i = 0; i < num; i++) {
-      //   const activityFound = activities.nameOfActivity.filter(groupActivityData[i])
-      //   console.log('ACTIVITYFOUND', activityFound)
-      //   activitiesArray.push(activityFound)
-      // }
+      const mapForFilter = groupActivityData.map(item => {
+        console.log('item', item)
+        const filteredArray = activities.filter(activity => activity.nameOfActivity === item)
+        console.log(filteredArray)
+        activitiesArray.push(filteredArray[0])
+      })
       setGroupActivities(activitiesArray)
+      console.log('ACTIVITIES ARRAY', activitiesArray)
+      console.log('map', mapForFilter)
     }
+
     if (activities) getGroupActivities()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activities])
@@ -72,21 +76,37 @@ const SingleGroup = () => {
   console.log('num', num)
 
 
+
   return (
     <section>
-      {group ?
-        <div>
-          <h2>{group.name}</h2>
-          <h4>{location.name}</h4>
-          <h3>{group.about}</h3>
+      <div>
+        {group ?
+          <div>
+            <h2>{group.name}</h2>
+            <h4>{location.name}</h4>
+            <h3>{group.about}</h3>
+          </div>
+          :
+          <h2>
+            {hasError ? 'Something has gone wrong!' : 'loading...group'}
+          </h2>
+        }
+      </div>
+      <div>
+        Actvities you would do in this group:
+        {groupActivities ?
+          <div>
+            {groupActivities.map(activity => {
+              return <ActivityCard key={activity._id} {...activity} />
+            })}
+          </div>
+          :
+          <h2>
+            {hasError ? 'Something has gone wrong!' : 'loading...group activities'}
+          </h2>
+        }
+      </div>
 
-
-        </div>
-        :
-        <h2>
-          {hasError ? 'Something has gone wrong!' : 'loading...group'}
-        </h2>
-      }
     </section>
   )
 }

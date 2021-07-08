@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
-import Image from 'react-bootstrap/Image'
+import { Image, Row, Container, Col } from 'react-bootstrap'
 import GroupCard from '../groups/GroupCard'
 
 const SingleActivity = () => {
@@ -58,46 +58,46 @@ const SingleActivity = () => {
   console.log('groups', allGroups)
   console.log('groupActivities', activityGroups)
   return (
-
     <section>
-      {activity ?
-        <div>
-          {/* TITLE DIV */}
-          <div> 
-            <h2>{activity.nameOfActivity}</h2>
+      <div>
+        {activity ?
+          <div>
+            <h2 id='singleActivityTitle'>{activity.nameOfActivity}</h2>
+            <Row className="justify-content-md-center">
+              <Col className='imageContainer'>
+                <Image src={`${activity.image}.jpeg`} alt={activity.nameOfActivity} />
+              </Col>
+              <Col style={{
+                display: 'flex',
+                alignItems: 'center',
+              }}>
+                <p>{activity.summary}</p>
+              </Col>
+            </Row>
           </div>
-          {/* IMAGE AND SUMMARY DIV */}
-          
-          <div id='activityContainer'>
-            <div className='imageContainer'>
-              <Image src={`${activity.image}.jpeg`} alt={activity.nameOfActivity} />
-            </div>
-            <div>
-              <p>{activity.summary}</p>
-            </div>
-          </div>
-        </div>
-        :
-        <h2>
-          {hasError ? 'Something has gone wrong!' : 'loading... activity'}
-        </h2>
-      }
+          :
+          <h2>
+            {hasError ? 'Something has gone wrong!' : 'loading... activity'}
+          </h2>
+        }
+      </div>
 
       <div>
         Groups where you can do this activity:
         {activityGroups ?
-          <div>
-            {activityGroups.map(group => {
-              return <GroupCard key={group._id} {...group} />
-            })}
-          </div>
+          <Row>
+            <Col centered xs="1" sm="2" md="3">
+              {activityGroups.map(group => {
+                return <GroupCard key={group._id} {...group} />
+              })}
+            </Col>
+          </Row>
           :
           <h2>
             {hasError ? 'Something has gone wrong!' : 'loading...group activities'}
           </h2>
         }
       </div>
-        
     </section >
   )
 }

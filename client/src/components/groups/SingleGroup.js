@@ -84,7 +84,7 @@ const SingleGroup = () => {
         {group ?
           <div className='groupSet'>
             <h2>{group.name}</h2>
-            <h4>Located in: {location.name}</h4>
+            <h4>Located in: {location}</h4>
             <div>
               <Image src={`${group.image}.jpeg`} alt={group.name} className='imageContainer' />
             </div>

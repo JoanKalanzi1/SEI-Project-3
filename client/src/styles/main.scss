@@ -12,7 +12,7 @@
   margin: 180px;
 }
 
-#cardName {
+#carouselCardName {
   // background-color: white;
   color:white;
   border: 1px solid white;
@@ -20,14 +20,19 @@
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-.imageContainer {
-  max-width: 25%;
+#cardName {
+  background-color: white;
+  color:white;
+  border: 1px solid white;
   border-radius: 5px;
-=======
-#imageContainer {
- 
+  text-decoration: none;
 }
+
+#singleActivityTitle{
+  display: flex;
+  justify-content: center;
+}
+
 
   a {
     color: #f8f9fa;
@@ -71,5 +76,4 @@ transition: transform 0.2s ease-in-out;
 .logo {
   display: flex;
     justify-content: center;
->>>>>>> development
 }

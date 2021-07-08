@@ -16,7 +16,7 @@ const ActivityCarouselCard = ({ _id, nameOfActivity, image }) => {
         alignItems: 'center',
         borderRadius: '5px',
       }}>
-        <span id='cardName'><Nav.Link href={`activities/${_id}`}>{nameOfActivity}</Nav.Link></span>
+        <span id='carouselCardName'><Nav.Link href={`activities/${_id}`}>{nameOfActivity}</Nav.Link></span>
       </Col>
     </Nav.Item>
   )

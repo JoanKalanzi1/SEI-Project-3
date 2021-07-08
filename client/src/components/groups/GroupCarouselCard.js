@@ -16,7 +16,7 @@ const GroupCarouselCard = ({ _id, name, image }) => {
         alignItems: 'center',
         borderRadius: '5px',
       }}>
-        <span id='cardName'><Nav.Link href={`groups/${_id}`}>{name}</Nav.Link></span>
+        <span id='carouselCardName'><Nav.Link href={`groups/${_id}`}>{name}</Nav.Link></span>
       </Col>
     </Nav.Item>
   )

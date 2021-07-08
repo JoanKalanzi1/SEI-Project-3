@@ -1,3 +1,10 @@
+// physical : physical or non-physical
+// physical: 'Physical /non-physical',
+// competitive: 'competitive /non-competitive', sometimes
+// creative: 'yes / no / sometimes',
+// environment: 'indoor/outdoor',
+
+
 export default [
   {
     nameOfActivity: 'Mountain Biking',

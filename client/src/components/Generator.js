@@ -25,6 +25,7 @@ const Generator = () => {
       console.log(activities)
     }
     getData()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   console.log(activities)

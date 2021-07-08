@@ -8,7 +8,7 @@ import 'swiper/components/navigation/navigation.scss'
 import 'swiper/components/pagination/pagination.scss'
 import 'swiper/components/scrollbar/scrollbar.scss'
 import axios from 'axios'
-import ActivityCard from '../activities/ActivityCard'
+import ActivityCarouselCard from '../activities/ActivityCarouselCard'
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
 SwiperCore.use([Pagination])
@@ -64,7 +64,7 @@ const ActivityCarousel = () => {
         {carouselActivities.map(activity => {
           return (
             <SwiperSlide key={randomString()}>
-              <ActivityCard {...activity}/>
+              <ActivityCarouselCard {...activity}/>
             </SwiperSlide>
           )
         })}

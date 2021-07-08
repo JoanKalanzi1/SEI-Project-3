@@ -27,14 +27,15 @@ export default [
     summary: 'Do you enjoy making delicious concotions for others, but don\'t want to put in the time involved with cooking? Do you enjoy tasting different drinks, or just getting together and talking with friends over a glass of wine? Drinks making and tasting might be for you!'
   },
   {
-    nameOfActivity: 'Spending Time in Nature',
-    image: 'https://imgur.com/KkaUwA9',
-    physical: 'Physical',
-    competitive: 'Non-Competitive',
-    creative: 'No',
-    environment: 'Outdoor',
-    summary: 'Plants, hills, rivers, lakes, beaches, mountains, forests - all wonderful places to get away from it all. From getting out of the city, to tending to your own little urban jungle, all are great ways of spending more time with Mother Nature.'
-  },
+    nameOfActivity: 'Anime',
+    image: 'https://imgur.com/ZeOO8SJ',
+    physical: 'Physical /non-physical',
+    competitive: 'competitive /non-competitive',
+    creative: 'yes / no / sometimes',
+    environment: 'indoor/outdoor',
+    summary: 'Anime is a style of animation originating in Japan that is characterized by stark colorful graphics depicting vibrant characters in action-filled plots often with fantastic or futuristic themes.'
+  }
+  ,
   {
     nameOfActivity: 'Gardening',
     image: 'https://imgur.com/fEUGLTT',

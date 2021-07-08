@@ -8,7 +8,7 @@ import 'swiper/components/navigation/navigation.scss'
 import 'swiper/components/pagination/pagination.scss'
 import 'swiper/components/scrollbar/scrollbar.scss'
 import axios from 'axios'
-import GroupCard from '../groups/GroupCard'
+import GroupCarouselCard from '../groups/GroupCarouselCard.js'
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
 SwiperCore.use([Pagination])
@@ -65,7 +65,7 @@ const GroupCarousel = () => {
         {carouselGroups.map(group => {
           return (
             <SwiperSlide key={randomString()}>
-              <GroupCard {...group}/>
+              <GroupCarouselCard {...group}/>
             </SwiperSlide>
           )
         })}

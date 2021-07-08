@@ -1,9 +1,9 @@
 import React from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Col from 'react-bootstrap/Col'
-// import Image from 'react-bootstrap/Image'
 
-const GroupCard = ({ _id, name, image }) => {
+const ActivityCarouselCard = ({ _id, nameOfActivity, image }) => {
+
 
   return (
     <Nav.Item >
@@ -16,11 +16,11 @@ const GroupCard = ({ _id, name, image }) => {
         alignItems: 'center',
         borderRadius: '5px',
       }}>
-        <span id='cardName'><Nav.Link href={`http://localhost:3000/groups/${_id}`}>{name}</Nav.Link></span>
+        <span id='cardName'><Nav.Link href={`activities/${_id}`}>{nameOfActivity}</Nav.Link></span>
       </Col>
     </Nav.Item>
   )
 }
 
 
-export default GroupCard
+export default ActivityCarouselCard

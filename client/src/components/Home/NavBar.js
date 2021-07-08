@@ -30,7 +30,7 @@ const NavBar = () => {
   // { window.location.pathname === '/Login' ? 'Login Now' : 'Register Now' }
   return (
     <>
-      <Navbar className="navbar-colour" Navbar bg="" variant="dark">
+      <Navbar className="navbar-colour" Navbar bg="" variant="dark" >
         <div className="logo-nav-items">
           <div className="logo">
             <Navbar.Brand href="#home"><Image src="https://imgur.com/0C9foJS.jpeg" /></Navbar.Brand>

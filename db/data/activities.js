@@ -29,7 +29,7 @@ export default [
   ,
   {
     nameOfActivity: 'Anime',
-    image: 'url',
+    image: 'https://imgur.com/ZeOO8SJ',
     physical: 'Physical /non-physical',
     competitive: 'competitive /non-competitive',
     creative: 'yes / no / sometimes',

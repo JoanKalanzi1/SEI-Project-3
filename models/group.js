@@ -24,7 +24,7 @@ const groupSchema = new mongoose.Schema({
   name: { type: String, required: true, unique: true },
   image: { type: String, required: true },
   activity: [ { type:String } ],
-  location: {  type: Object, required: true, maxLength: 600 },
+  location: {  type: String, type: Number, required: true, maxLength: 600 },
   number: { type: String, required: true },
   about: { type: String, required: true },
   time: { type: String },

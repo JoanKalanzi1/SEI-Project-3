@@ -7,10 +7,10 @@ const SingleActivity = () => {
   const [activity, setActivity] = useState(null)
   const [activityName, setActivityName] = useState('')
   const [allGroups, setAllGroups] = useState(null)
+  const [groupActivities, setGroupActivities] = useState(null)
   const [hasError, setHasError] = useState(false)
   const { id } = useParams()
-  const groupsArray = []
-
+  
   useEffect(() => {
     const getActivityData = async () => {
       try {
@@ -47,18 +47,15 @@ const SingleActivity = () => {
       console.log('WORKING')
       const filteredGroup = allGroups.filter(group => group.activity.includes(activityName))
       console.log('filteredGroup>>>', filteredGroup)
+      setGroupActivities(filteredGroup)
     }
     if (allGroups) getGroupsWithActivity()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [allGroups])
 
-  // const filteredArray = activities.filter(activity => activity.nameOfActivity === groupActivityData[0])
-  // console.log('filter', filteredArray)
-  // console.log(groupActivityData)
-  // setGroupActivities(activitiesArray)
-
   console.log('DATA', activity)
   console.log('groups', allGroups)
+  console.log('groupActivities', groupActivities)
   return (
     <section>
       {activity ?

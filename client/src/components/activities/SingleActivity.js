@@ -61,19 +61,19 @@ const SingleActivity = () => {
 
     <section>
       {activity ?
-        <div>
+        <div className="groupSet"> 
           {/* TITLE DIV */}
           <div> 
-            <h2>{activity.nameOfActivity}</h2>
+            <h2 className="singleActivityText">{activity.nameOfActivity}</h2>
           </div>
           {/* IMAGE AND SUMMARY DIV */}
           
-          <div id='activityContainer'>
-            <div className='imageContainer'>
-              <Image src={`${activity.image}.jpeg`} alt={activity.nameOfActivity} />
+          <div id='activity"Container'>
+            <div className="centerImage">
+              <Image src={`${activity.image}.jpeg`} alt={activity.nameOfActivity} className= "imageContainer"/>
             </div>
             <div>
-              <p>{activity.summary}</p>
+              <p className="singleActivityText">{activity.summary}</p>
             </div>
           </div>
         </div>
@@ -83,10 +83,13 @@ const SingleActivity = () => {
         </h2>
       }
 
-      <div>
+      <div className="centerGroupsHeader">
+        <h2>
         Groups where you can do this activity:
+        </h2>
+       
         {activityGroups ?
-          <div>
+          <div className = "otheractivities">
             {activityGroups.map(group => {
               return <GroupCard key={group._id} {...group} />
             })}

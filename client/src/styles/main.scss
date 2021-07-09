@@ -20,8 +20,8 @@
   text-decoration: none;
 }
 
-#imageContainer {
- 
+.imageContainer {
+ max-width: 733px;
 }
 
   a.nav-link {
@@ -79,9 +79,81 @@ transition: transform 0.2s ease-in-out;
  align-items: center;
  margin-top: 20px;
  margin-bottom: 20px;
- h2, h3, h4 {
+ h2, h5{
    margin-top:10px;
    margin-bottom: 10px;
+   text-align: center;
+
 
  }
 }
+.otheractivitiestext{
+  display:flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.otheractivities {
+  max-width: 733px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .eachactivity{
+    margin:20px;
+  }
+
+}
+
+ .groupSet {
+  display:flex;
+  justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ h2, p{
+   margin-top:10px;
+   margin-bottom: 10px;
+   text-align: center;
+
+ }
+}
+.centerImage{
+  display:flex;
+  justify-content: center;
+}
+.singleActivityText {
+  margin-top:10px;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+.centerGroupsHeader {
+  text-align: center;
+}
+
+    // .nameOfActivity {
+    // margin-top:10px;
+    //  margin-bottom: 10px;
+    //  text-align: center;
+  
+    // }
+
+
+// .imageContainer {
+//   display:flex;
+//   justify-content: center;
+//   margin-bottom: 20px;
+//   max-width: 733px;
+//   max-height: 573px;
+//   margin-top: 20px;
+//   margin-left: auto;
+//   margin-right: auto;
+  
+//   .nameOfActivity {
+//   margin-top:10px;
+//    margin-bottom: 10px;
+//    text-align: center;
+
+//   }
+// }
+

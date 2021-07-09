@@ -29,7 +29,7 @@ const ActivitiesIndex = () => {
       
       <Container fluid>
         {activities.length > 0 ?
-          <Row xs="6" sm="3">
+          <Row xs="1" sm="2" md="3">
             {activities.map(activity => {
               return <ActivityCard key={activity._id} {...activity} />
             })}

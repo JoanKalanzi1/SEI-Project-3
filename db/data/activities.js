@@ -326,7 +326,7 @@ export default [
   },
   {
     nameOfActivity: 'Anime',
-    image: 'https://imgur.com/ZeOO8SJ',
+    image: 'https://imgur.com/KeO7Erd',
     physical: 'Non-Physical',
     competitive: 'Non-Competitive',
     creative: 'Sometimes',

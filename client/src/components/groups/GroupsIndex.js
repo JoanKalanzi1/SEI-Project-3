@@ -42,7 +42,7 @@ const GroupsIndex = () => {
         <Container fluid>
           <>
             {groups.length > 0 ?
-              <Row xs="6" sm="3">
+              <Row xs="1" sm="2" md="3" >
                 {groups.map(group => {
                   return <GroupCard key={group._id} {...group} />
                 })}

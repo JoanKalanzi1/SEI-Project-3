@@ -5,11 +5,14 @@
 .logo-nav-items {
   display: flex;
   flex-direction: column;
-  
 }
 
 .activity-carousel, .group-carousel {
-  margin: 180px;
+  margin: 100px;
+}
+
+.activity-carousel {
+  margin-top: 400px;
 }
 
 #carouselCardName {
@@ -34,6 +37,68 @@
 }
 
 
+
+.videoTag {
+  width: 100%;
+}
+
+.jumbotron {
+  position: relative;
+  height: 62.5vh;
+  padding: 0px !important;
+}
+
+.text-on-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-video-and-text{
+  position: relative; 
+  width: 100%;
+}
+
+h1 { 
+  position: absolute; 
+  top: 300px; 
+  left: 0; 
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px #0a0a0a;
+  letter-spacing: 4px;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+p {
+    position: absolute; 
+    top: 400px; 
+    left: 0; 
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px #0a0a0a;
+    font-size: 25px;
+    font-family: 'Libre Franklin';
+  }
+
+.button {
+  text-align: center;
+  position: relative;
+  top: 150px;
+}
+
+
+.imageContainer {
+  max-width: 25%;
+  border-radius: 5px;
+ 
+}
+.imageContainer {
+  max-width: 733px;
+ }
   a {
     color: #f8f9fa;
     text-decoration: none;
@@ -42,7 +107,74 @@
 
 .login {
   padding-top:80px; 
- 
+}
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+  content: "next";
+  color: white;
+}
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+  content: "prev";
+  color: white;
+}
+.swiper-scrollbar-drag {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: white;
+  border-radius: 10px;
+  left: 0;
+  top: 0;
+}
+:root {
+  --swiper-theme-color: #f8f9fa;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+}
+
+#cardName {
+transition: transform 0.2s ease-in-out;
+  &:hover{
+    transform: scale(1.05);
+    box-shadow: 25px rgb(255, 0, 0, 1);
+    color: darken($color: white, $amount: 20);
+  }
+}
+
+.select-adv{
+padding-top: 200px;
+}
+
+.Random {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+  padding-top: 20px;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+.select-adv {
+  padding-top: 50px;
+  padding-left: 60px;
+  padding-bottom: 30px;
+}
+.imageContainer {
+  max-width: 25%;
+  border-radius: 5px;
+}
+
+  a.nav-link {
+    color: #f8f9fa;
+    text-decoration: none;
+    background-color: #00000045;
+}
+
+.login {
+  padding-top:80px; 
 }
 .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
   content: "next";
@@ -66,14 +198,104 @@
   --swiper-theme-color: #f8f9fa;
 }
 #cardName {
+  color: red;
 transition: transform 0.2s ease-in-out;
   &:hover{
     transform: scale(1.05);
-    box-shadow: 25px rgb(255, 0, 0, 1);
-    color: darken($color: white, $amount: 20);
+    box-shadow: 25px rgb(81, 255, 0);
+    color: darken($color: white, $amount: 80);
   }
 }
 .logo {
   display: flex;
     justify-content: center;
 }
+.getout{
+  display: flex;
+  justify-content: center;
+}
+.groupSet{
+  display:flex;
+  justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ h2, h5{
+   margin-top:10px;
+   margin-bottom: 10px;
+   text-align: center;
+
+
+ }
+}
+.otheractivitiestext{
+  display:flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.otheractivities {
+  max-width: 733px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .eachactivity{
+    margin:20px;
+  }
+
+}
+
+ .groupSet {
+  display:flex;
+  justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ h2, p{
+   margin-top:10px;
+   margin-bottom: 10px;
+   text-align: center;
+
+ }
+}
+.centerImage{
+  display:flex;
+  justify-content: center;
+}
+.singleActivityText {
+  margin-top:10px;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+.centerGroupsHeader {
+  text-align: center;
+}
+
+    // .nameOfActivity {
+    // margin-top:10px;
+    //  margin-bottom: 10px;
+    //  text-align: center;
+  
+    // }
+
+
+// .imageContainer {
+//   display:flex;
+//   justify-content: center;
+//   margin-bottom: 20px;
+//   max-width: 733px;
+//   max-height: 573px;
+//   margin-top: 20px;
+//   margin-left: auto;
+//   margin-right: auto;
+  
+//   .nameOfActivity {
+//   margin-top:10px;
+//    margin-bottom: 10px;
+//    text-align: center;
+
+//   }
+// }
+

@@ -51,6 +51,7 @@ const ActivityCarousel = () => {
 
 
   return (
+    
     <div className="activity-carousel">
       <Swiper
         spaceBetween={50}

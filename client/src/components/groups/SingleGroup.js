@@ -3,6 +3,7 @@ import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import ActivityCard from '../activities/ActivityCard'
 import Image from 'react-bootstrap/Image'
+import { Container, Col } from 'react-bootstrap'
 
 const SingleGroup = () => {
   const [group, setGroup] = useState(null) // linked to first getData i.e. individual group
@@ -80,31 +81,36 @@ const SingleGroup = () => {
 
   return (
     <section>
-      <div>
-        {group ?
-          <div className='groupSet'>
-            <h2>{group.name}</h2>
-            <h4>Located in: {location}</h4>
-            <div>
-              <Image src={`${group.image}.jpeg`} alt={group.name} className='imageContainer' />
+      <Container>
+        <Col></Col>
+        <Col md="auto">
+          {group ?
+            <div className='groupSet'>
+              <h2>{group.name}</h2>
+              <h4>Located in:{location}</h4>
+              <div>
+                <Image src={`${group.image}.jpeg`} alt={group.name} className='imageContainer' />
+              </div>
+              <h5>{group.about}</h5>
+              <h5>{group.time}</h5>
+              <h5>{group.contact}</h5>
             </div>
-          
-            <h3>{group.about}</h3>
-            <h3>{group.time}</h3>
-            <h3>{group.contact}</h3>
-          </div>
-          :
-          <h2>
-            {hasError ? 'Something has gone wrong!' : 'loading...group'}
-          </h2>
-        }
-      </div>
+            :
+            <h2>
+              {hasError ? 'Something has gone wrong!' : 'loading...group'}
+            </h2>
+          }
+        </Col>
+        <Col></Col>
+      </Container>
       <div>
+        <h2 className= "otheractivitiestext">
         Actvities you can take part in, in this group:
+        </h2>
         {groupActivities ?
-          <div>
+          <div className = "otheractivities">
             {groupActivities.map(activity => {
-              return <ActivityCard key={activity._id} {...activity} />
+              return <ActivityCard key={activity._id} {...activity} className= "eachactivity" />
             })}
           </div>
           :

@@ -1,3 +1,10 @@
+// physical : physical or non-physical
+// physical: 'Physical /non-physical',
+// competitive: 'competitive /non-competitive', sometimes
+// creative: 'yes / no / sometimes',
+// environment: 'indoor/outdoor',
+
+
 export default [
   {
     nameOfActivity: 'Netball',
@@ -326,7 +333,7 @@ export default [
   },
   {
     nameOfActivity: 'Anime',
-    image: 'https://imgur.com/ZeOO8SJ',
+    image: 'https://imgur.com/KeO7Erd',
     physical: 'Non-Physical',
     competitive: 'Non-Competitive',
     creative: 'Sometimes',

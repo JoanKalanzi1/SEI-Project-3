@@ -12,7 +12,7 @@ const Home = () => {
       <HeroVideo />
       <ActivityCarousel />
       <div className="act-car">
-        <h2>Browse our groups in London</h2>
+        <h2>Browse our activities and groups </h2>
       </div>
       <GroupCarousel />
     </>

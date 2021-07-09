@@ -231,7 +231,8 @@ h2, p{
 .otheractivitiestext{
   display:flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 43px;
+  margin-top: 78px
 }
 .otheractivities {
   max-width: 733px;
@@ -326,7 +327,24 @@ h2, p{
 .centerGroupsHeader {
   text-align: center;
 }
-
+.groupSummary{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 40px 278px;
+  flex-direction: row;
+  font-size: larger;
+}
+.groupInfo{
+  border: 2px solid rgb(175, 171, 171);
+  padding: 25px;
+  border-radius: 2%;
+}
+.singleGroupName{
+  margin:30px;
+}
     // .nameOfActivity {
     // margin-top:10px;
     //  margin-bottom: 10px;

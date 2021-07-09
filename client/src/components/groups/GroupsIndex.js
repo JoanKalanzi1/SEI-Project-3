@@ -31,7 +31,7 @@ const GroupsIndex = () => {
     <>
       <div className="groupTopper">
         <div className="summaryGroupsA">Take your next step with GetOut</div>
-        <div className="summaryGroupsB">If you don't see a group you like, start a group to find the people you’re looking for</div>
+        <div className="summaryGroupsB">If you do not see a group you like, start a group to find the people you’re looking for</div>
         <div className="summaryGroupsC">
           <Link to="/creategroups" variant="primary">Start a group</Link></div>
       </div>

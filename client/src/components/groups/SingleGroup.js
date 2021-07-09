@@ -105,7 +105,7 @@ const SingleGroup = () => {
       </Container>
       <div>
         <h2 className= "otheractivitiestext">
-        Actvities you can take part in, in this group:
+        Actvities you can do in this group:
         </h2>
         {groupActivities ?
           <div className = "otheractivities">

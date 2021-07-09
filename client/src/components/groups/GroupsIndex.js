@@ -29,15 +29,12 @@ const GroupsIndex = () => {
 
   return (
     <>
-      <Jumbotron>
-        <h1>Take your next step with GetOut</h1>
-        <p>
-        Start a group to find the people you’re looking for.
-        </p>
-        <p>
-          <Link to= "/creategroups"variant="primary">start a group</Link>
-        </p>
-      </Jumbotron>
+      <div className="groupTopper">
+        <div className="summaryGroupsA">Take your next step with GetOut</div>
+        <div className="summaryGroupsB">If you don't see a group you like, start a group to find the people you’re looking for</div>
+        <div className="summaryGroupsC">
+          <Link to="/creategroups" variant="primary">Start a group</Link></div>
+      </div>
       <section>
         <Container fluid>
           <>

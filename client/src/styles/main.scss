@@ -237,6 +237,7 @@ h2, p{
   max-width: 733px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 100px;
 
   .eachactivity{
     margin:20px;
@@ -258,14 +259,70 @@ h2, p{
   display:flex;
   justify-content: center;
 }
-.singleActivityText {
-  margin-top:10px;
-  margin-bottom: 10px;
-  text-align: center;
-  color: black;
-  text-shadow: 0;
-  position: relative;
+.summary {
+  display: flex;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 40px 570px;
+    flex-direction: row;
+    font-size: larger;
 }
+.summaryGroups {
+  display: flex;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 40px 570px 55px;
+    flex-direction: row;
+    font-size: larger;
+}
+.summaryGroupsA{
+  display: flex;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 40px 570px 55px;
+    flex-direction: row;
+    font-size: xx-large;
+}
+
+.summaryGroupsB{
+  display: flex;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: x-large;
+}
+
+.summaryGroupsC{
+  display: flex;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 20px 570px 55px;
+    flex-direction: row;
+    font-size: xx-large;
+}
+
+
+.singleActivityText {
+  margin: 25px auto 45px;
+    text-align: center;
+    color: black;
+    text-shadow: none;
+    position: relative;
+    top: 0;
+}
+
+
+
 .centerGroupsHeader {
   text-align: center;
 }

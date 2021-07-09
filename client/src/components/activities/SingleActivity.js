@@ -70,9 +70,9 @@ const SingleActivity = () => {
             <div className="centerImage">
               <Image src={`${activity.image}.jpeg`} alt={activity.nameOfActivity} className="imageContainer" />
             </div>
-            <div>
-              <p className="singleActivityText">{activity.summary}</p>
-            </div>
+
+            <div className="summary" >{activity.summary}</div>
+
           </div>
         </div>
         :
@@ -83,9 +83,9 @@ const SingleActivity = () => {
 
 
       <div className="centerGroupsHeader">
-        <h2>
-          Groups where you can do this activity:
-        </h2>
+        <div className="summaryGroups">
+          <h3>Groups where you can do this activity:</h3>
+        </div>
 
         {activityGroups ?
           <div className="otheractivities">

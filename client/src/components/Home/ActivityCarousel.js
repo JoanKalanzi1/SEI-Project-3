@@ -35,7 +35,7 @@ const ActivityCarousel = () => {
     getActivityData()
   }, [])
   console.log('ACTIVITIES', activities)
-  
+
   useEffect(() => {
     const getCarouselData = () => {
       for (let i = 0; i < 8; i++) {
@@ -51,6 +51,7 @@ const ActivityCarousel = () => {
 
 
   return (
+    
     <div className="activity-carousel">
       <Swiper
         spaceBetween={50}

@@ -58,7 +58,6 @@ const SingleActivity = () => {
   console.log('groups', allGroups)
   console.log('groupActivities', activityGroups)
   return (
-
     <section>
       {activity ?
         <div className="groupSet"> 

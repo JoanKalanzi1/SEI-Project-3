@@ -26,6 +26,7 @@ const ActivitiesIndex = () => {
 
   return (
     <section>
+      
       <Container fluid>
         {activities.length > 0 ?
           <Row xs="6" sm="3">

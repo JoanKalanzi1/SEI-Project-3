@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import GroupCard from './GroupCard'
-import Container from 'react-bootstrap/Container'
+import { Container, Jumbotron } from 'react-bootstrap'
 import Row from 'react-bootstrap/Row'
+import { Link } from 'react-router-dom'
 
 
 
@@ -27,21 +28,34 @@ const GroupsIndex = () => {
   }, [])
 
   return (
-    <section>
-      <Container fluid>
-        {groups.length > 0 ?
-          <Row xs="6" sm="3">
-            {groups.map(group => {
-              return <GroupCard key={group._id} {...group} />
-            })}
-          </Row>
-          :
-          <h2>
-            {hasError ? 'Something has gone wrong!' : 'loading....groups'}
-          </h2>
-        }
-      </Container>
-    </section>
+    <>
+      <Jumbotron>
+        <h1>Take your next step with GetOut</h1>
+        <p>
+        Start a group to find the people you’re looking for.
+        </p>
+        <p>
+          <Link to= "/creategroups"variant="primary">start a group</Link>
+        </p>
+      </Jumbotron>
+      <section>
+        <Container fluid>
+          <>
+            {groups.length > 0 ?
+              <Row xs="6" sm="3">
+                {groups.map(group => {
+                  return <GroupCard key={group._id} {...group} />
+                })}
+              </Row>
+              :
+              <h2>
+                {hasError ? 'Something has gone wrong!' : 'loading....groups'}
+              </h2>
+            }
+          </>
+        </Container>
+      </section>
+    </>
   )
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Col from 'react-bootstrap/Col'
 
-const ActivityCard = ({ _id, nameOfActivity, image }) => {
+const ActivityCarouselCard = ({ _id, nameOfActivity, image }) => {
 
 
   return (
@@ -14,13 +14,13 @@ const ActivityCard = ({ _id, nameOfActivity, image }) => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        
+        borderRadius: '5px',
       }}>
-        <span id='cardName'><Nav.Link href={`http://localhost:3000/activities/${_id}`}>{nameOfActivity}</Nav.Link></span>
+        <span id='cardName'><Nav.Link href={`activities/${_id}`}>{nameOfActivity}</Nav.Link></span>
       </Col>
     </Nav.Item>
   )
 }
 
 
-export default ActivityCard
+export default ActivityCarouselCard

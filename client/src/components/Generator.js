@@ -25,6 +25,7 @@ const Generator = () => {
       }
     }
     getData()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   const handleRandomSelection = () => {
     const randomNumber = Math.floor(Math.random() * activities.length)

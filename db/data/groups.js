@@ -3,9 +3,11 @@ export default [
     name: 'Netball for the Youth',
     image: 'https://imgur.com/aW6yRlP',
     activity: ['Netball', 'Socialising' ],
-    location: { name: 'Bishopsgate', longitude: -0.07851, latitude: 51.518852 },
+    location: 'Bishopsgate', 
+    longitude: -0.07851, 
+    latitude: 51.518852,
     number: '0',
-    about: 'We love playing netball because we are young and free',
+    about: 'We love playing netball because we are young and free. We also put a lot of emphasis on socialising after our training, and our matches!',
     time: '14:00',
     level: 'Beginner',
     contact: '02579280927897'
@@ -13,8 +15,10 @@ export default [
   {
     name: ' We Love Cheese',
     image: 'https://imgur.com/dMyKfyR',
-    activity: ['Socialising', 'Eating'],
-    location: { name: '	Cock Lane', longitude: -0.102727, latitude: 51.516996 },
+    activity: ['Socialising', 'Drinks'],
+    location: 'Cock Lane',
+    longitude: -0.102727,
+    latitude: 51.516996,
     number: '0',
     about: 'A fun group that love cheese. Bring your own cheese.',
     time: '18:00',
@@ -24,8 +28,10 @@ export default [
   {
     name: 'Tree Hugging Meditation',
     image: 'https://imgur.com/q5hkr46',
-    activity: ['Nature', 'Gardening'],
-    location: { name: ' Aldersgate Street', longitude: -0.097025, latitude: 51.520737 },
+    activity: ['Spending Time in Nature', 'Gardening', 'Volunteering'],
+    location: 'Aldersgate Street',
+    longitude: -0.097025,
+    latitude: 51.520737,
     number: '0',
     about: 'A group of people who love nature and meditation ',
     time: '10:00',
@@ -35,10 +41,12 @@ export default [
   {
     name: 'Walking Away',
     image: 'https://imgur.com/XCAKUQm',
-    activity: ['Hiking', 'Rambling'],
-    location: { name: 'Aldgate', longitude: -0.078905, latitude: 51.514882 },
+    activity: ['Walking', 'Hiking', 'Rambling', 'Spending Time in Nature'],
+    location: 'Aldgate',
+    longitude: -0.078905,
+    latitude: 51.514882,
     number: '0',
-    about: ' we like hiking around london',
+    about: 'We meet for a variety of different walking based activities, whether that\s walking the cities steets, rambling over gentle rolling hills, or hiking in the mountains, we do it all!',
     time: '09:00',
     level: 'Beginner',
     contact: '02579280927897'
@@ -47,7 +55,9 @@ export default [
     name: 'Baking Warriors',
     image: 'https://imgur.com/lkuEpjM',
     activity: ['Baking', 'Cooking'],
-    location: { name: 'Chancery Lane ', longitude: -0.112442, latitude: 51.517 },
+    location: 'Chancery Lane ',
+    longitude: -0.112442,
+    latitude: 51.517,
     number: '0',
     about: 'Baking is our life\'s mission.',
     time: '15:00',
@@ -57,8 +67,10 @@ export default [
   {
     name: 'Urban Gardening',
     image: 'https://imgur.com/nfXv5F9',
-    activity: ['Gardening', 'Nature'],
-    location: { name: 'Ascot Road ', longitude: -0.424507 , latitude: 51.64862 },
+    activity: ['Gardening', 'Spending Time in Nature'],
+    location: 'Ascot Road ',
+    longitude: -0.424507,
+    latitude: 51.64862,
     number: '0',
     about: 'Sharing skills and experiences of gardening in small spaces',
     time: '11:00',
@@ -68,8 +80,10 @@ export default [
   {
     name: 'The Ultimate Frisbee group',
     image: 'https://imgur.com/hzldeA5',
-    activity: ['Ultimate Frisbee'],
-    location: { name: 'Warbank Crescent', longitude: -0.001272, latitude: 51.338315 },
+    activity: ['Ultimate Frisbee', 'Socialising', 'Running'],
+    location: 'Warbank Crescent',
+    longitude: -0.001272,
+    latitude: 51.338315,
     number: '0',
     about: 'If you love throwing a frisbee join this group',
     time: '18:00',
@@ -77,10 +91,12 @@ export default [
     contact: '0258090904776'
   },
   {
-    name: 'Warhammer',
+    name: 'Table Top Gaming Group',
     image: 'https://imgur.com/JcsgSBz',
-    activity: ['Modeling', 'Wargaming', 'Painting'],
-    location: { name: 'Bothwell Road ', longitude: -0.015246, latitude: 51.344533 },
+    activity: ['Painting', 'Table Top Gaming', 'Model Building'],
+    location: 'Bothwell Road ',
+    longitude: -0.015246,
+    latitude: 51.344533,
     number: '0',
     about: 'whatever mike wants',
     time: '15:00',
@@ -88,10 +104,12 @@ export default [
     contact: '0257909992899'
   },
   {
-    name: 'Reading over Wine',
+    name: 'Wine (and Book!) Club',
     image: 'https://imgur.com/lBCnC4K',
-    activity: ['Drinks', 'Reading'],
-    location: { name: ' Bedford Gardens', longitude: -0.193568, latitude: 51.506947 },
+    activity: ['Drinks', 'Reading', 'Socialising'],
+    location: 'Bedford Gardens',
+    longitude: -0.193568,
+    latitude: 51.506947,
     number: '0',
     about: 'Do you love reading? Do you love drinking wine? if the answer is yes! join our join',
     time: '19:00',
@@ -101,8 +119,10 @@ export default [
   {
     name: 'Biking',
     image: 'https://imgur.com/BMFHc7R',
-    activity: ['Mountain Biking', 'Cycling'],
-    location: { name: 'Lennox Gardens', longitude: -0.164845, latitude: 51.496377 },
+    activity: ['Mountain Biking', 'Road Cycling'],
+    location: 'Lennox Gardens', 
+    ongitude: -0.164845,
+    latitude: 51.496377,
     number: '0',
     about: ' we cycle around london',
     time: '19:00',
@@ -113,7 +133,9 @@ export default [
     name: 'Soup Kitchen',
     image: 'https://imgur.com/6k18rXY',
     activity: ['Cooking', 'Volunteering'],
-    location: { name: 'Annandale Road ', longitude: 0.007598, latitude: 51.486366 },
+    location: 'Annandale Road ',
+    longitude: 0.007598,
+    latitude: 51.486366,
     number: '0',
     about: ' we volunteer to various soup centers in london ',
     time: '09:00',
@@ -123,8 +145,10 @@ export default [
   {
     name: 'Video Gaming',
     image: 'https://imgur.com/iUa4nll',
-    activity: ['Computer Gaming', 'Gaming'],
-    location: { name: 'Bellot Street', longitude: 0.005707, latitude: 51.487188 },
+    activity: ['Computer Gaming', 'Console Gaming'],
+    location: 'Bellot Street',
+    longitude: 0.005707,
+    latitude: 51.487188,
     number: '0',
     about: ' we play games on online together',
     time: '20:00',
@@ -132,12 +156,14 @@ export default [
     contact: '025689090188778'
   },
   {
-    name: 'Football',
+    name: 'London Cosmo\'s Sports Club',
     image: 'https://imgur.com/LO58J0O',
-    activity: ['Football', 'Running'],
-    location: { name: 'Boyfield Street ', longitude: -0.102138, latitude: 51.49928 },
+    activity: ['Hockey', 'Rugby', 'Socialising', 'Tag Rugby', 'Running', 'Ultimate Frisbee'],
+    location: 'Boyfield Street ',
+    longitude: -0.102138,
+    latitude: 51.49928,
     number: '0',
-    about: 'We play football together in the park ',
+    about: 'What sport do you want to try? We\'ve got loads! We\'ve got teams for men & women, any age-group, and if we don\'t have a team, come make one! Most importantly, we also have a bar!',
     time: '09:00',
     level: 'intermediate',
     contact: '02509649920778'
@@ -145,8 +171,10 @@ export default [
   {
     name: 'Singing Angels',
     image: 'https://imgur.com/VR6KLVs',
-    activity: ['Music', 'Films'],
-    location: { name: 'Great Suffolk Street ', longitude: -0.098699, latitude: 51.502983 },
+    activity: ['Music', 'Films', 'Dancing'],
+    location: 'Great Suffolk Street ',
+    longitude: -0.098699,
+    latitude: 51.502983,
     number: '0',
     about: 'Have you ever wanted to join a pop and rock choir but felt too nervous about attending? Fear not! The Singing Angels is designed for you.',
     time: '09:00',
@@ -157,7 +185,9 @@ export default [
     name: 'Dancing for Fun',
     image: 'https://imgur.com/XvQpYPZ',
     activity: ['Dancing', 'Music'],
-    location: { name: ' Mandela Way ', longitude: -0.080152, latitude: 51.492762 },
+    location: 'Mandela Way ',
+    longitude: -0.080152,
+    latitude: 51.492762,
     number: '0',
     about: 'Meet like minded people through dancing',
     time: '09:00',
@@ -167,8 +197,10 @@ export default [
   {
     name: 'Board Games',
     image: 'https://imgur.com/2PRny7u',
-    activity: ['Board game', 'Puzzl'],
-    location: { name: 'Asolando Drive ', longitude: -0.092679, latitude:	51.490835 },
+    activity: ['Board Games', 'Jigsaws', 'Brain Games'],
+    location: 'Asolando Drive ',
+    longitude: -0.092679,
+    latitude:	51.490835,
     number: '0',
     about: 'We love board playing board games together ',
     time: '09:00',
@@ -179,7 +211,9 @@ export default [
     name: 'The Camera Club',
     image: 'https://imgur.com/yQO4Zdd',
     activity: ['Photography', 'Films'], // indoor or outdoor
-    location: { name: 'West Hampstead Mews ', longitude: -0.189936, latitude: 51.547303 },
+    location: 'West Hampstead Mews ',
+    longitude: -0.189936,
+    latitude: 51.547303,
     number: '0',
     about: 'Welcome to The camera club. Improve your PHOTOGRAPHY and BOOST YOUR CREATIVITY!',
     time: 'tuesday',
@@ -187,10 +221,12 @@ export default [
     contact: '098986557898778'
   },
   {
-    name: 'Knitting and movies',
+    name: 'Knitting and Movies',
     image: 'https://imgur.com/qlyi5lK',
-    activity: ['kitting', 'Films'], // indoor or outdoor
-    location: { name: 'Kingdon Road ', longitude: -0.192392, latitude: 51.549382 },
+    activity: ['Knitting', 'Films'], // indoor or outdoor
+    location: 'Kingdon Road ',
+    longitude: -0.192392,
+    latitude: 51.549382,
     number: '0',
     about: 'Come ready with your knitting project and join the virtual meet up.',
     time: 'tuesday',
@@ -201,8 +237,10 @@ export default [
   {
     name: 'Mindfulness through Games',
     image: 'https://imgur.com/KA5eLTd',
-    activity: ['puzzling', 'Math/ Mind Game', 'Board games', 'Chess'], // indoor or outdoor
-    location: { name: 'Great Eastern Road', longitude: 0.003688, latitude: 51.544929 },
+    activity: ['Jigsaws', 'Brain Games', 'Board Games', 'Chess'], // indoor or outdoor
+    location: 'Great Eastern Road',
+    longitude: 0.003688,
+    latitude: 51.544929,
     number: '0',
     about: 'The mind is very powerful. Join us and become more mindful through games  ',
     time: 'tuesday',
@@ -212,8 +250,10 @@ export default [
   {
     name: 'We Create Art',
     image: 'https://imgur.com/Vs8qOEG',
-    activity: ['Painting'], // indoor or outdoor
-    location: { name: 'Amhurst Road ', longitude: -0.061674, latitude: 51.549004 },
+    activity: ['Painting', 'Pottery', 'Writing'], // indoor or outdoor
+    location: 'Amhurst Road ',
+    longitude: -0.061674,
+    latitude: 51.549004,
     number: '0',
     about: 'We create beautiful art',
     time: '16:00',
@@ -223,8 +263,10 @@ export default [
   {
     name: 'Anime Review',
     image: 'https://imgur.com/8PFoP4K',
-    activity: ['Reading', 'Films, Music'], // indoor or outdoor
-    location: { name: 'Benworth Street ', longitude:	-0.02787, latitude: 51.528216 },
+    activity: ['Reading', 'Films', 'Music', 'Anime'], // indoor or outdoor
+    location: 'Benworth Street ',
+    longitude:	-0.02787,
+    latitude: 51.528216,
     number: '0',
     about: 'We watch anime and review it afterwards',
     time: '16:00',
@@ -234,8 +276,10 @@ export default [
   {
     name: 'Yoga and Wellbeing',
     image: 'https://imgur.com/U7GOyax',
-    activity: ['Yoga','Math / Mind Games'], // indoor or outdoor
-    location: { name: 'Cairo Road ', longitude: -0.018014, latitude: 51.585503 },
+    activity: ['Yoga','Brain Games', 'Spending Time in Nature'], // indoor or outdoor
+    location: 'Cairo Road ',
+    longitude: -0.018014,
+    latitude: 51.585503,
     number: '0',
     about: 'If you love Yoga you would love our group.',
     time: '16:00',
@@ -243,10 +287,12 @@ export default [
     contact: '098986557898778'
   },
   {
-    name: 'The Sailing Club',
+    name: 'Watch me Wave',
     image: 'https://imgur.com/Zccxsch',
-    activity: ['Swimming', 'Sailing'], // indoor or outdoor
-    location: { name: 'Harrow Lane ', longitude: -0.0131, latitude:	51.508507 },
+    activity: ['Swimming', 'Sailing', 'Scuba Diving'], // indoor or outdoor
+    location: 'Harrow Lane ',
+    longitude: -0.0131,
+    latitude:	51.508507,
     number: '0',
     about: 'The group is for sailing lovers and those that own a boat.',
     time: '16:00',

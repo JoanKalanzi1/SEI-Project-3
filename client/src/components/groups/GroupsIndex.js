@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import GroupCard from './GroupCard'
-import { Container, Jumbotron } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import Row from 'react-bootstrap/Row'
 import { Link } from 'react-router-dom'
 

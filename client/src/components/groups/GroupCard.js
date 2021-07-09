@@ -14,7 +14,7 @@ const GroupCard = ({ _id, name, image }) => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: '5px',
+        
       }}>
         <span id='cardName'><Nav.Link href={`http://localhost:3000/groups/${_id}`}>{name}</Nav.Link></span>
       </Col>

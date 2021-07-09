@@ -10,12 +10,9 @@ const Home = () => {
   return (
     <>
       <HeroVideo />
-      <div className="activity-carousel-title">
-        <h2> Activities</h2>
-      </div>
       <ActivityCarousel />
       <div className="act-car">
-        <h2>Activity</h2>
+        <h2>Browse our groups in London</h2>
       </div>
       <GroupCarousel />
     </>

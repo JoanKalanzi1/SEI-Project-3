@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
-import Image from 'react-bootstrap/Image'
+import { Image } from 'react-bootstrap'
 import GroupCard from '../groups/GroupCard'
 
 const SingleActivity = () => {
@@ -60,20 +60,19 @@ const SingleActivity = () => {
   return (
     <section>
       {activity ?
-        <div className="groupSet"> 
+        <div className="groupSet">
           {/* TITLE DIV */}
-          <div> 
+          <div>
             <h2 className="singleActivityText">{activity.nameOfActivity}</h2>
           </div>
           {/* IMAGE AND SUMMARY DIV */}
-          
           <div id='activity"Container'>
             <div className="centerImage">
-              <Image src={`${activity.image}.jpeg`} alt={activity.nameOfActivity} className= "imageContainer"/>
+              <Image src={`${activity.image}.jpeg`} alt={activity.nameOfActivity} className="imageContainer" />
             </div>
-            <div>
-              <p className="singleActivityText">{activity.summary}</p>
-            </div>
+
+            <div className="summary" >{activity.summary}</div>
+
           </div>
         </div>
         :
@@ -82,13 +81,14 @@ const SingleActivity = () => {
         </h2>
       }
 
+
       <div className="centerGroupsHeader">
-        <h2>
-        Groups where you can do this activity:
-        </h2>
-       
+        <div className="summaryGroups">
+          <h3>Groups where you can do this activity:</h3>
+        </div>
+
         {activityGroups ?
-          <div className = "otheractivities">
+          <div className="otheractivities">
             {activityGroups.map(group => {
               return <GroupCard key={group._id} {...group} />
             })}
@@ -99,7 +99,6 @@ const SingleActivity = () => {
           </h2>
         }
       </div>
-        
     </section >
   )
 }

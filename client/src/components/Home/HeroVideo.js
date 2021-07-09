@@ -20,8 +20,9 @@ const HeroVideo = () => {
           <source src="https://i.imgur.com/PXNKqMo.mp4" type="video/mp4" />
         </video>
         <div className='text-on-hero'>
+
           <h1>Jump into something new</h1>
-          <p>
+          <p className="hero-text">
             Couped up inside for too long? Us too!
             <br></br>
             Let us find you a new hobby and local group to join
@@ -29,7 +30,7 @@ const HeroVideo = () => {
           <p>
             <div className="button">
               <Link to='/generator'>
-                <Button variant="dark" size="lg" className="button-home" href="/generator" >Get me out!</Button>
+                <Button variant="dark" size="lg" className="button-home" href="/generator" >Generate a hobby</Button>
               </Link>
             </div>
           </p>

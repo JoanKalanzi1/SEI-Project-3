@@ -86,14 +86,22 @@ const SingleGroup = () => {
         <Col md="auto">
           {group ?
             <div className='groupSet'>
-              <h2>{group.name}</h2>
-              <h4>Located in:{location}</h4>
-              <div>
-                <Image src={`${group.image}.jpeg`} alt={group.name} className='imageContainer' />
+              <h2 className="singleGroupName">{group.name}</h2>
+              <div id='activity"Container'>
+                <div className="centerImage">
+                  <Image src={`${group.image}.jpeg`} alt={group.name} className='imageContainer' />
+                </div>
+
+                <div className="groupSummary">{group.about}</div>
               </div>
-              <h5>{group.about}</h5>
-              <h5>{group.time}</h5>
-              <h5>{group.contact}</h5>
+              <hr/>
+              <div className="groupInfo">
+                <h5>{group.time}</h5>
+                <h5>Location:   {location}</h5>
+                <h5>Contact number:   {group.contact}</h5>
+                <h5>Group members:   {group.number}</h5>
+              </div>
+
             </div>
             :
             <h2>
@@ -104,13 +112,13 @@ const SingleGroup = () => {
         <Col></Col>
       </Container>
       <div>
-        <h2 className= "otheractivitiestext">
-        Actvities you can do in this group:
+        <h2 className="otheractivitiestext">
+          Actvities you can do in this group:
         </h2>
         {groupActivities ?
-          <div className = "otheractivities">
+          <div className="otheractivities">
             {groupActivities.map(activity => {
-              return <ActivityCard key={activity._id} {...activity} className= "eachactivity" />
+              return <ActivityCard key={activity._id} {...activity} className="eachactivity" />
             })}
           </div>
           :

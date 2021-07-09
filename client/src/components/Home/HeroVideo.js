@@ -29,7 +29,7 @@ const HeroVideo = () => {
           <p>
             <div className="button">
               <Link to='/generator'>
-                <Button variant="dark" size="lg" className="button-home" href="/generator">Get me out!</Button>
+                <Button variant="dark" size="lg" className="button-home" href="/generator" >Get me out!</Button>
               </Link>
             </div>
           </p>

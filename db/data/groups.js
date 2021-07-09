@@ -10,7 +10,7 @@ export default [
     about: 'We are a friendly, local sports club encouraging girls and adults to play more netball and have fun in the process. Alongside this, our aim is for all members to improve their skills and develop as a player. Our juniors train all year round and compete in friendly fixtures against other local clubs, alongside competing in a few tournaments each year. We also attend international netball matches, host camps and have sessions led by international netball players. Our adults also train all year round and play in the London Netball League every Thursday and we are currently doing very well, with both teams playing in the Premier Division (we won both the Premier and Division 1 Leagues in March 2020). All new members have the option to train and play for the club, or to just train for fitness and fun.',
     time: 'Tuesdays & Thursdays at 19:00',
     level: 'Beginner',
-    contact: '02579280927897'
+    contact: '025 7928 0927'
   },
   {
     name: 'Cheese? Wine-not!',
@@ -23,7 +23,7 @@ export default [
     about: 'Bonjour wine & cheese lovers! Join us for our weekly Wine and Cheese Mondays at 6pm! We will have a complimentary tasting of red or wine wine with a complimentary platter of new selection of cheeses such as blue cheese, camembert, brie, bonne bouche, fresh baguette along with cherry sweet onions and honey! Our selected red and white wine this week will be: Cabernet (red) and Sauvignon (white).',
     time: 'Monday at 18:00',
     level: 'Beginner',
-    contact: '02579280927897'
+    contact: '025 7928 0927'
   },
   {
     name: 'THC - Tree Huggers Club',
@@ -36,7 +36,7 @@ export default [
     about: 'Hey dudes and dudettes, come in peace and welcome to our most excellent group space, THC. Know that we are all one people, one child of this our Mother Earth, Gaia. Join us as we venture forth amongst our brothers and sisters the animals, and most ancient and revered family, the trees. Join us as we embrace their love, their knowledge, and their calming influence on our hearts and minds.',
     time: 'Saturday and Sunday at 09:00',
     level: 'Beginner',
-    contact: '02579280927897'
+    contact: '025 9280 9278'
   },
   {
     name: 'Walking Away',
@@ -49,7 +49,7 @@ export default [
     about: 'We meet for a variety of different walking based activities, whether that\s walking the cities steets, rambling over gentle rolling hills, or hiking in the mountains, we do it all!',
     time: 'Saturday at 09:00 sharp!',
     level: 'Beginner',
-    contact: '02579280927897'
+    contact: '025 7928 0927'
   },
   {
     name: 'Baking Warriors',
@@ -62,7 +62,7 @@ export default [
     about: 'We fire up the outdoor brick oven at the Old Stone House and invite everyone to come bake and cook together! You\'re encouraged to show up with a dish (or dishes) to cook, or just hang out and enjoy a conversation around the fire.',
     time: 'Thursday at 4pm',
     level: 'Beginner',
-    contact: '025976424890'
+    contact: '025 9764 2489'
   },
   {
     name: 'Urban Gardening',
@@ -75,7 +75,7 @@ export default [
     about: '“Your vibe attracts your tribe”, and we believe the most important element in our group is the people. Come and share your knowledge about gardening in small spaces, and trade cuttings, borrow toools, show off your own acheivements and favourites!',
     time: 'Tuesday at 18:00, Saturday at 15:00',
     level: 'Beginner',
-    contact: '0257798887798'
+    contact: '025 7798 8877'
   },
   {
     name: 'London Ultimate Frisbee Pickup',
@@ -88,7 +88,7 @@ export default [
     about: 'London Ultimate Frisbee Pickup is back! Bring cleats if you have them and a light and dark shirt to be able to switch teams. Please read the event rules below and make sure you agree with them before signing up.',
     time: 'Monday and Thursday at 18:00',
     level: 'Beginner',
-    contact: '0258090904776'
+    contact: '025 8090 9047'
   },
   {
     name: 'Table Top Gaming Group',
@@ -101,7 +101,7 @@ export default [
     about: 'Established in 17th April, 2016, Table Top Gaming Group is a casual, easy-going gaming group which aims to introduce games to more people in London, as well as providing a welcoming platform for seasoned gamers to share a friendly gaming session with fellow board game enthusiasts. With over 1,000 events held in the past five years, we are a highly-active game group.',
     time: 'Mondays from 18:00 to 22:00',
     level: 'hey',
-    contact: '0257909992899'
+    contact: '025 7909 9928'
   },
   {
     name: 'Women\'s Wine (and Book!) Club',
@@ -114,7 +114,7 @@ export default [
     about: 'Welcome! This group is for women in the London City area in their late-20\'s to 40\'s to who love to read all different types of books and are looking to make new friends! The plan is to select a book each month to read, then get together at a local restaurant or bar to discuss over a glass of wine.',
     time: 'Saturday at 19:00',
     level: ' Beginner',
-    contact: '0257929787912'
+    contact: '025 7929 7879'
   },
   {
     name: 'Bike to Adventure',
@@ -127,7 +127,7 @@ export default [
     about: 'We are the most active cyclo-centric multi-sport group in the tri-state area. We also love food. We believe in and encourage four-season cycling as the healthiest way to commute and be in tune with the best our region has to offer. Every ride will include a food stop or several, as well as varying cultural, historical, or natural destinations.',
     time: 'Saturday and Sunday at 09:00, MTB Night Ride on Monday at 18:00 ',
     level: ' Beginner',
-    contact: '0259078863090'
+    contact: '020 9078 8630'
   },
   {
     name: 'London Souper Heroes',
@@ -140,7 +140,7 @@ export default [
     about: 'There are many less fortunate people in the Greater London area and we do what we can to help them. There is always a need for volunteers to help make their live\'s more comfortable. We don\'t take payment, we just do good for others.',
     time: 'Every evening at 17:00',
     level: ' Beginner',
-    contact: '02590739303892'
+    contact: '025 9073 9303'
   },
   {
     name: 'London Gamers Guild',
@@ -150,10 +150,10 @@ export default [
     longitude: 0.005707,
     latitude: 51.487188,
     number: '30+',
-    about: ' we play games on online together',
+    about: 'Have you ever been frustrated by the fact your friends are never online at the same time you are? How about never being able to talk in online games without being shouted at? Fear not! We\'re here for you, come join our guild that operates both online, and in LAN parties!',
     time: 'Online - every night from 18:00, or together on Saturday at 12:00',
     level: ' Beginner',
-    contact: '025689090188778'
+    contact: '025 6890 9018 '
   },
   {
     name: 'London Cosmo\'s Sports Club',
@@ -166,59 +166,59 @@ export default [
     about: 'What sport do you want to try? We\'ve got loads! We\'ve got teams for men & women, any age-group, and if we don\'t have a team, come make one! Most importantly, we also have a bar!',
     time: 'Every weekday evening from 19:00. Saturday Morning matches from 10:00',
     level: 'intermediate',
-    contact: '02509649920778'
+    contact: '025 0964 9920'
   },
   {
     name: 'Singing Angels',
     image: 'https://imgur.com/VR6KLVs',
-    activity: ['Music', 'Films', 'Dancing'],
+    activity: ['Music', 'Volunteering', 'Dancing'],
     location: 'Great Suffolk Street ',
     longitude: -0.098699,
     latitude: 51.502983,
     number: '25',
-    about: 'Have you ever wanted to join a pop and rock choir but felt too nervous about attending? Fear not! The Singing Angels is designed for you.',
+    about: 'Have you ever wanted to join a pop and rock choir but felt too nervous about attending? Fear not! The Singing Angels is designed for you. We sing at community events and love to really get involved with the music. Don\'t want to perform? No problem, just come join us for our practises and get in the groooove.',
     time: 'Tuesday at 18:00, Friday at 18:00',
     level: 'intermediate',
-    contact: '02587489098778'
+    contact: '025 8748 9098'
   },
   {
-    name: 'Dancing for Fun',
+    name: 'Saturday Night Fever',
     image: 'https://imgur.com/XvQpYPZ',
     activity: ['Dancing', 'Music'],
     location: 'Mandela Way ',
     longitude: -0.080152,
     latitude: 51.492762,
     number: '30',
-    about: 'Meet like minded people through dancing',
+    about: 'Are you ready to twist and shout about your rhythm? Do you want to spice up your life with some salsa? Have you ever ended up tangoing with the wrong kind of people? If the answer is yes to all three, come and join us! We dance for the joy of it, and love every second.',
     time: 'Tuesday at 20:00 for practise, Saturday at 20:00 for fun',
     level: 'intermediate',
-    contact: '024557898778'
+    contact: '024 5578 9877'
   },
   {
-    name: 'Board Games',
+    name: 'Never Bored Games',
     image: 'https://imgur.com/2PRny7u',
-    activity: ['Board Games', 'Jigsaws', 'Brain Games'],
+    activity: ['Board Games', 'Jigsaws', 'Brain Games', 'Chess'],
     location: 'Asolando Drive ',
     longitude: -0.092679,
     latitude:	51.490835,
     number: '20+',
-    about: 'We love board playing board games together ',
+    about: 'Our events are free to attend, and you are welcome to bring your own games or just join in with those others have brought. If you\'ve only played older games like Monopoly, Risk and Scrabble, you will find a lot of the games we play at the club unfamiliar. But we are a welcoming bunch and will always be happy to teach games to new players.',
     time: 'Sunday at 11:00',
     level: 'intermediate',
-    contact: '025789367127'
+    contact: '025 7893 6712'
   },
   {
     name: 'The Camera Club',
     image: 'https://imgur.com/yQO4Zdd',
-    activity: ['Photography', 'Films'], // indoor or outdoor
+    activity: ['Photography', 'Films'],
     location: 'West Hampstead Mews ',
     longitude: -0.189936,
     latitude: 51.547303,
     number: '35-40',
-    about: 'Welcome to The camera club. Improve your PHOTOGRAPHY and BOOST YOUR CREATIVITY!',
+    about: 'Come and enjoy all things film based. We all enjoy watching films with true cinematography, and learning techniques on Wednesdays, and on Saturdays brush up on your camera skills and learn new photography techniques whilst on a casual photo walk with other local photographers. No formal lectures, just a chance to meet-up, share ideas and receive feedback!',
     time: 'Wednesday at 18:00 for Film night, Saturday at 10:00 for Photography',
     level: 'Both',
-    contact: '098986557898778'
+    contact: '098 9865 5789'
   },
   {
     name: 'Knitting and Movies',
@@ -231,22 +231,22 @@ export default [
     about: 'Come ready with your knitting project and join the virtual meet up.',
     time: 'Sunday at 16:00',
     level: 'Both',
-    contact: '098986557898778'
+    contact: '098 9865 5789'
     
   },
-  {
-    name: 'Mindfulness through Games',
-    image: 'https://imgur.com/KA5eLTd',
-    activity: ['Jigsaws', 'Brain Games', 'Board Games', 'Chess'], // indoor or outdoor
-    location: 'Great Eastern Road',
-    longitude: 0.003688,
-    latitude: 51.544929,
-    number: '20',
-    about: 'The mind is very powerful. Join us and become more mindful through games  ',
-    time: 'Mondays at 6pm',
-    level: 'Both',
-    contact: '098986557898778'
-  },
+  // {
+  //   name: 'Mindfulness through Games',
+  //   image: 'https://imgur.com/KA5eLTd',
+  //   activity: ['Jigsaws', 'Brain Games', 'Board Games'], // indoor or outdoor
+  //   location: 'Great Eastern Road',
+  //   longitude: 0.003688,
+  //   latitude: 51.544929,
+  //   number: '20',
+  //   about: 'The mind is very powerful. Join us and become more mindful through games  ',
+  //   time: 'Mondays at 6pm',
+  //   level: 'Both',
+  //   contact: '098 9865 5789'
+  // },
   {
     name: 'We Create Art',
     image: 'https://imgur.com/Vs8qOEG',
@@ -258,7 +258,7 @@ export default [
     about: 'We create beautiful art',
     time: 'Wednesday at 16:00, Saturday at 11:00',
     level: 'Both',
-    contact: '098986557898778'
+    contact: '098 9865 5789'
   },
   {
     name: 'Anime Review',
@@ -271,7 +271,7 @@ export default [
     about: 'We watch anime and review it afterwards',
     time: '16:00 EVERY SATURDAY',
     level: 'Both',
-    contact: '098986557898778'
+    contact: '098 9865 5789'
   },
   {
     name: 'Yoga and Wellbeing',
@@ -284,7 +284,7 @@ export default [
     about: 'If you love Yoga you would love our group.',
     time: 'We run sessions every evening from 17:30',
     level: 'Both',
-    contact: '098986557898778'
+    contact: '098 9865 5789'
   },
   {
     name: 'Watch me Wave',
@@ -297,7 +297,7 @@ export default [
     about: 'The group is for sailing lovers and those that own a boat.',
     time: 'Summer: 9am to 6pm, every day between March 1st and October 1st',
     level: 'Both',
-    contact: '098986557898778'
+    contact: '098 9865 5789'
   }
 //   {
 //     name: 'GCSE Tutors',

@@ -144,3 +144,50 @@ button:hover {
   padding-left: 60px;
   padding-bottom: 30px;
 }
+.imageContainer {
+  max-width: 25%;
+  border-radius: 5px;
+}
+
+  a {
+    color: #f8f9fa;
+    text-decoration: none;
+    background-color: #00000045;
+}
+
+.login {
+  padding-top:80px; 
+}
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+  content: "next";
+  color: white;
+}
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+  content: "prev";
+
+  color: white;
+}
+.swiper-scrollbar-drag {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: white;
+  border-radius: 10px;
+  left: 0;
+  top: 0;
+}
+:root {
+  --swiper-theme-color: #f8f9fa;
+}
+#cardName {
+transition: transform 0.2s ease-in-out;
+  &:hover{
+    transform: scale(1.05);
+    box-shadow: 25px rgb(255, 0, 0, 1);
+    color: darken($color: white, $amount: 20);
+  }
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}

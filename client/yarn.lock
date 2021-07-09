@@ -50,10 +50,23 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+"@babel/core@^7.0.0", "@babel/core@^7.1.0", "@babel/core@^7.1.6", "@babel/core@^7.12.3", "@babel/core@^7.7.5", "@babel/core@^7.8.4":
+  version "7.14.6"
+  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.14.6.tgz#e0814ec1a950032ff16c13a2721de39a8416fcab"
+  integrity sha512-gJnOEWSqTk96qG5BoIrl5bVtc23DCycmIePPYnamY9RboYdI4nFy5vAQMSl81O5K/W0sLDWfGysnOECC+KUUCA==
+=======
+>>>>>>> development
 "@babel/core@^7.1.0", "@babel/core@^7.12.3", "@babel/core@^7.7.5", "@babel/core@^7.8.4":
   version "7.12.17"
   resolved "https://registry.npmjs.org/@babel/core/-/core-7.12.17.tgz"
   integrity sha512-V3CuX1aBywbJvV2yzJScRxeiiw0v2KZZYYE3giywxzFJL13RiyPjaaDwhDnxmgFTTS7FgvM2ijr4QmKNIu0AtQ==
+<<<<<<< HEAD
+=======
+>>>>>>> b66b9a201992e50465b92166cb7b7134c57049f2
+>>>>>>> development
   dependencies:
     "@babel/code-frame" "^7.12.13"
     "@babel/generator" "^7.12.17"
@@ -67,8 +80,26 @@
     debug "^4.1.0"
     gensync "^1.0.0-beta.1"
     json5 "^2.1.2"
+<<<<<<< HEAD
     lodash "^4.17.19"
     semver "^5.4.1"
+=======
+<<<<<<< HEAD
+    semver "^6.3.0"
+    source-map "^0.5.0"
+
+"@babel/generator@^7.12.1", "@babel/generator@^7.14.5", "@babel/generator@^7.5.0":
+  version "7.14.5"
+  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.14.5.tgz#848d7b9f031caca9d0cd0af01b063f226f52d785"
+  integrity sha512-y3rlP+/G25OIX3mYKKIOlQRcqj7YgrvHxOLbVmyLJ9bPmi5ttvUmpydVjcFjZphOktWuA7ovbx91ECloWTfjIA==
+  dependencies:
+    "@babel/types" "^7.14.5"
+    jsesc "^2.5.1"
+=======
+    lodash "^4.17.19"
+    semver "^5.4.1"
+>>>>>>> b66b9a201992e50465b92166cb7b7134c57049f2
+>>>>>>> development
     source-map "^0.5.0"
 
 <<<<<<< HEAD
@@ -6310,9 +6341,31 @@ es-abstract@^1.17.2:
   version "1.17.7"
   resolved "https://registry.npmjs.org/es-abstract/-/es-abstract-1.17.7.tgz"
   integrity sha512-VBl/gnfcJ7OercKA9MVaegWsBHFjV492syMudcnQZvt/Dw8ezpcOHYZXa/J96O8vx+g4x65YKhxOwDUh63aS5g==
+<<<<<<< HEAD
+=======
   dependencies:
     es-to-primitive "^1.2.1"
     function-bind "^1.1.1"
+    has "^1.0.3"
+    has-symbols "^1.0.1"
+    is-callable "^1.2.2"
+    is-regex "^1.1.1"
+    object-inspect "^1.8.0"
+    object-keys "^1.1.1"
+    object.assign "^4.1.1"
+    string.prototype.trimend "^1.0.1"
+    string.prototype.trimstart "^1.0.1"
+
+es-abstract@^1.18.0-next.1, es-abstract@^1.18.0-next.2:
+  version "1.18.0-next.2"
+  resolved "https://registry.npmjs.org/es-abstract/-/es-abstract-1.18.0-next.2.tgz"
+  integrity sha512-Ih4ZMFHEtZupnUh6497zEL4y2+w8+1ljnCyaTa+adcoafI1GOvMwFlDjBLfWR7y9VLfrjRJe9ocuHY1PSR9jjw==
+>>>>>>> b66b9a201992e50465b92166cb7b7134c57049f2
+>>>>>>> development
+  dependencies:
+    es-to-primitive "^1.2.1"
+    function-bind "^1.1.1"
+<<<<<<< HEAD
     has "^1.0.3"
     has-symbols "^1.0.1"
     is-callable "^1.2.2"
@@ -6340,6 +6393,16 @@ es-abstract@^1.18.0-next.1, es-abstract@^1.18.0-next.2:
     is-regex "^1.1.1"
     object-inspect "^1.9.0"
     object-keys "^1.1.1"
+=======
+    get-intrinsic "^1.0.2"
+    has "^1.0.3"
+    has-symbols "^1.0.1"
+    is-callable "^1.2.2"
+    is-negative-zero "^2.0.1"
+    is-regex "^1.1.1"
+    object-inspect "^1.9.0"
+    object-keys "^1.1.1"
+>>>>>>> development
     object.assign "^4.1.2"
     string.prototype.trimend "^1.0.3"
     string.prototype.trimstart "^1.0.3"

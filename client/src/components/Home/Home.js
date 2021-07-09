@@ -4,6 +4,7 @@ import GroupCarousel from './GroupCarousel'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import HeroVideo from './HeroVideo'
 import Map from './Map'
+import Footer from './Footer'
 
 
 const Home = () => {
@@ -30,9 +31,7 @@ const Home = () => {
       <ActivityCarousel />
       <Map />
       <GroupCarousel />
-      <div className="Footer">
-        <h2> Footer </h2>
-      </div>
+      <Footer />
     </>
   )
 }

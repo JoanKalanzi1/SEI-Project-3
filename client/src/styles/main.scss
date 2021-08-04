@@ -12,7 +12,7 @@
 }
 
 .activity-carousel {
-  margin-top: 400px;
+  margin-top: 500px;
 }
 
 #carouselCardName {
@@ -199,6 +199,13 @@ transition: transform 0.2s ease-in-out;
     color: darken($color: white, $amount: 80);
   }
 }
+.adventure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 85px;
+}
+
 .logo {
   display: flex;
     justify-content: center;
@@ -333,7 +340,7 @@ h2, p{
   align-items: baseline;
   text-align: center;
   flex-wrap: wrap;
-  margin: 40px 278px;
+  margin: 40px 220px;
   flex-direction: row;
   font-size: larger;
 }

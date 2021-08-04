@@ -12,6 +12,7 @@ import GroupRegister from './components/Auth/GroupRegister'
 import GroupLogin from './components/Auth/GroupLogin'
 import Generator from './components/Generator'
 import CreateGroup from './components/Auth/CreateGroup'
+import Footer from './components/Home/Footer'
 
 
 

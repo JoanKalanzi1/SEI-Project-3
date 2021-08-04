@@ -124,7 +124,7 @@ const CreateGroup = () => {
             placeholder="51.549382" />
         </Form.Group>
         {errors.latitude && <p className="help is-danger">{errors.latitude}</p>}
-     
+    
         <Form.Group className="mb-3" controlId="formBasicContact">
           <Form.Label>Contact</Form.Label>
           <Form.Control

@@ -46,7 +46,7 @@ export default [
     longitude: -0.078905,
     latitude: 51.514882,
     number: '25-50',
-    about: 'We meet for a variety of different walking based activities, whether that\s walking the cities steets, rambling over gentle rolling hills, or hiking in the mountains, we do it all!',
+    about: 'We meet for a variety of different walking based activities, whether that\'s walking the city steets, rambling over gentle rolling hills, or hiking in the mountains, we do it all!',
     time: 'Saturday at 09:00 sharp!',
     level: 'Beginner',
     contact: '025 7928 0927'

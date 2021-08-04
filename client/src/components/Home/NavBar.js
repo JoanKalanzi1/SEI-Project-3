@@ -38,7 +38,7 @@ const NavBar = () => {
           <Col>
             <div className="logo-nav-items">
               <div className="logo">
-                <Navbar.Brand href="#home"><Image src="https://imgur.com/0C9foJS.jpeg" /></Navbar.Brand>
+                <Navbar.Brand href="/"><Image src="https://imgur.com/0C9foJS.jpeg" /></Navbar.Brand>
               </div>
               <div className="navbar-items">
                 <Nav className="mr-auto">

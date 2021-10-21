@@ -87,4 +87,3 @@ Groups
 3. Cycling club
 4. Gaming club - incl board games, 
 5. 
-Hey Joan, hope your weekend is good as well. I would say it’s definitely something to do on the backend, and it’s a relationship just like Charlotte has shown, so that a user can have a group in their schema, like a comment. So that group can be referenced and shown on the user profile. So a request that goes to add a group and shows up on the user profile when a group is added
